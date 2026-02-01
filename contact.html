@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Booking | Hire Aman Satija for Your Event</title>
+    <link rel="stylesheet" href="src/css/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body class="bg-brand-dark text-white font-sans antialiased">
+
+    <div id="app">
+        <!-- Page Header -->
+        <section class="pt-40 pb-20 border-b border-white/5 bg-brand-charcoal">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-5xl md:text-7xl font-serif font-bold mb-6">Let's <span
+                        class="text-brand-gold italic">Connect</span></h1>
+                <p class="text-white/60 tracking-widest uppercase">Secure your dates for a premium experience</p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="py-24">
+            <div class="container mx-auto px-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-20">
+                    <!-- Contact Form -->
+                    <div class="reveal">
+                        <h2 class="text-3xl font-serif font-bold mb-8">Send an <span
+                                class="text-brand-gold italic">Enquiry</span></h2>
+                        <form id="booking-form" class="space-y-6">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-xs uppercase tracking-widest text-white/40 mb-2">Full
+                                        Name</label>
+                                    <input type="text" placeholder="John Doe"
+                                        class="w-full bg-transparent border-b border-white/20 py-3 focus:outline-none focus:border-brand-gold transition-colors text-white">
+                                </div>
+                                <div>
+                                    <label class="block text-xs uppercase tracking-widest text-white/40 mb-2">Contact
+                                        Number</label>
+                                    <input type="tel" placeholder="+91 XXXXX XXXXX"
+                                        class="w-full bg-transparent border-b border-white/20 py-3 focus:outline-none focus:border-brand-gold transition-colors text-white">
+                                </div>
+                            </div>
+                            <div>
+                                <label class="block text-xs uppercase tracking-widest text-white/40 mb-2">Event
+                                    Type</label>
+                                <select
+                                    class="w-full bg-transparent border-b border-white/20 py-3 focus:outline-none focus:border-brand-gold transition-colors text-white/60 appearance-none">
+                                    <option class="bg-brand-dark">Wedding / Sangeet</option>
+                                    <option class="bg-brand-dark">Corporate Gala / Award Night</option>
+                                    <option class="bg-brand-dark">Celebrity Show / Concert</option>
+                                    <option class="bg-brand-dark">Private Celebration</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-xs uppercase tracking-widest text-white/40 mb-2">Event Date &
+                                    Location</label>
+                                <input type="text" placeholder="24th Dec, Mumbai"
+                                    class="w-full bg-transparent border-b border-white/20 py-3 focus:outline-none focus:border-brand-gold transition-colors text-white">
+                            </div>
+                            <div>
+                                <label class="block text-xs uppercase tracking-widest text-white/40 mb-2">Additional
+                                    Details</label>
+                                <textarea rows="4" placeholder="Tell us more about your event..."
+                                    class="w-full bg-transparent border-b border-white/20 py-3 focus:outline-none focus:border-brand-gold transition-colors text-white"></textarea>
+                            </div>
+                            <button type="submit" class="btn-gold w-full mt-8">Send Message</button>
+                        </form>
+                    </div>
+
+                    <!-- Contact Details -->
+                    <div class="reveal" style="transition-delay: 100ms;">
+                        <h2 class="text-3xl font-serif font-bold mb-8">Direct <span
+                                class="text-brand-gold italic">Contact</span></h2>
+                        <div class="space-y-12">
+                            <div>
+                                <h4 class="text-brand-gold font-bold uppercase tracking-widest text-xs mb-4">Location
+                                </h4>
+                                <p class="text-2xl font-serif">Available Worldwide</p>
+                                <p class="text-white/60">Based in India, Traveling Globally</p>
+                            </div>
+                            <div>
+                                <h4 class="text-brand-gold font-bold uppercase tracking-widest text-xs mb-4">Phone &
+                                    WhatsApp</h4>
+                                <a href="tel:+91XXXXXXXXXX"
+                                    class="text-2xl font-serif hover:text-brand-gold transition-colors">+91 98XXX
+                                    XXXXX</a>
+                            </div>
+                            <div>
+                                <h4 class="text-brand-gold font-bold uppercase tracking-widest text-xs mb-4">Email</h4>
+                                <a href="mailto:info@amansatija.com"
+                                    class="text-2xl font-serif hover:text-brand-gold transition-colors">info@amansatija.com</a>
+                            </div>
+                            <hr class="border-white/10">
+                            <div>
+                                <h4 class="text-brand-gold font-bold uppercase tracking-widest text-xs mb-4">Follow Aman
+                                </h4>
+                                <div class="flex space-x-6 text-2xl">
+                                    <a href="https://www.instagram.com/anchor_aman_satija/" target="_blank"
+                                        class="text-white/40 hover:text-brand-gold transition-colors"><i
+                                            class="fa-brands fa-instagram"></i></a>
+                                    <a href="#" class="text-white/40 hover:text-brand-gold transition-colors"><i
+                                            class="fa-brands fa-facebook-f"></i></a>
+                                    <a href="#" class="text-white/40 hover:text-brand-gold transition-colors"><i
+                                            class="fa-brands fa-linkedin-in"></i></a>
+                                    <a href="#" class="text-white/40 hover:text-brand-gold transition-colors"><i
+                                            class="fa-brands fa-youtube"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script type="module">
+        import { initPage } from './src/js/main.js';
+        initPage();
+    </script>
+</body>
+
+</html>
