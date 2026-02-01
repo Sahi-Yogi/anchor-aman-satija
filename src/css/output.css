@@ -562,6 +562,9 @@ body {
   font-family: 'Plus Jakarta Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 h1,
@@ -1909,6 +1912,84 @@ h1,
   .stat-number {
     font-size: 4.5rem;
   }
+}
+
+/* Lightbox Overlay */
+
+.lightbox-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.95);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  z-index: 1000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.lightbox-overlay.active {
+  display: flex;
+  opacity: 1;
+}
+
+.lightbox-content {
+  width: 90%;
+  max-width: 1000px;
+  aspect-ratio: 16/9;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  width: 3rem;
+  height: 3rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 1001;
+}
+
+.lightbox-close:hover {
+  background: rgba(212, 175, 55, 0.6);
+  transform: rotate(90deg);
+}
+
+/* Fix for footer to stay at bottom */
+
+#app {
+  flex: 1 0 auto;
+  width: 100%;
+}
+
+footer {
+  flex-shrink: 0;
+}
+
+/* Ensure no unintended overflow */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Footer link icon fix */
+
+.footer-link span {
+  position: relative;
+  z-index: 1;
 }
 
 .hover\:border-brand-gold:hover{
