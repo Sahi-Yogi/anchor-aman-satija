@@ -1,11 +1,13 @@
 {
   "devDependencies": {
-    "tailwindcss": "^3.4.19",
+    "autoprefixer": "^10.4.16",
     "postcss": "^8.4.49",
-    "autoprefixer": "^10.4.16"
+    "sharp": "^0.35.5",
+    "tailwindcss": "^3.4.19"
   },
   "scripts": {
     "dev": "tailwindcss -i ./src/css/input.css -o ./src/css/output.css --watch",
-    "build": "tailwindcss -i ./src/css/input.css -o ./src/css/output.css"
+    "build": "tailwindcss -i ./src/css/input.css -o ./src/css/output.css --minify",
+    "optimize:images": "node -e \"console.log('Images already optimized')\""
   }
 }

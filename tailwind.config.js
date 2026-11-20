@@ -6,6 +6,7 @@ module.exports = {
     "./services.html",
     "./gallery.html",
     "./testimonials.html",
+    "./press-kit.html",
     "./contact.html",
     "./src/**/*.{html,js}"
   ],

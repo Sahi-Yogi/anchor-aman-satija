@@ -4,125 +4,405 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery | Aman Satija Portfolio</title>
+    <title>Gallery & Showreels | Aman Satija (@anchor_aman_satijaaa)</title>
+    <meta name="description" content="Explore live stage showreels, Instagram highlights, couple games clips, and event photo gallery of Anchor Aman Satija.">
+    
+    <!-- Preconnect to external origins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+
+    <!-- Google Fonts with font-display=swap -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap">
+
+    <!-- Minified Local CSS -->
     <link rel="stylesheet" href="src/css/output.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Font Awesome (Asynchronous Non-render-blocking) -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></noscript>
 </head>
 
 <body class="bg-brand-dark text-white font-sans antialiased">
 
     <div id="app">
         <!-- Page Header -->
-        <section class="pt-40 pb-20 border-b border-white/5 bg-brand-charcoal">
+        <section class="pt-40 pb-16 border-b border-white/5 bg-brand-charcoal">
             <div class="container mx-auto px-6 text-center">
-                <h1 class="text-5xl md:text-7xl font-serif font-bold mb-6">Moments in <span
+                <span class="verified-badge mb-4">
+                    <i class="fa-solid fa-circle-check text-brand-gold"></i> Official Portfolio • @anchor_aman_satijaaa
+                </span>
+                <h1 class="text-5xl md:text-7xl font-serif font-bold mb-4">Moments in <span
                         class="text-brand-gold italic">Motion</span></h1>
-                <p class="text-white/60 tracking-widest uppercase">A glimpse into 2500+ live performances</p>
+                <p class="text-white/60 tracking-widest uppercase text-sm">Stage Glimpses from 2500+ Live Shows Across India</p>
+
+                <!-- Instagram Story Highlights Bar -->
+                <div class="mt-14 max-w-4xl mx-auto overflow-x-auto pb-4 scrollbar-none">
+                    <div class="flex items-center justify-center gap-6 sm:gap-10 min-w-max px-4">
+                        <!-- Highlight 1 -->
+                        <a href="#showreels" class="story-highlight-item group">
+                            <div class="story-ring mb-2">
+                                <div class="story-ring-inner">
+                                    <img src="src/assets/images/real-wedding-aman.webp" alt="Weddings" class="w-full h-full object-cover">
+                                </div>
+                            </div>
+                            <span class="text-xs font-semibold text-white/80 group-hover:text-brand-gold transition-colors">Weddings</span>
+                        </a>
+
+                        <!-- Highlight 2 -->
+                        <a href="#showreels" class="story-highlight-item group">
+                            <div class="story-ring mb-2">
+                                <div class="story-ring-inner">
+                                    <img src="src/assets/images/reel-live-sangeet.webp" alt="Couple Games" class="w-full h-full object-cover">
+                                </div>
+                            </div>
+                            <span class="text-xs font-semibold text-white/80 group-hover:text-brand-gold transition-colors">Couple Games</span>
+                        </a>
+
+                        <!-- Highlight 3 -->
+                        <a href="#showreels" class="story-highlight-item group">
+                            <div class="story-ring mb-2">
+                                <div class="story-ring-inner">
+                                    <img src="src/assets/images/reel-stage-tiger.webp" alt="Tiger of Alwar" class="w-full h-full object-cover">
+                                </div>
+                            </div>
+                            <span class="text-xs font-semibold text-white/80 group-hover:text-brand-gold transition-colors">Tiger of Alwar</span>
+                        </a>
+
+                        <!-- Highlight 4 -->
+                        <a href="#showreels" class="story-highlight-item group">
+                            <div class="story-ring mb-2">
+                                <div class="story-ring-inner">
+                                    <img src="src/assets/images/real-corporate-aman.webp" alt="Corporate" class="w-full h-full object-cover">
+                                </div>
+                            </div>
+                            <span class="text-xs font-semibold text-white/80 group-hover:text-brand-gold transition-colors">Corporate</span>
+                        </a>
+
+                        <!-- Highlight 5 -->
+                        <a href="#showreels" class="story-highlight-item group">
+                            <div class="story-ring mb-2">
+                                <div class="story-ring-inner">
+                                    <img src="src/assets/images/reel-versatile.webp" alt="Celebrity Shows" class="w-full h-full object-cover">
+                                </div>
+                            </div>
+                            <span class="text-xs font-semibold text-white/80 group-hover:text-brand-gold transition-colors">Star Nights</span>
+                        </a>
+
+                        <!-- Highlight 6 -->
+                        <a href="testimonials.html" class="story-highlight-item group">
+                            <div class="story-ring mb-2">
+                                <div class="story-ring-inner">
+                                    <img src="src/assets/images/real-hero-aman.webp" alt="5.0 Star Reviews" class="w-full h-full object-cover">
+                                </div>
+                            </div>
+                            <span class="text-xs font-semibold text-white/80 group-hover:text-brand-gold transition-colors">Reviews 5.0★</span>
+                        </a>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <!-- Featured Showreels -->
-        <section class="py-24">
+        <!-- Featured Showreels Section -->
+        <section id="showreels" class="py-24">
             <div class="container mx-auto px-6">
-                <h2 class="text-3xl font-serif font-bold mb-16 text-center reveal">Featured <span
-                        class="text-brand-gold italic">Performance Reels</span></h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-                    <!-- Video Item 1 -->
-                    <div class="group relative aspect-video overflow-hidden bg-brand-charcoal reveal cursor-pointer"
-                        data-video-id="dQw4w9WgXcQ">
-                        <img src="src/assets/images/img-1.png" alt="Showreel 1"
-                            class="w-full h-full object-cover opacity-60 transition-transform duration-700 group-hover:scale-110">
+                <div class="flex flex-col md:flex-row justify-between items-center mb-16">
+                    <div>
+                        <p class="text-brand-gold uppercase tracking-[0.3em] text-xs font-bold mb-2">High-Def Video Archive</p>
+                        <h2 class="text-3xl md:text-4xl font-serif font-bold">Official <span class="text-brand-gold italic">Stage Showreels</span></h2>
+                        <p class="text-white/60 text-sm mt-1">Watch live crowd reactions, couple comedy, and stage command</p>
+                    </div>
+                    <a href="https://www.youtube.com/results?search_query=Anchor+Aman+Satija" target="_blank" rel="noopener noreferrer" class="mt-4 md:mt-0 text-brand-gold hover:text-white transition-colors text-sm uppercase tracking-widest flex items-center gap-2 border border-brand-gold/30 px-6 py-3 rounded-full hover:bg-brand-gold/10">
+                        <i class="fa-brands fa-youtube text-red-500 text-lg"></i>
+                        <span>Explore Full YouTube Channel &rarr;</span>
+                    </a>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Reel 1: Versatile Stage Entertainer -->
+                    <div class="group relative aspect-video overflow-hidden bg-brand-charcoal reveal cursor-pointer rounded-lg border border-white/5"
+                        data-video-id="eqW_SmrCuHs">
+                        <picture>
+                            <source srcset="src/assets/images/reel-versatile.webp" type="image/webp">
+                            <img src="src/assets/images/reel-versatile.jpg" alt="Versatile Entertainer Showreel" width="600" height="340" loading="lazy" decoding="async"
+                                class="w-full h-full object-cover opacity-70 transition-transform duration-700 group-hover:scale-110">
+                        </picture>
                         <div class="absolute inset-0 flex items-center justify-center">
-                            <div
-                                class="w-20 h-20 bg-brand-gold text-brand-dark rounded-full flex items-center justify-center shadow-2xl transition-transform duration-300 group-hover:scale-125">
-                                <i class="fa-solid fa-play text-2xl ml-1"></i>
+                            <div class="w-16 h-16 bg-brand-gold text-brand-dark rounded-full flex items-center justify-center shadow-2xl transition-transform duration-300 group-hover:scale-125">
+                                <i class="fa-solid fa-play text-xl ml-1"></i>
                             </div>
                         </div>
-                        <div
-                            class="absolute bottom-0 left-0 w-full p-8 bg-gradient-to-t from-brand-dark to-transparent">
-                            <h3 class="text-xl font-bold font-serif">Aman Satija | Official Showreel</h3>
-                            <p class="text-white/60 text-sm tracking-widest uppercase">Corporate & Public Shows</p>
+                        <div class="absolute bottom-0 left-0 w-full p-6 bg-gradient-to-t from-brand-dark via-brand-dark/80 to-transparent">
+                            <span class="text-[10px] uppercase tracking-widest text-brand-gold font-bold mb-1 block">Live Stage Emceeing</span>
+                            <h3 class="text-lg font-bold font-serif leading-snug">The Versatile Stage Host | Official Showreel</h3>
+                            <p class="text-white/60 text-xs mt-1">Multi-city Galas, Summits & Star Shows</p>
                         </div>
                     </div>
 
-                    <!-- Video Item 2 -->
-                    <div class="group relative aspect-video overflow-hidden bg-brand-charcoal reveal cursor-pointer"
-                        style="transition-delay: 100ms;" data-video-id="dQw4w9WgXcQ">
-                        <img src="src/assets/images/img-2.png" alt="Showreel 2"
-                            class="w-full h-full object-cover opacity-60 transition-transform duration-700 group-hover:scale-110">
+                    <!-- Reel 2: Destination Wedding & Sangeet Games -->
+                    <div class="group relative aspect-video overflow-hidden bg-brand-charcoal reveal cursor-pointer rounded-lg border border-white/5"
+                        style="transition-delay: 100ms;" data-video-id="XX73wxQDXJ4">
+                        <picture>
+                            <source srcset="src/assets/images/reel-live-sangeet.webp" type="image/webp">
+                            <img src="src/assets/images/reel-live-sangeet.jpg" alt="Wedding Sangeet Showreel" width="600" height="340" loading="lazy" decoding="async"
+                                class="w-full h-full object-cover opacity-70 transition-transform duration-700 group-hover:scale-110">
+                        </picture>
                         <div class="absolute inset-0 flex items-center justify-center">
-                            <div
-                                class="w-20 h-20 bg-brand-gold text-brand-dark rounded-full flex items-center justify-center shadow-2xl transition-transform duration-300 group-hover:scale-125">
-                                <i class="fa-solid fa-play text-2xl ml-1"></i>
+                            <div class="w-16 h-16 bg-brand-gold text-brand-dark rounded-full flex items-center justify-center shadow-2xl transition-transform duration-300 group-hover:scale-125">
+                                <i class="fa-solid fa-play text-xl ml-1"></i>
                             </div>
                         </div>
-                        <div
-                            class="absolute bottom-0 left-0 w-full p-8 bg-gradient-to-t from-brand-dark to-transparent">
-                            <h3 class="text-xl font-bold font-serif">Wedding Highlights | Destination Gala</h3>
-                            <p class="text-white/60 text-sm tracking-widest uppercase">Premium Destination Weddings</p>
+                        <div class="absolute bottom-0 left-0 w-full p-6 bg-gradient-to-t from-brand-dark via-brand-dark/80 to-transparent">
+                            <span class="text-[10px] uppercase tracking-widest text-brand-gold font-bold mb-1 block">Wedding Sangeet & Games</span>
+                            <h3 class="text-lg font-bold font-serif leading-snug">Destination Wedding Highlights | Sangeet Night</h3>
+                            <p class="text-white/60 text-xs mt-1">Interactive Couple Test & Family Ice-Breakers</p>
+                        </div>
+                    </div>
+
+                    <!-- Reel 3: Tiger of Alwar Crowd Work -->
+                    <div class="group relative aspect-video overflow-hidden bg-brand-charcoal reveal cursor-pointer rounded-lg border border-white/5"
+                        style="transition-delay: 200ms;" data-video-id="2farIc-fGu8">
+                        <picture>
+                            <source srcset="src/assets/images/reel-stage-tiger.webp" type="image/webp">
+                            <img src="src/assets/images/reel-stage-tiger.jpg" alt="Crowd Interaction Showreel" width="600" height="340" loading="lazy" decoding="async"
+                                class="w-full h-full object-cover opacity-70 transition-transform duration-700 group-hover:scale-110">
+                        </picture>
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="w-16 h-16 bg-brand-gold text-brand-dark rounded-full flex items-center justify-center shadow-2xl transition-transform duration-300 group-hover:scale-125">
+                                <i class="fa-solid fa-play text-xl ml-1"></i>
+                            </div>
+                        </div>
+                        <div class="absolute bottom-0 left-0 w-full p-6 bg-gradient-to-t from-brand-dark via-brand-dark/80 to-transparent">
+                            <span class="text-[10px] uppercase tracking-widest text-brand-gold font-bold mb-1 block">Crowd Command</span>
+                            <h3 class="text-lg font-bold font-serif leading-snug">"Tiger of Alwar" Live Festival Interaction</h3>
+                            <p class="text-white/60 text-xs mt-1">High-Octane Energy with 5000+ Audience</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Instagram Grid -->
-        <section class="py-24 bg-brand-charcoal/50 border-t border-white/5">
+        <!-- Event Photo Showcase with Venue & Context -->
+        <section class="py-24 bg-brand-charcoal/30 border-t border-white/5">
+            <div class="container mx-auto px-6 media-scroll-container">
+                <div class="flex flex-col sm:flex-row justify-between items-start sm:items-end mb-12 gap-4">
+                    <div>
+                        <p class="text-brand-gold uppercase tracking-[0.3em] text-xs font-bold mb-2">Stage Portfolio</p>
+                        <h2 class="text-3xl md:text-4xl font-serif font-bold">Capturing the <span class="text-brand-gold italic">Energy</span></h2>
+                        <p class="text-white/60 text-sm mt-1">Swipe or use arrows to explore real snapshots from destination weddings, palace lawns & corporate galas.</p>
+                    </div>
+                    <!-- Scroll Navigation Buttons -->
+                    <div class="flex items-center gap-3">
+                        <button type="button" class="scroll-btn media-scroll-prev" aria-label="Previous Media Item">
+                            <i class="fa-solid fa-arrow-left"></i>
+                        </button>
+                        <button type="button" class="scroll-btn media-scroll-next" aria-label="Next Media Item">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Horizontal Scroll Track -->
+                <div class="media-scroll-track">
+                    <!-- Photo 1: Wedding -->
+                    <div class="media-scroll-item group relative overflow-hidden bg-brand-charcoal rounded-lg border border-white/5 reveal">
+                        <div class="aspect-[4/3] overflow-hidden">
+                            <picture>
+                                <source srcset="src/assets/images/real-wedding-aman.webp" type="image/webp">
+                                <img src="src/assets/images/real-wedding-aman.jpg" alt="Destination Sangeet" width="600" height="450" loading="lazy" decoding="async"
+                                    class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                            </picture>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-center text-xs text-brand-gold mb-2">
+                                <span><i class="fa-solid fa-location-dot mr-1"></i> Jaipur Grand Resort</span>
+                                <span class="text-white/40">Royal Sangeet</span>
+                            </div>
+                            <h4 class="font-serif font-bold text-lg mb-1">Couple Compatibility "Shoe Game"</h4>
+                            <p class="text-white/60 text-xs leading-relaxed">Engaging the couple with rapid-fire questions, creating unscripted laughter across 800+ wedding guests.</p>
+                        </div>
+                    </div>
+
+                    <!-- Photo 2: Corporate -->
+                    <div class="media-scroll-item group relative overflow-hidden bg-brand-charcoal rounded-lg border border-white/5 reveal" style="transition-delay: 100ms;">
+                        <div class="aspect-[4/3] overflow-hidden">
+                            <picture>
+                                <source srcset="src/assets/images/real-corporate-aman.webp" type="image/webp">
+                                <img src="src/assets/images/real-corporate-aman.jpg" alt="Corporate Summit" width="600" height="450" loading="lazy" decoding="async"
+                                    class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                            </picture>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-center text-xs text-brand-gold mb-2">
+                                <span><i class="fa-solid fa-location-dot mr-1"></i> Delhi-NCR Convention Center</span>
+                                <span class="text-white/40">Corporate Gala</span>
+                            </div>
+                            <h4 class="font-serif font-bold text-lg mb-1">Annual Leadership & Awards Night</h4>
+                            <p class="text-white/60 text-xs leading-relaxed">Hosting Fortune brand CEOs, managing awards pacing, and keeping keynote sessions seamless and crisp.</p>
+                        </div>
+                    </div>
+
+                    <!-- Photo 3: Stage Crowd -->
+                    <div class="media-scroll-item group relative overflow-hidden bg-brand-charcoal rounded-lg border border-white/5 reveal" style="transition-delay: 200ms;">
+                        <div class="aspect-[4/3] overflow-hidden">
+                            <picture>
+                                <source srcset="src/assets/images/real-stage-aman.webp" type="image/webp">
+                                <img src="src/assets/images/real-stage-aman.jpg" alt="Mega Live Show" width="600" height="450" loading="lazy" decoding="async"
+                                    class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                            </picture>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-center text-xs text-brand-gold mb-2">
+                                <span><i class="fa-solid fa-location-dot mr-1"></i> Alwar Heritage Grounds</span>
+                                <span class="text-white/40">Star Concert</span>
+                            </div>
+                            <h4 class="font-serif font-bold text-lg mb-1">The "Tiger of Alwar" Crowd Work</h4>
+                            <p class="text-white/60 text-xs leading-relaxed">Power-packed crowd coordination for a live musical festival with over 5,000 attendees.</p>
+                        </div>
+                    </div>
+
+                    <!-- Photo 4: Hero Stage Presence -->
+                    <div class="media-scroll-item group relative overflow-hidden bg-brand-charcoal rounded-lg border border-white/5 reveal" style="transition-delay: 300ms;">
+                        <div class="aspect-[4/3] overflow-hidden">
+                            <picture>
+                                <source srcset="src/assets/images/real-hero-aman.webp" type="image/webp">
+                                <img src="src/assets/images/real-hero-aman.jpg" alt="Anchor Aman Satija Stage Presence" width="600" height="450" loading="lazy" decoding="async"
+                                    class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                            </picture>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-center text-xs text-brand-gold mb-2">
+                                <span><i class="fa-solid fa-microphone-lines mr-1"></i> Pan India Stages</span>
+                                <span class="text-white/40">Mic Mastery</span>
+                            </div>
+                            <h4 class="font-serif font-bold text-lg mb-1">Signature Royal Stage Aura</h4>
+                            <p class="text-white/60 text-xs leading-relaxed">10+ years of stage emceeing excellence, elegant wardrobe styling, and versatile multi-lingual delivery.</p>
+                        </div>
+                    </div>
+
+                    <!-- Photo 5: Sangeet Night Energy -->
+                    <div class="media-scroll-item group relative overflow-hidden bg-brand-charcoal rounded-lg border border-white/5 reveal" style="transition-delay: 400ms;">
+                        <div class="aspect-[4/3] overflow-hidden">
+                            <picture>
+                                <source srcset="src/assets/images/reel-live-sangeet.webp" type="image/webp">
+                                <img src="src/assets/images/reel-live-sangeet.jpg" alt="Sangeet Night Energy" width="600" height="450" loading="lazy" decoding="async"
+                                    class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                            </picture>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-center text-xs text-brand-gold mb-2">
+                                <span><i class="fa-solid fa-location-dot mr-1"></i> Udaipur Palace Lawn</span>
+                                <span class="text-white/40">Sangeet Beats</span>
+                            </div>
+                            <h4 class="font-serif font-bold text-lg mb-1">Interactive Family Dance-Off</h4>
+                            <p class="text-white/60 text-xs leading-relaxed">High-voltage sangeet and cocktail games that bring both bride and groom families together on the dance floor.</p>
+                        </div>
+                    </div>
+
+                    <!-- Photo 6: Festival Stage -->
+                    <div class="media-scroll-item group relative overflow-hidden bg-brand-charcoal rounded-lg border border-white/5 reveal" style="transition-delay: 500ms;">
+                        <div class="aspect-[4/3] overflow-hidden">
+                            <picture>
+                                <source srcset="src/assets/images/reel-stage-tiger.webp" type="image/webp">
+                                <img src="src/assets/images/reel-stage-tiger.jpg" alt="Festival Stage Interaction" width="600" height="450" loading="lazy" decoding="async"
+                                    class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                            </picture>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-center text-xs text-brand-gold mb-2">
+                                <span><i class="fa-solid fa-location-dot mr-1"></i> Rajasthan State Festival</span>
+                                <span class="text-white/40">Live Hype</span>
+                            </div>
+                            <h4 class="font-serif font-bold text-lg mb-1">Mass Audience Engagement</h4>
+                            <p class="text-white/60 text-xs leading-relaxed">Spontaneous crowd chants, interactive celebrity introductions, and building arena-level excitement.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Instagram Feed Section -->
+        <section class="py-24 border-t border-white/5">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-16">
-                    <h2 class="text-3xl font-serif font-bold mb-4 reveal">Live From <span
+                    <p class="text-brand-gold uppercase tracking-[0.3em] text-xs font-bold mb-2">Daily Stories, Behind-the-Scenes & Reels</p>
+                    <h2 class="text-3xl md:text-4xl font-serif font-bold mb-6 reveal">Follow On <span
                             class="text-brand-gold italic">Instagram</span></h2>
-                    <a href="https://www.instagram.com/anchor_aman_satija/" target="_blank"
-                        class="inline-flex items-center space-x-3 bg-white/5 border border-white/10 px-6 py-3 rounded-full hover:bg-brand-gold hover:text-brand-dark transition-all duration-500 reveal">
-                        <i class="fa-brands fa-instagram text-xl"></i>
-                        <span class="uppercase tracking-[0.4em] text-[10px] font-bold">Follow @anchor_aman_satija</span>
+                    <a href="https://www.instagram.com/anchor_aman_satijaaa/" target="_blank" rel="noopener noreferrer"
+                        class="inline-flex items-center space-x-3 bg-white/5 border border-brand-gold/40 px-8 py-4 rounded-full hover:bg-brand-gold hover:text-brand-dark transition-all duration-500 reveal shadow-xl group">
+                        <i class="fa-brands fa-instagram text-2xl text-brand-gold group-hover:text-brand-dark"></i>
+                        <span class="uppercase tracking-[0.3em] text-xs font-bold">Follow @anchor_aman_satijaaa</span>
                     </a>
                 </div>
 
                 <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4">
                     <!-- Insta Item 1 -->
-                    <a href="https://www.instagram.com/anchor_aman_satija/" target="_blank"
-                        class="instagram-item reveal">
-                        <img src="src/assets/images/img-1.png" alt="Insta Post"
-                            class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500">
+                    <a href="https://www.instagram.com/anchor_aman_satijaaa/" target="_blank" rel="noopener noreferrer"
+                        class="instagram-item reveal group">
+                        <picture>
+                            <source srcset="src/assets/images/reel-live-sangeet.webp" type="image/webp">
+                            <img src="src/assets/images/reel-live-sangeet.jpg" alt="Insta Reel Aman Satija" width="400" height="400" loading="lazy" decoding="async"
+                                class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500">
+                        </picture>
                         <div class="instagram-overlay">
-                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-solid fa-play text-xl mb-1"></i>
+                            <span class="text-[10px] uppercase font-bold tracking-widest">Sangeet Reel</span>
                         </div>
                     </a>
+
                     <!-- Insta Item 2 -->
-                    <a href="https://www.instagram.com/anchor_aman_satija/" target="_blank"
-                        class="instagram-item reveal" style="transition-delay: 100ms;">
-                        <img src="src/assets/images/img-2.png" alt="Insta Post"
-                            class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500">
+                    <a href="https://www.instagram.com/anchor_aman_satijaaa/" target="_blank" rel="noopener noreferrer"
+                        class="instagram-item reveal group" style="transition-delay: 100ms;">
+                        <picture>
+                            <source srcset="src/assets/images/reel-stage-tiger.webp" type="image/webp">
+                            <img src="src/assets/images/reel-stage-tiger.jpg" alt="Insta Reel Aman Satija" width="400" height="400" loading="lazy" decoding="async"
+                                class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500">
+                        </picture>
                         <div class="instagram-overlay">
-                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-solid fa-play text-xl mb-1"></i>
+                            <span class="text-[10px] uppercase font-bold tracking-widest">Crowd Hype</span>
                         </div>
                     </a>
+
                     <!-- Insta Item 3 -->
-                    <a href="https://www.instagram.com/anchor_aman_satija/" target="_blank"
-                        class="instagram-item reveal" style="transition-delay: 200ms;">
-                        <img src="src/assets/images/img-3.png" alt="Insta Post"
-                            class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500">
+                    <a href="https://www.instagram.com/anchor_aman_satijaaa/" target="_blank" rel="noopener noreferrer"
+                        class="instagram-item reveal group" style="transition-delay: 200ms;">
+                        <picture>
+                            <source srcset="src/assets/images/reel-versatile.webp" type="image/webp">
+                            <img src="src/assets/images/reel-versatile.jpg" alt="Insta Reel Aman Satija" width="400" height="400" loading="lazy" decoding="async"
+                                class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500">
+                        </picture>
                         <div class="instagram-overlay">
-                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-solid fa-play text-xl mb-1"></i>
+                            <span class="text-[10px] uppercase font-bold tracking-widest">Stage Walk</span>
                         </div>
                     </a>
+
                     <!-- Insta Item 4 -->
-                    <a href="https://www.instagram.com/anchor_aman_satija/" target="_blank"
-                        class="instagram-item reveal" style="transition-delay: 300ms;">
-                        <img src="src/assets/images/img-1.png" alt="Insta Post"
-                            class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500">
+                    <a href="https://www.instagram.com/anchor_aman_satijaaa/" target="_blank" rel="noopener noreferrer"
+                        class="instagram-item reveal group" style="transition-delay: 300ms;">
+                        <picture>
+                            <source srcset="src/assets/images/real-wedding-aman.webp" type="image/webp">
+                            <img src="src/assets/images/real-wedding-aman.jpg" alt="Insta Reel Aman Satija" width="400" height="400" loading="lazy" decoding="async"
+                                class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500">
+                        </picture>
                         <div class="instagram-overlay">
-                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-instagram text-2xl mb-1"></i>
+                            <span class="text-[10px] uppercase font-bold tracking-widest">Destination Gala</span>
                         </div>
                     </a>
+
                     <!-- Insta Item 5 -->
-                    <a href="https://www.instagram.com/anchor_aman_satija/" target="_blank"
-                        class="instagram-item reveal" style="transition-delay: 400ms;">
-                        <img src="src/assets/images/img-2.png" alt="Insta Post"
-                            class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500">
+                    <a href="https://www.instagram.com/anchor_aman_satijaaa/" target="_blank" rel="noopener noreferrer"
+                        class="instagram-item reveal group" style="transition-delay: 400ms;">
+                        <picture>
+                            <source srcset="src/assets/images/real-corporate-aman.webp" type="image/webp">
+                            <img src="src/assets/images/real-corporate-aman.jpg" alt="Insta Reel Aman Satija" width="400" height="400" loading="lazy" decoding="async"
+                                class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500">
+                        </picture>
                         <div class="instagram-overlay">
-                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-instagram text-2xl mb-1"></i>
+                            <span class="text-[10px] uppercase font-bold tracking-widest">Awards Ceremony</span>
                         </div>
                     </a>
                 </div>

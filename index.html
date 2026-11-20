@@ -4,12 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aman Satija | Professional Event Anchor & Emcee</title>
+    <title>Aman Satija | Professional Event Anchor & Emcee (@anchor_aman_satijaaa)</title>
     <meta name="description"
-        content="Aman Satija is a premium event anchor and emcee with 10+ years of experience and 2500+ live shows across India. Specialized in weddings, corporate events, and celebrity shows.">
+        content="Aman Satija (known as the 'Tiger of Alwar') is a premium event anchor, wedding emcee, and entertainer with 14+ years experience and 2500+ live shows across India.">
+    
+    <!-- Preconnect to external origins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+
+    <!-- Preload Hero Image for instant LCP -->
+    <link rel="preload" as="image" href="src/assets/images/real-hero-aman.webp" type="image/webp" fetchpriority="high">
+
+    <!-- Google Fonts with font-display=swap -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap">
+
+    <!-- Minified Local CSS -->
     <link rel="stylesheet" href="src/css/output.css">
-    <!-- Font Awesome CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Font Awesome (Asynchronous Non-render-blocking) -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></noscript>
 </head>
 
 <body class="bg-brand-dark text-white font-sans antialiased overflow-x-hidden">
@@ -18,25 +33,34 @@
         <!-- Hero Section -->
         <section class="relative h-screen flex items-center justify-center overflow-hidden spotlight-container">
             <div class="absolute inset-0 z-0">
-                <img src="src/assets/images/img-1.png" alt="Aman Satija Hero"
-                    class="w-full h-full object-cover sm:scale-110 lg:scale-100 opacity-60">
+                <picture>
+                    <source srcset="src/assets/images/real-hero-aman.webp" type="image/webp">
+                    <img src="src/assets/images/real-hero-aman.jpg" alt="Anchor Aman Satija - Tiger of Alwar" width="1920" height="2560" fetchpriority="high" decoding="async"
+                        class="w-full h-full object-cover object-[center_15%] sm:scale-105 lg:scale-100 opacity-65">
+                </picture>
                 <div class="absolute inset-0 bg-gradient-to-t from-brand-dark via-brand-dark/20 to-transparent"></div>
                 <div class="absolute inset-0 spotlight"></div>
             </div>
 
             <div class="container mx-auto px-6 relative z-10 text-center">
-                <p class="text-brand-gold uppercase tracking-[0.5em] mb-4 reveal">Since 2014</p>
-                <h1 class="text-6xl md:text-8xl font-serif font-bold mb-6 tracking-tighter reveal">
+                <p class="text-brand-gold uppercase tracking-[0.4em] mb-3 text-xs md:text-sm font-semibold reveal">Since 2012 • Alwar | Jaipur | Delhi-NCR | Pan India</p>
+                <h1 class="text-6xl md:text-8xl font-serif font-bold mb-3 tracking-tighter reveal">
                     AMAN <span class="text-brand-gold">SATIJA</span>
                 </h1>
-                <p class="text-xl md:text-2xl text-white/80 max-w-2xl mx-auto mb-10 leading-relaxed reveal">
-                    Professional Event Anchor & Emcee. <br class="hidden md:block">
-                    Turning your moments into <span class="text-brand-gold italic">Grand Memories</span>.
+                <p class="text-xs md:text-sm uppercase tracking-[0.3em] text-white/60 mb-6 reveal">
+                    The "Tiger of Alwar" • High-Energy Wedding & Corporate Emcee
                 </p>
-                <div
-                    class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-6 reveal">
-                    <a href="contact.html" class="btn-gold">Book Now</a>
-                    <a href="gallery.html" class="btn-outline">View Portfolio</a>
+                <p class="text-xl md:text-2xl text-white/80 max-w-2xl mx-auto mb-10 leading-relaxed reveal">
+                    Professional Event Anchor & Stage Host. <br class="hidden md:block">
+                    Turning your celebrations into <span class="text-brand-gold italic">Grand Memories</span>.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center items-center gap-4 reveal">
+                    <a href="contact.html" class="btn-gold w-full sm:w-auto">Book Now</a>
+                    <a href="https://wa.me/919057529067?text=Hi%20Aman%2C%20I%20would%20like%20to%20inquire%20about%20booking%20you%20for%20an%20event." target="_blank" rel="noopener noreferrer" class="btn-gold !bg-[#25D366] !text-white hover:!bg-[#1ebe5d] w-full sm:w-auto flex items-center justify-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-lg"></i>
+                        <span>WhatsApp Quick Book</span>
+                    </a>
+                    <a href="gallery.html" class="btn-outline w-full sm:w-auto">View Portfolio</a>
                 </div>
             </div>
 
@@ -49,8 +73,64 @@
             </div>
         </section>
 
+        <!-- Instagram Story Highlights Bar -->
+        <section class="py-10 bg-brand-charcoal/40 border-b border-white/5 overflow-x-auto scrollbar-none">
+            <div class="container mx-auto px-6">
+                <div class="flex items-center justify-center gap-6 sm:gap-10 min-w-max">
+                    <a href="gallery.html#showreels" class="story-highlight-item group">
+                        <div class="story-ring mb-2">
+                            <div class="story-ring-inner">
+                                <img src="src/assets/images/real-wedding-aman.webp" alt="Weddings" class="w-full h-full object-cover">
+                            </div>
+                        </div>
+                        <span class="text-xs font-semibold text-white/80 group-hover:text-brand-gold transition-colors">Weddings</span>
+                    </a>
+                    <a href="gallery.html#showreels" class="story-highlight-item group">
+                        <div class="story-ring mb-2">
+                            <div class="story-ring-inner">
+                                <img src="src/assets/images/reel-live-sangeet.webp" alt="Couple Games" class="w-full h-full object-cover">
+                            </div>
+                        </div>
+                        <span class="text-xs font-semibold text-white/80 group-hover:text-brand-gold transition-colors">Couple Games</span>
+                    </a>
+                    <a href="gallery.html#showreels" class="story-highlight-item group">
+                        <div class="story-ring mb-2">
+                            <div class="story-ring-inner">
+                                <img src="src/assets/images/reel-stage-tiger.webp" alt="Tiger of Alwar" class="w-full h-full object-cover">
+                            </div>
+                        </div>
+                        <span class="text-xs font-semibold text-white/80 group-hover:text-brand-gold transition-colors">Tiger of Alwar</span>
+                    </a>
+                    <a href="gallery.html#showreels" class="story-highlight-item group">
+                        <div class="story-ring mb-2">
+                            <div class="story-ring-inner">
+                                <img src="src/assets/images/real-corporate-aman.webp" alt="Corporate" class="w-full h-full object-cover">
+                            </div>
+                        </div>
+                        <span class="text-xs font-semibold text-white/80 group-hover:text-brand-gold transition-colors">Corporate</span>
+                    </a>
+                    <a href="gallery.html#showreels" class="story-highlight-item group">
+                        <div class="story-ring mb-2">
+                            <div class="story-ring-inner">
+                                <img src="src/assets/images/reel-versatile.webp" alt="Celebrity Shows" class="w-full h-full object-cover">
+                            </div>
+                        </div>
+                        <span class="text-xs font-semibold text-white/80 group-hover:text-brand-gold transition-colors">Star Nights</span>
+                    </a>
+                    <a href="testimonials.html" class="story-highlight-item group">
+                        <div class="story-ring mb-2">
+                            <div class="story-ring-inner">
+                                <img src="src/assets/images/real-hero-aman.webp" alt="5.0 Star Reviews" class="w-full h-full object-cover">
+                            </div>
+                        </div>
+                        <span class="text-xs font-semibold text-white/80 group-hover:text-brand-gold transition-colors">Reviews 5.0★</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
         <!-- Stats Section -->
-        <section class="py-20 border-y border-white/5 bg-brand-charcoal">
+        <section class="py-20 border-b border-white/5 bg-brand-charcoal">
             <div class="container mx-auto px-6">
                 <div class="grid grid-cols-1 md:grid-cols-4 gap-12 text-center">
                     <div class="reveal">
@@ -59,15 +139,15 @@
                     </div>
                     <div class="reveal" style="transition-delay: 100ms;">
                         <div class="stat-number mb-2" data-target="2500" data-suffix="+">0</div>
-                        <p class="text-white/60 uppercase tracking-widest text-xs">Live Shows</p>
+                        <p class="text-white/60 uppercase tracking-widest text-xs">Live Shows Hosted</p>
                     </div>
                     <div class="reveal" style="transition-delay: 200ms;">
                         <div class="stat-number mb-2" data-target="500" data-suffix="+">0</div>
-                        <p class="text-white/60 uppercase tracking-widest text-xs">Global Brands</p>
+                        <p class="text-white/60 uppercase tracking-widest text-xs">Corporate & Destination Brands</p>
                     </div>
                     <div class="reveal" style="transition-delay: 300ms;">
                         <div class="stat-number mb-2" data-target="100" data-suffix="%">0</div>
-                        <p class="text-white/60 uppercase tracking-widest text-xs">Success Rate</p>
+                        <p class="text-white/60 uppercase tracking-widest text-xs">Client Satisfaction</p>
                     </div>
                 </div>
             </div>
@@ -78,9 +158,10 @@
             <div class="container mx-auto px-6">
                 <div class="flex justify-between items-end mb-16">
                     <div class="max-w-xl">
+                        <p class="text-brand-gold uppercase tracking-[0.3em] text-xs font-bold mb-2">Stage Expertise</p>
                         <h2 class="text-4xl md:text-5xl font-serif font-bold mb-4">Exquisite <span
                                 class="text-brand-gold italic">Services</span></h2>
-                        <p class="text-white/60">Crafting high-octane experiences across multiple domains.</p>
+                        <p class="text-white/60">Tailored hosting for destination weddings, summits, and live festivals.</p>
                     </div>
                     <a href="services.html"
                         class="hidden md:block text-brand-gold hover:text-white transition-colors uppercase tracking-widest text-sm">See
@@ -89,41 +170,130 @@
 
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                     <!-- Wedding -->
-                    <div class="group relative overflow-hidden bg-brand-charcoal reveal h-[500px]">
-                        <img src="src/assets/images/img-2.png" alt="Wedding Anchoring"
-                            class="w-full h-full object-cover opacity-50 transition-transform duration-700 group-hover:scale-110">
+                    <div class="group relative overflow-hidden bg-brand-charcoal reveal h-[500px] rounded-lg">
+                        <picture>
+                            <source srcset="src/assets/images/real-wedding-aman.webp" type="image/webp">
+                            <img src="src/assets/images/real-wedding-aman.jpg" alt="Wedding Anchoring by Aman Satija" width="800" height="500" loading="lazy" decoding="async"
+                                class="w-full h-full object-cover object-top opacity-60 transition-transform duration-700 group-hover:scale-110">
+                        </picture>
                         <div class="absolute inset-0 bg-gradient-to-t from-brand-dark to-transparent"></div>
                         <div class="absolute bottom-10 left-8">
+                            <span class="text-xs uppercase tracking-widest text-brand-gold font-bold mb-2 block">Couple Games & Sangeet</span>
                             <h3 class="text-2xl font-serif font-bold mb-2">Wedding Anchoring</h3>
-                            <p class="text-white/60 mb-4">Elegance meets energy for your big day.</p>
+                            <p class="text-white/60 mb-4 text-sm">Elegance meets energy for your royal day.</p>
                             <a href="services.html#wedding"
-                                class="text-brand-gold text-sm uppercase tracking-widest">Learn More</a>
+                                class="text-brand-gold text-sm uppercase tracking-widest">Learn More &rarr;</a>
                         </div>
                     </div>
+
                     <!-- Corporate -->
-                    <div class="group relative overflow-hidden bg-brand-charcoal reveal h-[500px]"
+                    <div class="group relative overflow-hidden bg-brand-charcoal reveal h-[500px] rounded-lg"
                         style="transition-delay: 100ms;">
-                        <img src="src/assets/images/img-3.png" alt="Corporate Events"
-                            class="w-full h-full object-cover opacity-50 transition-transform duration-700 group-hover:scale-110">
+                        <picture>
+                            <source srcset="src/assets/images/real-corporate-aman.webp" type="image/webp">
+                            <img src="src/assets/images/real-corporate-aman.jpg" alt="Corporate Galas by Aman Satija" width="800" height="500" loading="lazy" decoding="async"
+                                class="w-full h-full object-cover opacity-60 transition-transform duration-700 group-hover:scale-110">
+                        </picture>
                         <div class="absolute inset-0 bg-gradient-to-t from-brand-dark to-transparent"></div>
                         <div class="absolute bottom-10 left-8">
+                            <span class="text-xs uppercase tracking-widest text-brand-gold font-bold mb-2 block">Summits & AGMs</span>
                             <h3 class="text-2xl font-serif font-bold mb-2">Corporate Galas</h3>
-                            <p class="text-white/60 mb-4">Sophistication for awards and summits.</p>
+                            <p class="text-white/60 mb-4 text-sm">Sophistication for national awards & product launches.</p>
                             <a href="services.html#corporate"
-                                class="text-brand-gold text-sm uppercase tracking-widest">Learn More</a>
+                                class="text-brand-gold text-sm uppercase tracking-widest">Learn More &rarr;</a>
                         </div>
                     </div>
-                    <!-- celebrity -->
-                    <div class="group relative overflow-hidden bg-brand-charcoal reveal h-[500px]"
+
+                    <!-- Celebrity -->
+                    <div class="group relative overflow-hidden bg-brand-charcoal reveal h-[500px] rounded-lg"
                         style="transition-delay: 200ms;">
-                        <img src="src/assets/images/img-1.png" alt="Celebrity Shows"
-                            class="w-full h-full object-cover opacity-50 transition-transform duration-700 group-hover:scale-110">
+                        <picture>
+                            <source srcset="src/assets/images/real-stage-aman.webp" type="image/webp">
+                            <img src="src/assets/images/real-stage-aman.jpg" alt="Celebrity Shows & Live Concerts by Aman Satija" width="800" height="500" loading="lazy" decoding="async"
+                                class="w-full h-full object-cover opacity-60 transition-transform duration-700 group-hover:scale-110">
+                        </picture>
                         <div class="absolute inset-0 bg-gradient-to-t from-brand-dark to-transparent"></div>
                         <div class="absolute bottom-10 left-8">
+                            <span class="text-xs uppercase tracking-widest text-brand-gold font-bold mb-2 block">Crowd Command</span>
                             <h3 class="text-2xl font-serif font-bold mb-2">Celebrity Shows</h3>
-                            <p class="text-white/60 mb-4">High-power interactions with icons.</p>
+                            <p class="text-white/60 mb-4 text-sm">High-power interactions with icons & mega concerts.</p>
                             <a href="services.html#celebrity"
-                                class="text-brand-gold text-sm uppercase tracking-widest">Learn More</a>
+                                class="text-brand-gold text-sm uppercase tracking-widest">Learn More &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Showreels Section on Home -->
+        <section class="py-24 bg-brand-charcoal/50 border-t border-white/5">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col md:flex-row justify-between items-center mb-16">
+                    <div>
+                        <p class="text-brand-gold uppercase tracking-[0.3em] text-xs font-bold mb-2">Stage In Action</p>
+                        <h2 class="text-3xl md:text-5xl font-serif font-bold">Featured <span class="text-brand-gold italic">Stage Showreels</span></h2>
+                        <p class="text-white/60 text-sm mt-1">Watch live crowd energy, couple games & stage command</p>
+                    </div>
+                    <a href="gallery.html" class="mt-4 md:mt-0 text-brand-gold hover:text-white transition-colors text-sm uppercase tracking-widest flex items-center gap-2 border border-brand-gold/30 px-6 py-3 rounded-full hover:bg-brand-gold/10">
+                        <span>View Full Video Gallery &rarr;</span>
+                    </a>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Reel 1 -->
+                    <div class="group relative aspect-video overflow-hidden bg-brand-charcoal reveal cursor-pointer rounded-lg border border-white/5"
+                        data-video-id="eqW_SmrCuHs">
+                        <picture>
+                            <source srcset="src/assets/images/reel-versatile.webp" type="image/webp">
+                            <img src="src/assets/images/reel-versatile.jpg" alt="Versatile Entertainer" width="600" height="340" loading="lazy" decoding="async"
+                                class="w-full h-full object-cover opacity-70 transition-transform duration-700 group-hover:scale-110">
+                        </picture>
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="w-16 h-16 bg-brand-gold text-brand-dark rounded-full flex items-center justify-center shadow-2xl transition-transform duration-300 group-hover:scale-125">
+                                <i class="fa-solid fa-play text-xl ml-1"></i>
+                            </div>
+                        </div>
+                        <div class="absolute bottom-0 left-0 w-full p-6 bg-gradient-to-t from-brand-dark via-brand-dark/80 to-transparent">
+                            <span class="text-[10px] uppercase tracking-widest text-brand-gold font-bold mb-1 block">Live Stage Emcee</span>
+                            <h3 class="text-base font-bold font-serif">Versatile Stage Host | Official Reel</h3>
+                        </div>
+                    </div>
+
+                    <!-- Reel 2 -->
+                    <div class="group relative aspect-video overflow-hidden bg-brand-charcoal reveal cursor-pointer rounded-lg border border-white/5"
+                        style="transition-delay: 100ms;" data-video-id="XX73wxQDXJ4">
+                        <picture>
+                            <source srcset="src/assets/images/reel-live-sangeet.webp" type="image/webp">
+                            <img src="src/assets/images/reel-live-sangeet.jpg" alt="Wedding Sangeet" width="600" height="340" loading="lazy" decoding="async"
+                                class="w-full h-full object-cover opacity-70 transition-transform duration-700 group-hover:scale-110">
+                        </picture>
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="w-16 h-16 bg-brand-gold text-brand-dark rounded-full flex items-center justify-center shadow-2xl transition-transform duration-300 group-hover:scale-125">
+                                <i class="fa-solid fa-play text-xl ml-1"></i>
+                            </div>
+                        </div>
+                        <div class="absolute bottom-0 left-0 w-full p-6 bg-gradient-to-t from-brand-dark via-brand-dark/80 to-transparent">
+                            <span class="text-[10px] uppercase tracking-widest text-brand-gold font-bold mb-1 block">Destination Sangeet</span>
+                            <h3 class="text-base font-bold font-serif">Wedding Highlights & Couple Games</h3>
+                        </div>
+                    </div>
+
+                    <!-- Reel 3 -->
+                    <div class="group relative aspect-video overflow-hidden bg-brand-charcoal reveal cursor-pointer rounded-lg border border-white/5"
+                        style="transition-delay: 200ms;" data-video-id="2farIc-fGu8">
+                        <picture>
+                            <source srcset="src/assets/images/reel-stage-tiger.webp" type="image/webp">
+                            <img src="src/assets/images/reel-stage-tiger.jpg" alt="Crowd Work" width="600" height="340" loading="lazy" decoding="async"
+                                class="w-full h-full object-cover opacity-70 transition-transform duration-700 group-hover:scale-110">
+                        </picture>
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="w-16 h-16 bg-brand-gold text-brand-dark rounded-full flex items-center justify-center shadow-2xl transition-transform duration-300 group-hover:scale-125">
+                                <i class="fa-solid fa-play text-xl ml-1"></i>
+                            </div>
+                        </div>
+                        <div class="absolute bottom-0 left-0 w-full p-6 bg-gradient-to-t from-brand-dark via-brand-dark/80 to-transparent">
+                            <span class="text-[10px] uppercase tracking-widest text-brand-gold font-bold mb-1 block">Crowd Command</span>
+                            <h3 class="text-base font-bold font-serif">"Tiger of Alwar" Live Festival Hype</h3>
                         </div>
                     </div>
                 </div>
@@ -133,38 +303,54 @@
         <!-- Infinite Logo/Brand Marquee -->
         <div class="marquee-container bg-brand-dark">
             <div class="marquee-content">
-                <span>BMW</span>
-                <span>Google</span>
-                <span>Microsoft</span>
-                <span>Mercedes-Benz</span>
+                <span>Maruti Suzuki</span>
+                <span>Tata Motors</span>
                 <span>Samsung</span>
-                <span>Lufthansa</span>
-                <span>Qatar Airways</span>
-                <span>Dyson</span>
-                <span>Airtel</span>
                 <span>Reliance</span>
+                <span>Airtel</span>
+                <span>Wonder Cement</span>
+                <span>ICICI Bank</span>
+                <span>HDFC Bank</span>
+                <span>Havells</span>
+                <span>Pernod Ricard</span>
+                <span>Hero MotoCorp</span>
+                <span>Raymond</span>
+                <span>Dainik Bhaskar</span>
+                <span>JK Tyre</span>
                 <!-- Repeat for smooth loop -->
-                <span>BMW</span>
-                <span>Google</span>
-                <span>Microsoft</span>
-                <span>Mercedes-Benz</span>
+                <span>Maruti Suzuki</span>
+                <span>Tata Motors</span>
                 <span>Samsung</span>
-                <span>Lufthansa</span>
-                <span>Qatar Airways</span>
-                <span>Dyson</span>
-                <span>Airtel</span>
                 <span>Reliance</span>
+                <span>Airtel</span>
+                <span>Wonder Cement</span>
+                <span>ICICI Bank</span>
+                <span>HDFC Bank</span>
+                <span>Havells</span>
+                <span>Pernod Ricard</span>
+                <span>Hero MotoCorp</span>
+                <span>Raymond</span>
+                <span>Dainik Bhaskar</span>
+                <span>JK Tyre</span>
             </div>
         </div>
 
         <!-- CTA Section -->
         <section class="py-24 bg-brand-gold">
             <div class="container mx-auto px-6 text-center text-brand-dark">
-                <h2 class="text-4xl md:text-5xl font-serif font-bold mb-8">Ready to make your event <br> <span
+                <h2 class="text-4xl md:text-5xl font-serif font-bold mb-4">Ready to make your event <br> <span
                         class="italic underline">unforgettable?</span></h2>
-                <a href="contact.html"
-                    class="px-12 py-4 bg-brand-dark text-brand-gold font-bold uppercase tracking-[0.2em] hover:bg-white hover:text-brand-dark transition-all duration-300">Book
-                    Aman Satija</a>
+                <p class="text-brand-dark/80 text-lg mb-8 max-w-xl mx-auto">Book India’s high-energy stage powerhouse for your wedding, conference, or live show.</p>
+                <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                    <a href="contact.html"
+                        class="px-10 py-4 bg-brand-dark text-brand-gold font-bold uppercase tracking-[0.2em] hover:bg-white hover:text-brand-dark transition-all duration-300 w-full sm:w-auto">Book
+                        Aman Satija</a>
+                    <a href="https://wa.me/919057529067?text=Hi%20Aman%2C%20I%20would%20like%20to%20inquire%20about%20booking%20you%20for%20an%20event." target="_blank" rel="noopener noreferrer"
+                        class="px-10 py-4 bg-white text-green-700 font-bold uppercase tracking-[0.2em] hover:bg-brand-dark hover:text-white transition-all duration-300 w-full sm:w-auto flex items-center justify-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-xl"></i>
+                        <span>WhatsApp Now</span>
+                    </a>
+                </div>
             </div>
         </section>
 

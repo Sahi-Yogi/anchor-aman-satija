@@ -5,8 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact & Booking | Hire Aman Satija for Your Event</title>
+    <meta name="description" content="Secure your event dates with Anchor Aman Satija. Direct booking numbers, WhatsApp quick-connect, and inquiry form for weddings & corporate events.">
+    
+    <!-- Preconnect to external origins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+
+    <!-- Google Fonts with font-display=swap -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap">
+
+    <!-- Minified Local CSS -->
     <link rel="stylesheet" href="src/css/output.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Font Awesome (Asynchronous Non-render-blocking) -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></noscript>
 </head>
 
 <body class="bg-brand-dark text-white font-sans antialiased">
@@ -17,7 +31,7 @@
             <div class="container mx-auto px-6 text-center">
                 <h1 class="text-5xl md:text-7xl font-serif font-bold mb-6">Let's <span
                         class="text-brand-gold italic">Connect</span></h1>
-                <p class="text-white/60 tracking-widest uppercase">Secure your dates for a premium experience</p>
+                <p class="text-white/60 tracking-widest uppercase">Direct Bookings • Alwar • Jaipur • Delhi-NCR • Pan India</p>
             </div>
         </section>
 
@@ -27,87 +41,101 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-20">
                     <!-- Contact Form -->
                     <div class="reveal">
-                        <h2 class="text-3xl font-serif font-bold mb-8">Send an <span
-                                class="text-brand-gold italic">Enquiry</span></h2>
+                        <div class="flex items-center justify-between mb-8">
+                            <h2 class="text-3xl font-serif font-bold">Send an <span
+                                    class="text-brand-gold italic">Enquiry</span></h2>
+                            <span class="text-xs text-brand-gold uppercase tracking-widest flex items-center gap-1">
+                                <i class="fa-brands fa-whatsapp text-green-400"></i> Instant WhatsApp Connect
+                            </span>
+                        </div>
                         <form id="booking-form" class="space-y-6">
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <div>
                                     <label class="block text-xs uppercase tracking-widest text-white/40 mb-2">Full
-                                        Name</label>
-                                    <input type="text" placeholder="John Doe"
+                                        Name *</label>
+                                    <input type="text" required placeholder="Your Name" autocomplete="name"
                                         class="w-full bg-transparent border-b border-white/20 py-3 focus:outline-none focus:border-brand-gold transition-colors text-white">
                                 </div>
                                 <div>
                                     <label class="block text-xs uppercase tracking-widest text-white/40 mb-2">Contact
-                                        Number</label>
-                                    <input type="tel" placeholder="+91 XXXXX XXXXX"
+                                        Number *</label>
+                                    <input type="tel" required placeholder="e.g. +91 98765 43210" autocomplete="tel"
                                         class="w-full bg-transparent border-b border-white/20 py-3 focus:outline-none focus:border-brand-gold transition-colors text-white">
                                 </div>
                             </div>
                             <div>
                                 <label class="block text-xs uppercase tracking-widest text-white/40 mb-2">Event
-                                    Type</label>
+                                    Type *</label>
                                 <select
-                                    class="w-full bg-transparent border-b border-white/20 py-3 focus:outline-none focus:border-brand-gold transition-colors text-white/60 appearance-none">
-                                    <option class="bg-brand-dark">Wedding / Sangeet</option>
-                                    <option class="bg-brand-dark">Corporate Gala / Award Night</option>
-                                    <option class="bg-brand-dark">Celebrity Show / Concert</option>
-                                    <option class="bg-brand-dark">Private Celebration</option>
+                                    class="w-full bg-transparent border-b border-white/20 py-3 focus:outline-none focus:border-brand-gold transition-colors text-white/80 appearance-none">
+                                    <option class="bg-brand-dark" value="Wedding / Sangeet Hosting">Wedding / Sangeet (With Couple Games)</option>
+                                    <option class="bg-brand-dark" value="Corporate Gala / Award Night">Corporate Gala / Award Night / AGM</option>
+                                    <option class="bg-brand-dark" value="Celebrity Show / Music Concert">Celebrity Show / Music Concert</option>
+                                    <option class="bg-brand-dark" value="Destination Wedding Package">Destination Wedding (Multi-Day Hosting)</option>
+                                    <option class="bg-brand-dark" value="Private Luxury Celebration">Private Luxury Celebration</option>
                                 </select>
                             </div>
                             <div>
                                 <label class="block text-xs uppercase tracking-widest text-white/40 mb-2">Event Date &
-                                    Location</label>
-                                <input type="text" placeholder="24th Dec, Mumbai"
+                                    City *</label>
+                                <input type="text" required placeholder="e.g. 24th Nov 2026, Jaipur / Delhi"
                                     class="w-full bg-transparent border-b border-white/20 py-3 focus:outline-none focus:border-brand-gold transition-colors text-white">
                             </div>
                             <div>
                                 <label class="block text-xs uppercase tracking-widest text-white/40 mb-2">Additional
-                                    Details</label>
-                                <textarea rows="4" placeholder="Tell us more about your event..."
+                                    Details (Crowd Size, Venue, Expectations)</label>
+                                <textarea rows="4" placeholder="Share your event flow or requirements..."
                                     class="w-full bg-transparent border-b border-white/20 py-3 focus:outline-none focus:border-brand-gold transition-colors text-white"></textarea>
                             </div>
-                            <button type="submit" class="btn-gold w-full mt-8">Send Message</button>
+                            <button type="submit" class="btn-gold w-full mt-8 flex items-center justify-center gap-2">
+                                <i class="fa-brands fa-whatsapp text-xl"></i>
+                                <span>Submit & Connect on WhatsApp</span>
+                            </button>
+                            <p class="text-xs text-white/40 text-center tracking-wider">Submitting immediately opens WhatsApp with your pre-filled inquiry details for instant response.</p>
                         </form>
                     </div>
 
                     <!-- Contact Details -->
                     <div class="reveal" style="transition-delay: 100ms;">
                         <h2 class="text-3xl font-serif font-bold mb-8">Direct <span
-                                class="text-brand-gold italic">Contact</span></h2>
-                        <div class="space-y-12">
+                                class="text-brand-gold italic">Contact Desk</span></h2>
+                        <div class="space-y-10">
                             <div>
-                                <h4 class="text-brand-gold font-bold uppercase tracking-widest text-xs mb-4">Location
-                                </h4>
-                                <p class="text-2xl font-serif">Available Worldwide</p>
-                                <p class="text-white/60">Based in India, Traveling Globally</p>
+                                <h4 class="text-brand-gold font-bold uppercase tracking-widest text-xs mb-3">Primary Booking Line</h4>
+                                <a href="tel:+919057529067" class="text-3xl font-serif hover:text-brand-gold transition-colors block mb-1">+91 90575 29067</a>
+                                <p class="text-white/40 text-xs">Direct calls & management inquiries</p>
                             </div>
                             <div>
-                                <h4 class="text-brand-gold font-bold uppercase tracking-widest text-xs mb-4">Phone &
-                                    WhatsApp</h4>
-                                <a href="tel:+91XXXXXXXXXX"
-                                    class="text-2xl font-serif hover:text-brand-gold transition-colors">+91 98XXX
-                                    XXXXX</a>
+                                <h4 class="text-brand-gold font-bold uppercase tracking-widest text-xs mb-3">Secondary / WhatsApp Line</h4>
+                                <a href="https://wa.me/918239202921" target="_blank" rel="noopener noreferrer" class="text-2xl font-serif hover:text-brand-gold transition-colors block mb-1">+91 82392 02921</a>
+                                <a href="https://wa.me/919057529067?text=Hi%20Aman%2C%20I%20would%20like%20to%20inquire%20about%20booking%20you%20for%20an%20event." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-sm text-[#25D366] hover:underline">
+                                    <i class="fa-brands fa-whatsapp"></i> Chat directly on WhatsApp &rarr;
+                                </a>
                             </div>
                             <div>
-                                <h4 class="text-brand-gold font-bold uppercase tracking-widest text-xs mb-4">Email</h4>
+                                <h4 class="text-brand-gold font-bold uppercase tracking-widest text-xs mb-3">Base & Head Office</h4>
+                                <p class="text-2xl font-serif">Alwar & Jaipur, Rajasthan</p>
+                                <p class="text-white/60">Operating extensively across Rajasthan, Delhi-NCR & Worldwide Destination Events</p>
+                            </div>
+                            <div>
+                                <h4 class="text-brand-gold font-bold uppercase tracking-widest text-xs mb-3">Official Email</h4>
                                 <a href="mailto:info@amansatija.com"
-                                    class="text-2xl font-serif hover:text-brand-gold transition-colors">info@amansatija.com</a>
+                                    class="text-xl font-serif hover:text-brand-gold transition-colors">info@amansatija.com</a>
                             </div>
                             <hr class="border-white/10">
                             <div>
-                                <h4 class="text-brand-gold font-bold uppercase tracking-widest text-xs mb-4">Follow Aman
+                                <h4 class="text-brand-gold font-bold uppercase tracking-widest text-xs mb-4">Official Social Profiles
                                 </h4>
-                                <div class="flex space-x-6 text-2xl">
-                                    <a href="https://www.instagram.com/anchor_aman_satija/" target="_blank"
-                                        class="text-white/40 hover:text-brand-gold transition-colors"><i
-                                            class="fa-brands fa-instagram"></i></a>
-                                    <a href="#" class="text-white/40 hover:text-brand-gold transition-colors"><i
-                                            class="fa-brands fa-facebook-f"></i></a>
-                                    <a href="#" class="text-white/40 hover:text-brand-gold transition-colors"><i
-                                            class="fa-brands fa-linkedin-in"></i></a>
-                                    <a href="#" class="text-white/40 hover:text-brand-gold transition-colors"><i
+                                <div class="flex items-center space-x-6 text-2xl">
+                                    <a href="https://www.instagram.com/anchor_aman_satijaaa/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"
+                                        class="text-white/40 hover:text-brand-gold transition-colors flex items-center gap-2">
+                                        <i class="fa-brands fa-instagram"></i>
+                                        <span class="text-sm">@anchor_aman_satijaaa</span>
+                                    </a>
+                                    <a href="https://www.youtube.com/results?search_query=Anchor+Aman+Satija" target="_blank" rel="noopener noreferrer" aria-label="YouTube" class="text-white/40 hover:text-brand-gold transition-colors"><i
                                             class="fa-brands fa-youtube"></i></a>
+                                    <a href="https://wa.me/919057529067" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="text-white/40 hover:text-brand-gold transition-colors"><i
+                                            class="fa-brands fa-whatsapp"></i></a>
                                 </div>
                             </div>
                         </div>
