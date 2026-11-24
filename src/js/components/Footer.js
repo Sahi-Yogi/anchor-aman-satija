@@ -118,7 +118,7 @@ export const Footer = () => {
             <!-- Bottom Copyright & Social Strip -->
             <div class="border-t border-white/5 pt-6 flex flex-col md:flex-row justify-between items-center text-white/35 text-[11px] font-semibold tracking-wider">
                 <p>&copy; 2026 AMAN SATIJA ENTERTAINMENT • ALL RIGHTS RESERVED.</p>
-                <div class="mt-4 md:mt-0 flex flex-wrap items-center justify-center gap-4 sm:gap-6">
+                <div class="mt-4 md:mt-0 flex flex-wrap items-center justify-center gap-3.5 sm:gap-5">
                     <a href="https://www.instagram.com/anchor_aman_satijaaa/" target="_blank" rel="noopener noreferrer" class="hover:text-brand-gold transition-colors flex items-center gap-1.5">
                         <i class="fa-brands fa-instagram text-brand-gold"></i>
                         <span>@anchor_aman_satijaaa</span>
@@ -127,6 +127,10 @@ export const Footer = () => {
                     <a href="index.html#faqs" class="hover:text-white transition-colors">Booking FAQs</a>
                     <span>•</span>
                     <a href="press-kit.html#rider" class="hover:text-white transition-colors">Tech Rider</a>
+                    <span>•</span>
+                    <a href="booking-terms.html" class="hover:text-white transition-colors">Booking Terms</a>
+                    <span>•</span>
+                    <a href="privacy-policy.html" class="hover:text-white transition-colors">Privacy Policy</a>
                     <span>•</span>
                     <a href="contact.html" class="hover:text-white transition-colors">Check Dates</a>
                 </div>
