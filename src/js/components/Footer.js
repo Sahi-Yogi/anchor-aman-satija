@@ -8,14 +8,14 @@ export const Footer = () => {
 
         <div class="container mx-auto px-6 relative z-10">
             <!-- Top Action Strip -->
-            <div class="bg-gradient-to-r from-brand-charcoal via-[#141414] to-brand-charcoal border border-brand-gold/30 rounded-2xl p-8 md:p-12 mb-16 shadow-2xl flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="bg-[#0e0f16] border border-brand-gold/30 rounded-2xl p-8 md:p-12 mb-16 shadow-2xl flex flex-col md:flex-row items-center justify-between gap-6">
                 <div>
                     <span class="text-brand-gold uppercase tracking-[0.3em] text-xs font-bold block mb-2">Direct Inquiries Open</span>
                     <h3 class="text-2xl md:text-3xl font-serif font-bold text-white">Planning a Wedding or Corporate Gala?</h3>
                     <p class="text-white/60 text-sm mt-1">Check availability, dates & get an instant custom quote on WhatsApp.</p>
                 </div>
                 <div class="flex flex-wrap gap-4 w-full md:w-auto">
-                    <a href="https://wa.me/919057529067?text=Hi%20Aman%2C%20I%20would%20like%20to%20inquire%20about%20booking%20you%20for%20an%20event." target="_blank" rel="noopener noreferrer" class="btn-gold !bg-[#25D366] !text-white hover:!bg-[#1ebe5d] flex-1 md:flex-initial flex items-center justify-center gap-2 text-sm">
+                    <a href="https://wa.me/919057529067?text=Hi%20Aman%2C%20I%20would%20like%20to%20inquire%20about%20booking%20you%20for%20an%20event." target="_blank" rel="noopener noreferrer" class="btn-whatsapp flex-1 md:flex-initial flex items-center justify-center gap-2 text-sm">
                         <i class="fa-brands fa-whatsapp text-lg"></i>
                         <span>WhatsApp (+91 90575 29067)</span>
                     </a>

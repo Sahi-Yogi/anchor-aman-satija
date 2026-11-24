@@ -47,24 +47,24 @@ export const Header = () => {
                 <!-- Desktop Action Strip -->
                 <div class="hidden lg:flex items-center space-x-2.5 xl:space-x-3 shrink-0">
                     <!-- WhatsApp Quick Chat -->
-                    <a href="https://wa.me/919057529067?text=Hi%20Aman%2C%20I%20would%20like%20to%20inquire%20about%20booking%20you%20for%20an%20event." target="_blank" rel="noopener noreferrer" title="Chat on WhatsApp" class="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 hover:text-white hover:bg-emerald-500 hover:border-emerald-500 transition-all duration-300 shadow-[0_2px_10px_rgba(37,211,102,0.15)]">
+                    <a href="https://wa.me/919057529067?text=Hi%20Aman%2C%20I%20would%20like%20to%20inquire%20about%20booking%20you%20for%20an%20event." target="_blank" rel="noopener noreferrer" title="Chat on WhatsApp" class="btn-icon w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 hover:text-white hover:bg-emerald-500 hover:border-emerald-500 shadow-[0_2px_10px_rgba(37,211,102,0.15)]">
                         <i class="fa-brands fa-whatsapp text-lg"></i>
                     </a>
 
                     <!-- Direct Desk Phone (Visible on 2XL screens) -->
-                    <a href="tel:+919057529067" title="Direct Booking Desk" class="hidden 2xl:flex items-center space-x-2 px-3 py-1.5 rounded-full bg-white/5 border border-white/10 hover:border-brand-gold/40 text-white/75 hover:text-white transition-all text-xs tracking-wider">
+                    <a href="tel:+919057529067" title="Direct Booking Desk" class="btn-icon hidden 2xl:flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-white/5 border border-white/10 hover:border-brand-gold/40 text-white/75 hover:text-white text-xs tracking-wider">
                         <i class="fa-solid fa-phone text-[10px] text-brand-gold"></i>
                         <span class="font-medium">+91 90575 29067</span>
                     </a>
 
                     <!-- Book Now Button -->
-                    <a href="contact.html" class="btn-gold !py-2 sm:!py-2.5 !px-4 sm:!px-5 lg:!px-6 !text-xs !tracking-[0.14em] !rounded-full shadow-[0_4px_20px_rgba(212,175,55,0.35)] hover:shadow-[0_4px_25px_rgba(212,175,55,0.55)]">
+                    <a href="contact.html" class="btn-gold !py-2 sm:!py-2.5 !px-4 sm:!px-5 lg:!px-6 !text-xs !tracking-[0.14em]">
                         Book Now
                     </a>
                 </div>
 
                 <!-- Hamburger Button (Mobile Only) -->
-                <button id="menu-trigger" aria-label="Toggle navigation menu" class="lg:hidden relative z-[70] w-10 h-10 flex flex-col justify-center items-center focus:outline-none">
+                <button id="menu-trigger" aria-label="Toggle navigation menu" class="btn-icon lg:hidden relative z-[70] w-10 h-10 flex flex-col justify-center items-center focus:outline-none">
                     <div class="w-6 h-0.5 bg-white mb-1.5 ham-line ham-line-1"></div>
                     <div class="w-4 h-0.5 bg-brand-gold mb-1.5 ham-line ham-line-2 self-end"></div>
                     <div class="w-6 h-0.5 bg-white ham-line ham-line-3"></div>
@@ -153,11 +153,11 @@ export const Header = () => {
                 <!-- Footer of Menu -->
                 <div class="mt-auto pt-4 shrink-0 flex flex-col space-y-4">
                     <div class="grid grid-cols-2 gap-3">
-                        <a href="https://wa.me/919057529067?text=Hi%20Aman%2C%20I%20would%20like%20to%20inquire%20about%20booking%20you%20for%20an%20event." target="_blank" rel="noopener noreferrer" class="bg-[#25D366] text-white font-bold text-center py-3.5 rounded-lg flex items-center justify-center space-x-2 text-sm shadow-lg hover:bg-[#1ebe5d] transition-colors">
+                        <a href="https://wa.me/919057529067?text=Hi%20Aman%2C%20I%20would%20like%20to%20inquire%20about%20booking%20you%20for%20an%20event." target="_blank" rel="noopener noreferrer" class="btn-whatsapp !py-3.5 !rounded-full w-full flex items-center justify-center space-x-2 text-sm">
                             <i class="fa-brands fa-whatsapp text-lg"></i>
                             <span>WhatsApp</span>
                         </a>
-                        <a href="tel:+919057529067" class="btn-gold text-center py-3.5 rounded-lg flex items-center justify-center space-x-2 text-sm shadow-lg">
+                        <a href="tel:+919057529067" class="btn-gold !py-3.5 !rounded-full w-full flex items-center justify-center space-x-2 text-sm">
                             <i class="fa-solid fa-phone text-xs"></i>
                             <span>Call Desk</span>
                         </a>

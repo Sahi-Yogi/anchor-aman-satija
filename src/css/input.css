@@ -25,38 +25,169 @@
 }
 
 @layer components {
+    /* 1. Primary Luxury Gold Button - Solid Royal Gold, Zero Gradients */
     .btn-gold {
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
         background-color: #D4AF37;
         color: #0A0A0A;
-        padding: 0.75rem 2rem;
+        border: 1px solid #E5C158;
+        border-radius: 9999px;
+        padding: 0.75rem 1.875rem;
+        font-family: 'Outfit', sans-serif;
+        font-size: 0.8125rem;
         font-weight: 700;
         text-transform: uppercase;
-        letter-spacing: 0.1em;
-        transition: all 0.3s ease;
-        display: inline-block;
+        letter-spacing: 0.12em;
+        line-height: 1.25;
+        white-space: nowrap;
         cursor: pointer;
+        user-select: none;
+        -webkit-user-select: none;
+        box-shadow: 0 4px 16px rgba(212, 175, 55, 0.28);
+        transition: transform 0.2s cubic-bezier(0.2, 0.8, 0.2, 1),
+                    background-color 0.2s ease,
+                    color 0.2s ease,
+                    border-color 0.2s ease,
+                    box-shadow 0.2s ease;
+        will-change: transform;
     }
 
     .btn-gold:hover {
-        background-color: #ffffff;
-        transform: scale(1.05);
+        background-color: #FFFFFF;
+        color: #000000;
+        border-color: #FFFFFF;
+        transform: translate3d(0, -2px, 0);
+        box-shadow: 0 8px 24px rgba(212, 175, 55, 0.45);
     }
 
-    .btn-outline {
-        border: 1px solid #D4AF37;
-        color: #D4AF37;
-        padding: 0.75rem 2rem;
+    .btn-gold:active {
+        background-color: #C59B27;
+        color: #0A0A0A;
+        border-color: #B88E1E;
+        transform: translate3d(0, 1px, 0) scale(0.97);
+        box-shadow: 0 2px 6px rgba(212, 175, 55, 0.2);
+        transition: transform 0.05s ease, background-color 0.05s ease, box-shadow 0.05s ease;
+    }
+
+    /* 2. Official WhatsApp Emerald Button - Solid Emerald Green, Zero Gradients */
+    .btn-whatsapp {
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #25D366;
+        color: #FFFFFF;
+        border: 1px solid rgba(255, 255, 255, 0.25);
+        border-radius: 9999px;
+        padding: 0.75rem 1.75rem;
+        font-family: 'Outfit', sans-serif;
+        font-size: 0.8125rem;
         font-weight: 700;
         text-transform: uppercase;
-        letter-spacing: 0.1em;
-        transition: all 0.3s ease;
-        display: inline-block;
+        letter-spacing: 0.08em;
+        line-height: 1.25;
+        white-space: nowrap;
         cursor: pointer;
+        user-select: none;
+        -webkit-user-select: none;
+        box-shadow: 0 4px 16px rgba(37, 211, 102, 0.32);
+        transition: transform 0.2s cubic-bezier(0.2, 0.8, 0.2, 1),
+                    background-color 0.2s ease,
+                    color 0.2s ease,
+                    border-color 0.2s ease,
+                    box-shadow 0.2s ease;
+        will-change: transform;
+    }
+
+    .btn-whatsapp:hover {
+        background-color: #20BA5A;
+        color: #FFFFFF;
+        border-color: rgba(255, 255, 255, 0.4);
+        transform: translate3d(0, -2px, 0);
+        box-shadow: 0 8px 24px rgba(37, 211, 102, 0.48);
+    }
+
+    .btn-whatsapp:active {
+        background-color: #179B48;
+        color: #FFFFFF;
+        border-color: #12803B;
+        transform: translate3d(0, 1px, 0) scale(0.97);
+        box-shadow: 0 2px 6px rgba(37, 211, 102, 0.25);
+        transition: transform 0.05s ease, background-color 0.05s ease, box-shadow 0.05s ease;
+    }
+
+    /* 3. Secondary Luxury Outline Button - Solid Border & Fill, Zero Gradients */
+    .btn-outline {
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(255, 255, 255, 0.03);
+        color: #D4AF37;
+        border: 1px solid rgba(212, 175, 55, 0.5);
+        border-radius: 9999px;
+        padding: 0.75rem 1.875rem;
+        font-family: 'Outfit', sans-serif;
+        font-size: 0.8125rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+        line-height: 1.25;
+        white-space: nowrap;
+        cursor: pointer;
+        user-select: none;
+        -webkit-user-select: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+        transition: transform 0.2s cubic-bezier(0.2, 0.8, 0.2, 1),
+                    background-color 0.2s ease,
+                    color 0.2s ease,
+                    border-color 0.2s ease,
+                    box-shadow 0.2s ease;
+        will-change: transform;
     }
 
     .btn-outline:hover {
         background-color: #D4AF37;
         color: #0A0A0A;
+        border-color: #D4AF37;
+        transform: translate3d(0, -2px, 0);
+        box-shadow: 0 8px 24px rgba(212, 175, 55, 0.35);
+    }
+
+    .btn-outline:active {
+        background-color: #C59B27;
+        color: #0A0A0A;
+        border-color: #B88E1E;
+        transform: translate3d(0, 1px, 0) scale(0.97);
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+        transition: transform 0.05s ease, background-color 0.05s ease, box-shadow 0.05s ease;
+    }
+
+    /* 4. Tactile Icon & Action Control Buttons */
+    .btn-icon {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        user-select: none;
+        -webkit-user-select: none;
+        transition: transform 0.2s cubic-bezier(0.2, 0.8, 0.2, 1),
+                    background-color 0.2s ease,
+                    color 0.2s ease,
+                    border-color 0.2s ease,
+                    box-shadow 0.2s ease;
+    }
+
+    .btn-icon:hover {
+        transform: translate3d(0, -2px, 0) scale(1.05);
+    }
+
+    .btn-icon:active {
+        transform: translate3d(0, 1px, 0) scale(0.92);
+        transition: transform 0.05s ease;
     }
 
     .glass-nav {
@@ -190,10 +321,7 @@
 }
 
 .text-gradient {
-    background: linear-gradient(to right, #D4AF37, #FFFFFF, #D4AF37);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #D4AF37;
 }
 
 .reveal {
@@ -264,17 +392,34 @@
     width: 3rem;
     height: 3rem;
     border-radius: 50%;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.12);
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: all 0.3s ease;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    transition: transform 0.2s cubic-bezier(0.2, 0.8, 0.2, 1),
+                background-color 0.2s ease,
+                color 0.2s ease,
+                border-color 0.2s ease,
+                box-shadow 0.2s ease;
 }
 
 .footer-icon-btn:hover {
     border-color: #D4AF37;
     background-color: #D4AF37;
     color: #0A0A0A;
+    transform: translate3d(0, -2px, 0);
+    box-shadow: 0 4px 14px rgba(212, 175, 55, 0.35);
+}
+
+.footer-icon-btn:active {
+    transform: translate3d(0, 1px, 0) scale(0.92);
+    background-color: #C59B27;
+    border-color: #B88E1E;
+    color: #0A0A0A;
+    transition: transform 0.05s ease;
 }
 
 /* iOS Safari Form Zoom Prevention & Smooth Touch */
@@ -581,14 +726,19 @@ body {
     height: 78px;
     border-radius: 50%;
     padding: 3px;
-    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
-    transition: all 0.3s ease;
+    background: #D4AF37;
+    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.25);
+    transition: transform 0.2s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.2s ease;
 }
 
 .story-highlight-item:hover .story-ring {
     box-shadow: 0 6px 20px rgba(212, 175, 55, 0.5);
     transform: scale(1.05);
+}
+
+.story-highlight-item:active .story-ring {
+    transform: scale(0.96);
+    transition: transform 0.05s ease;
 }
 
 .story-ring-inner {
@@ -654,22 +804,40 @@ body {
     height: 44px;
     border-radius: 50%;
     border: 1px solid rgba(212, 175, 55, 0.4);
-    background: rgba(18, 18, 18, 0.85);
+    background: #121212;
     color: #D4AF37;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    transition: all 0.3s ease;
+    user-select: none;
+    -webkit-user-select: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s cubic-bezier(0.2, 0.8, 0.2, 1),
+                background-color 0.2s ease,
+                color 0.2s ease,
+                border-color 0.2s ease,
+                box-shadow 0.2s ease;
 }
 
 .scroll-btn:hover {
     background: #D4AF37;
+    border-color: #D4AF37;
     color: #0A0A0A;
-    transform: scale(1.08);
+    transform: translate3d(0, -2px, 0) scale(1.06);
+    box-shadow: 0 6px 16px rgba(212, 175, 55, 0.35);
 }
 
-/* Floating WhatsApp Button */
+.scroll-btn:active {
+    background: #C59B27;
+    border-color: #B88E1E;
+    color: #0A0A0A;
+    transform: translate3d(0, 1px, 0) scale(0.94);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+    transition: transform 0.05s ease;
+}
+
+/* Floating WhatsApp Button - Pure Solid Emerald, Zero Gradients */
 .whatsapp-float {
     position: fixed;
     bottom: 24px;
@@ -678,23 +846,39 @@ body {
     display: flex;
     align-items: center;
     gap: 10px;
-    background: linear-gradient(135deg, #25D366, #128C7E);
+    background: #25D366;
     color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.28);
     padding: 12px 22px;
     border-radius: 9999px;
     font-weight: 700;
     font-size: 14px;
     letter-spacing: 0.05em;
     text-transform: uppercase;
-    box-shadow: 0 10px 25px rgba(37, 211, 102, 0.45);
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 8px 24px rgba(37, 211, 102, 0.38);
+    transition: transform 0.2s cubic-bezier(0.2, 0.8, 0.2, 1),
+                background-color 0.2s ease,
+                border-color 0.2s ease,
+                box-shadow 0.2s ease;
     text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
 }
 
 .whatsapp-float:hover {
-    transform: translateY(-4px) scale(1.04);
-    box-shadow: 0 16px 32px rgba(37, 211, 102, 0.65);
+    background: #20BA5A;
+    border-color: rgba(255, 255, 255, 0.45);
+    transform: translate3d(0, -3px, 0) scale(1.03);
+    box-shadow: 0 14px 30px rgba(37, 211, 102, 0.55);
     color: #ffffff;
+}
+
+.whatsapp-float:active {
+    background: #179B48;
+    border-color: #12803B;
+    transform: translate3d(0, 1px, 0) scale(0.96);
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+    transition: transform 0.05s ease, background-color 0.05s ease;
 }
 
 .whatsapp-float::before {
@@ -845,13 +1029,7 @@ body {
 }
 
 .text-gold-shimmer {
-    background: linear-gradient(110deg, #D4AF37 0%, #FFFDF0 25%, #E5C158 50%, #996515 75%, #D4AF37 100%);
-    background-size: 250% 100%;
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    animation: goldShimmer 7s linear infinite;
-    will-change: background-position;
+    color: #D4AF37;
 }
 
 /* 2. Fluid Ambient Aura Breathing in Hero */
@@ -936,7 +1114,7 @@ body {
     left: -120%;
     width: 60%;
     height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.06), transparent);
+    background: rgba(255, 255, 255, 0.04);
     transform: skewX(-20deg);
     transition: left 0.8s ease;
     pointer-events: none;
