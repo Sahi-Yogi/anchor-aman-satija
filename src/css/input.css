@@ -198,13 +198,14 @@
 
 .reveal {
     opacity: 0;
-    transform: translateY(30px);
-    transition: all 0.8s ease-out;
+    transform: translate3d(0, 24px, 0);
+    transition: opacity 0.75s cubic-bezier(0.16, 1, 0.3, 1), transform 0.75s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: opacity, transform;
 }
 
 .reveal.active {
     opacity: 1;
-    transform: translateY(0);
+    transform: translate3d(0, 0, 0);
 }
 
 .custom-cursor {
@@ -696,6 +697,16 @@ body {
     color: #ffffff;
 }
 
+.whatsapp-float::before {
+    content: '';
+    position: absolute;
+    inset: -3px;
+    border-radius: 9999px;
+    border: 2px solid rgba(37, 211, 102, 0.7);
+    animation: sonarWave 2.4s cubic-bezier(0.2, 0.8, 0.2, 1) infinite;
+    pointer-events: none;
+}
+
 .whatsapp-float i {
     font-size: 20px;
 }
@@ -816,4 +827,137 @@ body {
 
 .service-card-luxury:hover img {
     transform: scale(1.08);
+}
+
+/* ==========================================================================
+   2026 High-Performance GPU-Accelerated Luxury Motion Suite
+   Zero Layout Thrashing (Transforms, Opacity & Gradients Only)
+   ========================================================================== */
+
+/* 1. Liquid Gold Foil Shimmer across text */
+@keyframes goldShimmer {
+    0% {
+        background-position: -200% 0;
+    }
+    100% {
+        background-position: 200% 0;
+    }
+}
+
+.text-gold-shimmer {
+    background: linear-gradient(110deg, #D4AF37 0%, #FFFDF0 25%, #E5C158 50%, #996515 75%, #D4AF37 100%);
+    background-size: 250% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: goldShimmer 7s linear infinite;
+    will-change: background-position;
+}
+
+/* 2. Fluid Ambient Aura Breathing in Hero */
+@keyframes auraBreath {
+    0%, 100% {
+        transform: translate3d(0, 0, 0) scale(1);
+        opacity: 0.12;
+    }
+    50% {
+        transform: translate3d(24px, -24px, 0) scale(1.18);
+        opacity: 0.22;
+    }
+}
+
+.animate-aura-breath {
+    animation: auraBreath 9s ease-in-out infinite;
+    will-change: transform, opacity;
+}
+
+.animate-aura-breath-delayed {
+    animation: auraBreath 11s ease-in-out 3.5s infinite reverse;
+    will-change: transform, opacity;
+}
+
+/* 3. Royal Arch Radiant Border Glow */
+@keyframes archRadiance {
+    0%, 100% {
+        border-color: rgba(212, 175, 55, 0.5);
+        box-shadow: 0 25px 70px rgba(0, 0, 0, 0.9), 0 0 25px rgba(212, 175, 55, 0.2);
+    }
+    50% {
+        border-color: rgba(212, 175, 55, 0.85);
+        box-shadow: 0 30px 80px rgba(0, 0, 0, 0.95), 0 0 45px rgba(212, 175, 55, 0.4);
+    }
+}
+
+.royal-arch-glow {
+    animation: archRadiance 5s ease-in-out infinite;
+    will-change: border-color, box-shadow;
+}
+
+/* 4. Sonar Concentric Wave Pulse for Play Buttons & WhatsApp */
+@keyframes sonarWave {
+    0% {
+        transform: scale(0.95);
+        opacity: 0.85;
+    }
+    100% {
+        transform: scale(1.75);
+        opacity: 0;
+    }
+}
+
+.sonar-emitter {
+    position: relative;
+}
+
+.sonar-emitter::before {
+    content: '';
+    position: absolute;
+    inset: -4px;
+    border-radius: 9999px;
+    border: 2px solid rgba(212, 175, 55, 0.7);
+    animation: sonarWave 2.2s cubic-bezier(0.2, 0.8, 0.2, 1) infinite;
+    pointer-events: none;
+}
+
+.sonar-emitter-green::before {
+    border-color: rgba(37, 211, 102, 0.75);
+}
+
+/* 5. Smooth Specular Card Sheen on Hover */
+.luxury-glass-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.luxury-glass-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -120%;
+    width: 60%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.06), transparent);
+    transform: skewX(-20deg);
+    transition: left 0.8s ease;
+    pointer-events: none;
+}
+
+.luxury-glass-card:hover::after {
+    left: 160%;
+}
+
+/* 6. Hardware-accelerated Marquee Smoothness */
+.marquee-content {
+    will-change: transform;
+    transform: translate3d(0, 0, 0);
+}
+
+/* 7. Respect Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+    *, ::before, ::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
 }

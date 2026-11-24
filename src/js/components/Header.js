@@ -169,7 +169,7 @@ export const Header = () => {
                             <a href="https://www.youtube.com/results?search_query=Anchor+Aman+Satija" target="_blank" rel="noopener noreferrer" aria-label="YouTube" class="hover:text-brand-gold transition-colors"><i class="fa-brands fa-youtube"></i></a>
                             <a href="https://wa.me/919057529067" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="hover:text-brand-gold transition-colors"><i class="fa-brands fa-whatsapp"></i></a>
                         </div>
-                        <span class="text-[10px] uppercase tracking-[0.2em] text-white/40">Aman Satija &copy; 2024</span>
+                        <span class="text-[10px] uppercase tracking-[0.2em] text-white/40">Aman Satija &copy; 2026</span>
                     </div>
                 </div>
             </div>

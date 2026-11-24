@@ -3,9 +3,9 @@ import { Footer } from './components/Footer.js';
 
 // Common Data
 export const stats = [
-    { label: 'Years Experience', value: '10+' },
+    { label: 'Years of Legacy', value: '14+' },
     { label: 'Live Shows', value: '2500+' },
-    { label: 'Pan India Presence', value: '100% ' },
+    { label: 'Pan India Presence', value: '100%' },
 ];
 
 export const services = [
