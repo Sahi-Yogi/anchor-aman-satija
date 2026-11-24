@@ -284,79 +284,472 @@
             </div>
         </section>
 
-        <!-- Brand Trust Matrix + Marquee -->
-        <section class="py-16 lg:py-20 border-y border-white/10 bg-[#07080c]">
+        <!-- Brand Associations Showcase (Interactive Logo Wall + Live Spotlight Inspector) -->
+        <section id="brand-associations" class="py-16 lg:py-20 border-y border-white/10 bg-[#07080c]">
             <div class="container mx-auto px-6">
-                <div class="text-center max-w-2xl mx-auto mb-10 sm:mb-12 reveal">
-                    <span class="text-brand-gold uppercase tracking-[0.25em] text-xs font-bold block mb-2">Brand Associations</span>
-                    <h2 class="text-3xl font-serif font-bold mb-3">Brands &amp; Institutions <span class="text-brand-gold italic">Hosted For</span></h2>
-                    <p class="text-white/55 text-xs sm:text-sm">Trusted by India’s leading corporations, banks, automotive giants, and media networks.</p>
+                <!-- Header + Executive Metrics Strip -->
+                <div class="flex flex-col lg:flex-row justify-between items-start lg:items-end mb-10 sm:mb-12 gap-6 reveal">
+                    <div class="max-w-2xl">
+                        <div class="flex items-center gap-2 text-brand-gold uppercase tracking-[0.25em] text-xs font-bold mb-2">
+                            <span class="w-6 h-[2px] bg-brand-gold"></span>
+                            <span>Brand Associations</span>
+                        </div>
+                        <h2 class="text-3xl md:text-5xl font-serif font-bold text-white mb-3">
+                            Trusted by India’s <span class="text-brand-gold italic">Premier Brands</span>
+                        </h2>
+                        <p class="text-white/60 text-sm sm:text-base">
+                            From flagship automotive reveals and banking summits to national media awards—click any brand below to inspect corporate stage formats.
+                        </p>
+                    </div>
+
+                    <!-- Corporate Credibility Pills -->
+                    <div class="flex flex-wrap items-center gap-2.5 shrink-0">
+                        <span class="px-3.5 py-2 rounded-full bg-[#0c0d14] border border-brand-gold/35 text-brand-gold text-xs font-mono font-bold uppercase tracking-wider">
+                            <i class="fa-solid fa-building mr-1.5"></i>14+ Marquee Brands
+                        </span>
+                        <span class="px-3.5 py-2 rounded-full bg-[#0c0d14] border border-white/10 text-white/80 text-xs font-mono font-bold uppercase tracking-wider">
+                            <i class="fa-solid fa-layer-group text-brand-gold mr-1.5"></i>4 Core Sectors
+                        </span>
+                    </div>
                 </div>
 
-                <!-- Categorized Brand Wall -->
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mb-12 reveal">
-                    <div class="p-6 rounded-2xl bg-[#0c0d14] border border-white/10">
-                        <span class="text-[10px] font-mono uppercase tracking-widest text-brand-gold font-bold block mb-3">Automotive &amp; Mobility</span>
-                        <ul class="space-y-2 text-sm text-white/80 font-medium">
-                            <li>Maruti Suzuki</li>
-                            <li>Tata Motors</li>
-                            <li>Hero MotoCorp</li>
-                            <li>JK Tyre</li>
-                        </ul>
+                <!-- Sector Filter Bar + Live Brand Counter -->
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-8 reveal" data-filter-group="brand-showcase-grid">
+                    <div class="flex flex-wrap items-center gap-2">
+                        <button type="button" data-filter-value="all" class="filter-pill is-active">All Brands</button>
+                        <button type="button" data-filter-value="automotive" class="filter-pill">Automotive &amp; Mobility</button>
+                        <button type="button" data-filter-value="banking" class="filter-pill">Banking &amp; Telecom</button>
+                        <button type="button" data-filter-value="electronics" class="filter-pill">Electronics &amp; Industry</button>
+                        <button type="button" data-filter-value="lifestyle" class="filter-pill">Lifestyle &amp; Media</button>
                     </div>
-                    <div class="p-6 rounded-2xl bg-[#0c0d14] border border-white/10">
-                        <span class="text-[10px] font-mono uppercase tracking-widest text-brand-gold font-bold block mb-3">Banking &amp; Telecom</span>
-                        <ul class="space-y-2 text-sm text-white/80 font-medium">
-                            <li>HDFC Bank</li>
-                            <li>ICICI Bank</li>
-                            <li>Airtel</li>
-                            <li>Reliance Retail</li>
-                        </ul>
+                    <span data-filter-count data-unit="Brand" data-unit-plural="Brands" class="text-xs font-mono uppercase tracking-widest text-brand-gold font-bold shrink-0">14 Brands</span>
+                </div>
+
+                <!-- 14 Authentic Logo Showcase Cards + 2-Span Corporate Action Tile (Balanced 4x4 Grid on Desktop) -->
+                <div id="brand-showcase-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mb-10">
+                    <!-- 1. Maruti Suzuki -->
+                    <button type="button" data-category="automotive" data-brand-card aria-pressed="true"
+                        data-brand-name="Maruti Suzuki India"
+                        data-brand-sector="Automotive &amp; Mobility"
+                        data-brand-logo="src/assets/logos/maruti-suzuki-full.svg"
+                        data-brand-logo-class="max-h-8 w-auto object-contain"
+                        data-brand-wordmark=""
+                        data-brand-desc="Hosted high-impact dealer conferences, regional Arena &amp; Nexa launch activations, and milestone achiever recognition evenings with razor-sharp crowd engagement."
+                        data-brand-formats="Dealer Meets | Car Unveils | Regional Launches | Award Nights"
+                        class="brand-card is-selected group reveal">
+                        <div>
+                            <div class="brand-logo-plate">
+                                <img src="src/assets/logos/maruti-suzuki-full.svg" alt="Maruti Suzuki Logo" width="220" height="28" loading="lazy" class="max-h-7 w-auto object-contain">
+                            </div>
+                            <span class="text-[10px] font-mono uppercase tracking-[0.18em] text-brand-gold font-bold block mb-1">Automotive &amp; Mobility</span>
+                            <h3 class="font-serif font-bold text-white text-base group-hover:text-brand-gold transition-colors">Maruti Suzuki</h3>
+                            <p class="text-white/55 text-xs mt-1">Dealer Conventions &amp; Unveils</p>
+                        </div>
+                        <div class="flex items-center justify-between mt-4 pt-3 border-t border-white/5 w-full">
+                            <div class="brand-card-bar"></div>
+                            <span class="text-[10px] font-mono uppercase tracking-wider text-white/40 group-hover:text-brand-gold transition-colors">Inspect &rarr;</span>
+                        </div>
+                    </button>
+
+                    <!-- 2. Tata Motors -->
+                    <button type="button" data-category="automotive" data-brand-card aria-pressed="false"
+                        data-brand-name="Tata Motors"
+                        data-brand-sector="Automotive &amp; Mobility"
+                        data-brand-logo="src/assets/logos/tata.svg"
+                        data-brand-logo-class="h-9 w-9 object-contain shrink-0"
+                        data-brand-wordmark="TATA MOTORS"
+                        data-brand-wordmark-class="font-serif font-extrabold tracking-widest text-[#1D549F] text-sm ml-2.5"
+                        data-brand-desc="Commanded corporate showcases, commercial &amp; passenger vehicle roadshows, executive stakeholder interactions, and energetic dealer appreciation galas."
+                        data-brand-formats="Product Reveals | Roadshows | Corporate Summits | Team Engagements"
+                        class="brand-card group reveal" style="transition-delay: 40ms;">
+                        <div>
+                            <div class="brand-logo-plate">
+                                <img src="src/assets/logos/tata.svg" alt="Tata Motors Emblem" width="36" height="36" loading="lazy" class="h-8 w-8 object-contain shrink-0">
+                                <span class="ml-2.5 font-serif font-extrabold tracking-widest text-[#1D549F] text-sm">TATA MOTORS</span>
+                            </div>
+                            <span class="text-[10px] font-mono uppercase tracking-[0.18em] text-brand-gold font-bold block mb-1">Automotive &amp; Mobility</span>
+                            <h3 class="font-serif font-bold text-white text-base group-hover:text-brand-gold transition-colors">Tata Motors</h3>
+                            <p class="text-white/55 text-xs mt-1">Brand Launches &amp; Galas</p>
+                        </div>
+                        <div class="flex items-center justify-between mt-4 pt-3 border-t border-white/5 w-full">
+                            <div class="brand-card-bar"></div>
+                            <span class="text-[10px] font-mono uppercase tracking-wider text-white/40 group-hover:text-brand-gold transition-colors">Inspect &rarr;</span>
+                        </div>
+                    </button>
+
+                    <!-- 3. Hero MotoCorp -->
+                    <button type="button" data-category="automotive" data-brand-card aria-pressed="false"
+                        data-brand-name="Hero MotoCorp"
+                        data-brand-sector="Automotive &amp; Mobility"
+                        data-brand-logo="src/assets/logos/hero-motocorp.svg"
+                        data-brand-logo-class="max-h-10 w-auto object-contain"
+                        data-brand-wordmark=""
+                        data-brand-desc="High-voltage youth-oriented showroom launches, carnival crowd engagement, dealer milestones, and adrenaline-pumping stage activations across North India."
+                        data-brand-formats="Showroom Launches | Carnivals | Dealer Meets | Crowd Hype"
+                        class="brand-card group reveal" style="transition-delay: 80ms;">
+                        <div>
+                            <div class="brand-logo-plate">
+                                <img src="src/assets/logos/hero-motocorp.svg" alt="Hero MotoCorp Logo" width="160" height="52" loading="lazy" class="max-h-9 w-auto object-contain">
+                            </div>
+                            <span class="text-[10px] font-mono uppercase tracking-[0.18em] text-brand-gold font-bold block mb-1">Automotive &amp; Mobility</span>
+                            <h3 class="font-serif font-bold text-white text-base group-hover:text-brand-gold transition-colors">Hero MotoCorp</h3>
+                            <p class="text-white/55 text-xs mt-1">Two-Wheeler Unveils &amp; Meets</p>
+                        </div>
+                        <div class="flex items-center justify-between mt-4 pt-3 border-t border-white/5 w-full">
+                            <div class="brand-card-bar"></div>
+                            <span class="text-[10px] font-mono uppercase tracking-wider text-white/40 group-hover:text-brand-gold transition-colors">Inspect &rarr;</span>
+                        </div>
+                    </button>
+
+                    <!-- 4. JK Tyre -->
+                    <button type="button" data-category="automotive" data-brand-card aria-pressed="false"
+                        data-brand-name="JK Tyre &amp; Industries"
+                        data-brand-sector="Automotive &amp; Mobility"
+                        data-brand-logo="src/assets/logos/jk-tyre.svg"
+                        data-brand-logo-class="h-11 w-11 object-contain rounded shrink-0"
+                        data-brand-wordmark="JK TYRE"
+                        data-brand-wordmark-class="font-serif font-extrabold tracking-wider text-[#111827] text-sm ml-2.5"
+                        data-brand-desc="Hosted B2B distributor meets, corporate annual conclaves, and partner incentive evenings balancing formal brand protocol with lively evening entertainment."
+                        data-brand-formats="Distributor Conclaves | Award Evenings | Partner Galas"
+                        class="brand-card group reveal" style="transition-delay: 120ms;">
+                        <div>
+                            <div class="brand-logo-plate">
+                                <img src="src/assets/logos/jk-tyre.svg" alt="JK Tyre Logo" width="48" height="48" loading="lazy" class="h-11 w-11 object-contain rounded shrink-0">
+                                <span class="ml-2.5 font-serif font-extrabold tracking-wider text-[#111827] text-sm">JK TYRE</span>
+                            </div>
+                            <span class="text-[10px] font-mono uppercase tracking-[0.18em] text-brand-gold font-bold block mb-1">Automotive &amp; Mobility</span>
+                            <h3 class="font-serif font-bold text-white text-base group-hover:text-brand-gold transition-colors">JK Tyre</h3>
+                            <p class="text-white/55 text-xs mt-1">Partner Conclaves &amp; R&amp;R</p>
+                        </div>
+                        <div class="flex items-center justify-between mt-4 pt-3 border-t border-white/5 w-full">
+                            <div class="brand-card-bar"></div>
+                            <span class="text-[10px] font-mono uppercase tracking-wider text-white/40 group-hover:text-brand-gold transition-colors">Inspect &rarr;</span>
+                        </div>
+                    </button>
+
+                    <!-- 5. HDFC Bank -->
+                    <button type="button" data-category="banking" data-brand-card aria-pressed="false"
+                        data-brand-name="HDFC Bank"
+                        data-brand-sector="Banking &amp; Financial Services"
+                        data-brand-logo="src/assets/logos/hdfc-bank.svg"
+                        data-brand-logo-class="h-9 w-9 object-contain shrink-0"
+                        data-brand-wordmark="HDFC BANK"
+                        data-brand-wordmark-class="font-serif font-extrabold tracking-wider text-[#004B8D] text-sm ml-2.5"
+                        data-brand-desc="Presided over corporate R&amp;R award nights, leadership town halls, and regional achievement summits with executive poise, accurate awardee citations, and zero delays."
+                        data-brand-formats="Annual R&amp;R Galas | Leadership Town Halls | Excellence Awards"
+                        class="brand-card group reveal">
+                        <div>
+                            <div class="brand-logo-plate">
+                                <img src="src/assets/logos/hdfc-bank.svg" alt="HDFC Bank Emblem" width="34" height="34" loading="lazy" class="h-8 w-8 object-contain shrink-0">
+                                <span class="ml-2.5 font-serif font-extrabold tracking-wider text-[#004B8D] text-sm">HDFC BANK</span>
+                            </div>
+                            <span class="text-[10px] font-mono uppercase tracking-[0.18em] text-brand-gold font-bold block mb-1">Banking &amp; Finance</span>
+                            <h3 class="font-serif font-bold text-white text-base group-hover:text-brand-gold transition-colors">HDFC Bank</h3>
+                            <p class="text-white/55 text-xs mt-1">Awards &amp; Town Halls</p>
+                        </div>
+                        <div class="flex items-center justify-between mt-4 pt-3 border-t border-white/5 w-full">
+                            <div class="brand-card-bar"></div>
+                            <span class="text-[10px] font-mono uppercase tracking-wider text-white/40 group-hover:text-brand-gold transition-colors">Inspect &rarr;</span>
+                        </div>
+                    </button>
+
+                    <!-- 6. ICICI Bank -->
+                    <button type="button" data-category="banking" data-brand-card aria-pressed="false"
+                        data-brand-name="ICICI Bank"
+                        data-brand-sector="Banking &amp; Financial Services"
+                        data-brand-logo="src/assets/logos/icici-bank.svg"
+                        data-brand-logo-class="h-9 w-9 object-contain shrink-0"
+                        data-brand-wordmark="ICICI Bank"
+                        data-brand-wordmark-class="font-serif font-extrabold tracking-wide text-[#9A2126] text-base ml-2.5"
+                        data-brand-desc="Delivered poised bilingual hosting for regional employee recognition galas, quarterly business milestones, and team-building conferences."
+                        data-brand-formats="Corporate Milestones | R&amp;R Nights | Employee Engagement"
+                        class="brand-card group reveal" style="transition-delay: 40ms;">
+                        <div>
+                            <div class="brand-logo-plate">
+                                <img src="src/assets/logos/icici-bank.svg" alt="ICICI Bank Emblem" width="34" height="34" loading="lazy" class="h-8 w-8 object-contain shrink-0">
+                                <span class="ml-2.5 font-serif font-extrabold tracking-wide text-[#9A2126] text-base">ICICI Bank</span>
+                            </div>
+                            <span class="text-[10px] font-mono uppercase tracking-[0.18em] text-brand-gold font-bold block mb-1">Banking &amp; Finance</span>
+                            <h3 class="font-serif font-bold text-white text-base group-hover:text-brand-gold transition-colors">ICICI Bank</h3>
+                            <p class="text-white/55 text-xs mt-1">Leadership &amp; Recognition</p>
+                        </div>
+                        <div class="flex items-center justify-between mt-4 pt-3 border-t border-white/5 w-full">
+                            <div class="brand-card-bar"></div>
+                            <span class="text-[10px] font-mono uppercase tracking-wider text-white/40 group-hover:text-brand-gold transition-colors">Inspect &rarr;</span>
+                        </div>
+                    </button>
+
+                    <!-- 7. Airtel -->
+                    <button type="button" data-category="banking" data-brand-card aria-pressed="false"
+                        data-brand-name="Bharti Airtel"
+                        data-brand-sector="Telecom &amp; Digital"
+                        data-brand-logo="src/assets/logos/airtel.svg"
+                        data-brand-logo-class="h-9 w-9 object-contain shrink-0"
+                        data-brand-wordmark="airtel"
+                        data-brand-wordmark-class="font-sans font-extrabold lowercase tracking-tight text-[#E40000] text-xl ml-2"
+                        data-brand-desc="Fast-paced telecom channel partner conventions, youth on-ground promos, digital rollout events, and high-energy corporate celebrations."
+                        data-brand-formats="Channel Conventions | Youth Activations | Annual Parties"
+                        class="brand-card group reveal" style="transition-delay: 80ms;">
+                        <div>
+                            <div class="brand-logo-plate">
+                                <img src="src/assets/logos/airtel.svg" alt="Airtel Emblem" width="34" height="34" loading="lazy" class="h-8 w-8 object-contain shrink-0">
+                                <span class="ml-2 font-sans font-extrabold lowercase tracking-tight text-[#E40000] text-xl">airtel</span>
+                            </div>
+                            <span class="text-[10px] font-mono uppercase tracking-[0.18em] text-brand-gold font-bold block mb-1">Telecom &amp; Tech</span>
+                            <h3 class="font-serif font-bold text-white text-base group-hover:text-brand-gold transition-colors">Airtel</h3>
+                            <p class="text-white/55 text-xs mt-1">Partner Summits &amp; Live Promos</p>
+                        </div>
+                        <div class="flex items-center justify-between mt-4 pt-3 border-t border-white/5 w-full">
+                            <div class="brand-card-bar"></div>
+                            <span class="text-[10px] font-mono uppercase tracking-wider text-white/40 group-hover:text-brand-gold transition-colors">Inspect &rarr;</span>
+                        </div>
+                    </button>
+
+                    <!-- 8. Reliance Retail -->
+                    <button type="button" data-category="banking" data-brand-card aria-pressed="false"
+                        data-brand-name="Reliance Retail"
+                        data-brand-sector="Retail &amp; Conglomerate"
+                        data-brand-logo="src/assets/logos/reliance.svg"
+                        data-brand-logo-class="h-9 w-9 object-contain shrink-0"
+                        data-brand-wordmark="Reliance Retail"
+                        data-brand-wordmark-class="font-serif font-bold tracking-wide text-[#1B365D] text-sm ml-2"
+                        data-brand-desc="Anchored grand store launches, festive retail activations, regional town halls, and employee milestone ceremonies across high-footfall venues."
+                        data-brand-formats="Store Launches | Mall Carnivals | Corporate Town Halls"
+                        class="brand-card group reveal" style="transition-delay: 120ms;">
+                        <div>
+                            <div class="brand-logo-plate">
+                                <img src="src/assets/logos/reliance.svg" alt="Reliance Emblem" width="36" height="36" loading="lazy" class="h-8 w-8 object-contain shrink-0">
+                                <span class="ml-2 font-serif font-bold tracking-wide text-[#1B365D] text-sm">Reliance Retail</span>
+                            </div>
+                            <span class="text-[10px] font-mono uppercase tracking-[0.18em] text-brand-gold font-bold block mb-1">Retail Conglomerate</span>
+                            <h3 class="font-serif font-bold text-white text-base group-hover:text-brand-gold transition-colors">Reliance Retail</h3>
+                            <p class="text-white/55 text-xs mt-1">Store Launches &amp; Galas</p>
+                        </div>
+                        <div class="flex items-center justify-between mt-4 pt-3 border-t border-white/5 w-full">
+                            <div class="brand-card-bar"></div>
+                            <span class="text-[10px] font-mono uppercase tracking-wider text-white/40 group-hover:text-brand-gold transition-colors">Inspect &rarr;</span>
+                        </div>
+                    </button>
+
+                    <!-- 9. Samsung India -->
+                    <button type="button" data-category="electronics" data-brand-card aria-pressed="false"
+                        data-brand-name="Samsung India"
+                        data-brand-sector="Consumer Electronics"
+                        data-brand-logo="src/assets/logos/samsung.svg"
+                        data-brand-logo-class="h-12 w-32 object-contain"
+                        data-brand-wordmark=""
+                        data-brand-desc="Crisp product unveils, flagship device showcases, distributor briefings, and crowd-engaging brand experiences combining technical accuracy with charisma."
+                        data-brand-formats="Flagship Unveils | Retail Launches | Distributor Meets"
+                        class="brand-card group reveal">
+                        <div>
+                            <div class="brand-logo-plate">
+                                <img src="src/assets/logos/samsung.svg" alt="Samsung Logo" width="128" height="42" loading="lazy" class="h-12 w-32 object-contain">
+                            </div>
+                            <span class="text-[10px] font-mono uppercase tracking-[0.18em] text-brand-gold font-bold block mb-1">Consumer Electronics</span>
+                            <h3 class="font-serif font-bold text-white text-base group-hover:text-brand-gold transition-colors">Samsung India</h3>
+                            <p class="text-white/55 text-xs mt-1">Tech Unveils &amp; Brand Shows</p>
+                        </div>
+                        <div class="flex items-center justify-between mt-4 pt-3 border-t border-white/5 w-full">
+                            <div class="brand-card-bar"></div>
+                            <span class="text-[10px] font-mono uppercase tracking-wider text-white/40 group-hover:text-brand-gold transition-colors">Inspect &rarr;</span>
+                        </div>
+                    </button>
+
+                    <!-- 10. Havells -->
+                    <button type="button" data-category="electronics" data-brand-card aria-pressed="false"
+                        data-brand-name="Havells India"
+                        data-brand-sector="Electrical &amp; Industry"
+                        data-brand-logo="src/assets/logos/havells.svg"
+                        data-brand-logo-class="max-h-12 w-auto object-contain"
+                        data-brand-wordmark=""
+                        data-brand-desc="Hosted B2B dealer &amp; electrician meets, brand galas in Rajasthan &amp; Alwar hubs, interactive games, and high-morale annual partner celebrations."
+                        data-brand-formats="Trade Partner Meets | Alwar Industrial Galas | Quiz Shows"
+                        class="brand-card group reveal" style="transition-delay: 40ms;">
+                        <div>
+                            <div class="brand-logo-plate">
+                                <img src="src/assets/logos/havells.svg" alt="Havells Logo" width="120" height="79" loading="lazy" class="max-h-12 w-auto object-contain">
+                            </div>
+                            <span class="text-[10px] font-mono uppercase tracking-[0.18em] text-brand-gold font-bold block mb-1">Electronics &amp; Appliances</span>
+                            <h3 class="font-serif font-bold text-white text-base group-hover:text-brand-gold transition-colors">Havells</h3>
+                            <p class="text-white/55 text-xs mt-1">Channel Meets &amp; Galas</p>
+                        </div>
+                        <div class="flex items-center justify-between mt-4 pt-3 border-t border-white/5 w-full">
+                            <div class="brand-card-bar"></div>
+                            <span class="text-[10px] font-mono uppercase tracking-wider text-white/40 group-hover:text-brand-gold transition-colors">Inspect &rarr;</span>
+                        </div>
+                    </button>
+
+                    <!-- 11. Wonder Cement -->
+                    <button type="button" data-category="electronics" data-brand-card aria-pressed="false"
+                        data-brand-name="Wonder Cement"
+                        data-brand-sector="Infrastructure &amp; Manufacturing"
+                        data-brand-logo="src/assets/logos/wonder-cement.svg"
+                        data-brand-logo-class="max-h-12 w-auto object-contain"
+                        data-brand-wordmark=""
+                        data-brand-desc="Trusted host for Rajasthan dealer summits, marquee trade partner conventions, and motivational award ceremonies connecting teams across regional dialects."
+                        data-brand-formats="Rajasthan Summits | Dealer Awards | Bilingual Hosting"
+                        class="brand-card group reveal" style="transition-delay: 80ms;">
+                        <div>
+                            <div class="brand-logo-plate">
+                                <img src="src/assets/logos/wonder-cement.svg" alt="Wonder Cement Logo" width="110" height="77" loading="lazy" class="max-h-12 w-auto object-contain">
+                            </div>
+                            <span class="text-[10px] font-mono uppercase tracking-[0.18em] text-brand-gold font-bold block mb-1">Core Industry</span>
+                            <h3 class="font-serif font-bold text-white text-base group-hover:text-brand-gold transition-colors">Wonder Cement</h3>
+                            <p class="text-white/55 text-xs mt-1">Statewide Dealer Summits</p>
+                        </div>
+                        <div class="flex items-center justify-between mt-4 pt-3 border-t border-white/5 w-full">
+                            <div class="brand-card-bar"></div>
+                            <span class="text-[10px] font-mono uppercase tracking-wider text-white/40 group-hover:text-brand-gold transition-colors">Inspect &rarr;</span>
+                        </div>
+                    </button>
+
+                    <!-- 12. Raymond Luxury -->
+                    <button type="button" data-category="lifestyle" data-brand-card aria-pressed="false"
+                        data-brand-name="Raymond Luxury"
+                        data-brand-sector="Fashion &amp; Luxury Apparel"
+                        data-brand-logo="src/assets/logos/raymond.svg"
+                        data-brand-logo-class="max-h-10 w-auto object-contain"
+                        data-brand-wordmark=""
+                        data-brand-desc="Refined black-tie stage presence for luxury fashion showcases, flagship store openings, bespoke collection previews, and VIP clientele gatherings."
+                        data-brand-formats="Fashion Showcases | Store Openings | VIP Clientele Evenings"
+                        class="brand-card group reveal" style="transition-delay: 120ms;">
+                        <div>
+                            <div class="brand-logo-plate">
+                                <img src="src/assets/logos/raymond.svg" alt="Raymond Logo" width="140" height="47" loading="lazy" class="max-h-10 w-auto object-contain">
+                            </div>
+                            <span class="text-[10px] font-mono uppercase tracking-[0.18em] text-brand-gold font-bold block mb-1">Luxury Lifestyle</span>
+                            <h3 class="font-serif font-bold text-white text-base group-hover:text-brand-gold transition-colors">Raymond Luxury</h3>
+                            <p class="text-white/55 text-xs mt-1">Fashion Galas &amp; Openings</p>
+                        </div>
+                        <div class="flex items-center justify-between mt-4 pt-3 border-t border-white/5 w-full">
+                            <div class="brand-card-bar"></div>
+                            <span class="text-[10px] font-mono uppercase tracking-wider text-white/40 group-hover:text-brand-gold transition-colors">Inspect &rarr;</span>
+                        </div>
+                    </button>
+
+                    <!-- 13. Pernod Ricard -->
+                    <button type="button" data-category="lifestyle" data-brand-card aria-pressed="false"
+                        data-brand-name="Pernod Ricard"
+                        data-brand-sector="Global Spirits &amp; Hospitality"
+                        data-brand-logo="src/assets/logos/pernod-ricard.svg"
+                        data-brand-logo-class="max-h-11 w-auto object-contain"
+                        data-brand-wordmark=""
+                        data-brand-desc="Premium after-dark lifestyle nights, trade hospitality galas, upscale brand experiences, and refined entertainment for discerning hospitality audiences."
+                        data-brand-formats="Lifestyle Galas | After-Dark Events | Trade Hospitality"
+                        class="brand-card group reveal">
+                        <div>
+                            <div class="brand-logo-plate">
+                                <img src="src/assets/logos/pernod-ricard.svg" alt="Pernod Ricard Logo" width="150" height="55" loading="lazy" class="max-h-11 w-auto object-contain">
+                            </div>
+                            <span class="text-[10px] font-mono uppercase tracking-[0.18em] text-brand-gold font-bold block mb-1">Global Lifestyle</span>
+                            <h3 class="font-serif font-bold text-white text-base group-hover:text-brand-gold transition-colors">Pernod Ricard</h3>
+                            <p class="text-white/55 text-xs mt-1">Premium Nights &amp; Hospitality</p>
+                        </div>
+                        <div class="flex items-center justify-between mt-4 pt-3 border-t border-white/5 w-full">
+                            <div class="brand-card-bar"></div>
+                            <span class="text-[10px] font-mono uppercase tracking-wider text-white/40 group-hover:text-brand-gold transition-colors">Inspect &rarr;</span>
+                        </div>
+                    </button>
+
+                    <!-- 14. Dainik Bhaskar -->
+                    <button type="button" data-category="lifestyle" data-brand-card aria-pressed="false"
+                        data-brand-name="Dainik Bhaskar Group"
+                        data-brand-sector="Print &amp; Broadcast Media"
+                        data-brand-logo="src/assets/logos/dainik-bhaskar.svg"
+                        data-brand-logo-class="max-h-8 w-auto object-contain"
+                        data-brand-wordmark=""
+                        data-brand-desc="Commanded large public city festivals, civic felicitation honors, award ceremonies, and community cultural evenings across Rajasthan with 5,000+ audiences."
+                        data-brand-formats="City Festivals | Civic Honor Awards | Mega Community Nights"
+                        class="brand-card group reveal" style="transition-delay: 40ms;">
+                        <div>
+                            <div class="brand-logo-plate">
+                                <img src="src/assets/logos/dainik-bhaskar.svg" alt="Dainik Bhaskar Logo" width="180" height="31" loading="lazy" class="max-h-8 w-auto object-contain">
+                            </div>
+                            <span class="text-[10px] font-mono uppercase tracking-[0.18em] text-brand-gold font-bold block mb-1">National Media</span>
+                            <h3 class="font-serif font-bold text-white text-base group-hover:text-brand-gold transition-colors">Dainik Bhaskar</h3>
+                            <p class="text-white/55 text-xs mt-1">City Awards &amp; Mega Festivals</p>
+                        </div>
+                        <div class="flex items-center justify-between mt-4 pt-3 border-t border-white/5 w-full">
+                            <div class="brand-card-bar"></div>
+                            <span class="text-[10px] font-mono uppercase tracking-wider text-white/40 group-hover:text-brand-gold transition-colors">Inspect &rarr;</span>
+                        </div>
+                    </button>
+
+                    <!-- 15-16 (2-Span Balance Tile on All View): Next Brand Collaboration Card -->
+                    <div data-category="all-feature" class="sm:col-span-2 p-6 sm:p-7 rounded-2xl bg-[#0e0f16] border border-brand-gold/35 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-5 reveal" style="transition-delay: 80ms;">
+                        <div>
+                            <span class="text-[10px] font-mono uppercase tracking-[0.22em] text-brand-gold font-bold block mb-1.5">Corporate RFPs &amp; Event Agencies</span>
+                            <h3 class="text-xl sm:text-2xl font-serif font-bold text-white mb-1.5">Representing Your Brand Next?</h3>
+                            <p class="text-white/60 text-xs sm:text-sm leading-relaxed max-w-md">
+                                Book Anchor Aman Satija for 2026–27 Annual Galas, Dealer Meets, Product Unveils &amp; Leadership Summits Pan-India.
+                            </p>
+                        </div>
+                        <div class="flex flex-wrap gap-3 shrink-0 w-full sm:w-auto">
+                            <a href="contact.html" class="btn-gold !py-3 !px-6 !text-xs w-full sm:w-auto">Request Corporate Brief</a>
+                        </div>
                     </div>
-                    <div class="p-6 rounded-2xl bg-[#0c0d14] border border-white/10">
-                        <span class="text-[10px] font-mono uppercase tracking-widest text-brand-gold font-bold block mb-3">Electronics &amp; Industry</span>
-                        <ul class="space-y-2 text-sm text-white/80 font-medium">
-                            <li>Samsung India</li>
-                            <li>Havells</li>
-                            <li>Wonder Cement</li>
-                        </ul>
-                    </div>
-                    <div class="p-6 rounded-2xl bg-[#0c0d14] border border-white/10">
-                        <span class="text-[10px] font-mono uppercase tracking-widest text-brand-gold font-bold block mb-3">Lifestyle &amp; Media</span>
-                        <ul class="space-y-2 text-sm text-white/80 font-medium">
-                            <li>Raymond Luxury</li>
-                            <li>Pernod Ricard</li>
-                            <li>Dainik Bhaskar</li>
-                        </ul>
+                </div>
+
+                <!-- Interactive Selected Brand Spotlight Inspector -->
+                <div id="brand-spotlight-panel" class="p-6 sm:p-8 rounded-3xl bg-[#0c0d14] border border-brand-gold/40 shadow-2xl mb-12 reveal">
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-center">
+                        <!-- Logo Plate Display -->
+                        <div class="lg:col-span-4">
+                            <div class="w-full h-24 rounded-2xl bg-[#F7F6F2] border border-white/25 px-6 flex items-center justify-center shadow-inner">
+                                <img id="brand-sp-logo" src="src/assets/logos/maruti-suzuki-full.svg" alt="Maruti Suzuki India" class="max-h-8 w-auto object-contain">
+                                <span id="brand-sp-logo-text" class="hidden"></span>
+                            </div>
+                        </div>
+                        <!-- Selected Brand Stage Narrative -->
+                        <div class="lg:col-span-8 space-y-3">
+                            <div class="flex flex-wrap items-center justify-between gap-2">
+                                <span id="brand-sp-sector" class="text-[11px] font-mono uppercase tracking-[0.22em] text-brand-gold font-bold">Automotive &amp; Mobility</span>
+                                <span class="text-[10px] font-mono uppercase tracking-wider text-white/40"><i class="fa-solid fa-computer-mouse mr-1 text-brand-gold"></i>Click any logo card above to inspect</span>
+                            </div>
+                            <h3 id="brand-sp-name" class="text-2xl sm:text-3xl font-serif font-bold text-white">Maruti Suzuki India</h3>
+                            <p id="brand-sp-desc" class="text-white/70 text-sm leading-relaxed">
+                                Hosted high-impact dealer conferences, regional Arena &amp; Nexa launch activations, and milestone achiever recognition evenings with razor-sharp crowd engagement.
+                            </p>
+                            <div class="pt-1 flex flex-wrap items-center justify-between gap-4">
+                                <div id="brand-sp-tags" class="flex flex-wrap gap-2">
+                                    <span class="px-3 py-1 rounded-full bg-[#13141f] border border-white/10 text-xs text-white/80 font-medium">Dealer Meets</span>
+                                    <span class="px-3 py-1 rounded-full bg-[#13141f] border border-white/10 text-xs text-white/80 font-medium">Car Unveils</span>
+                                    <span class="px-3 py-1 rounded-full bg-[#13141f] border border-white/10 text-xs text-white/80 font-medium">Regional Launches</span>
+                                    <span class="px-3 py-1 rounded-full bg-[#13141f] border border-white/10 text-xs text-white/80 font-medium">Award Nights</span>
+                                </div>
+                                <a href="press-kit.html#rider" class="text-brand-gold text-xs font-bold uppercase tracking-widest hover:text-white transition-colors shrink-0">View Corporate AV Rider &rarr;</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
 
+            <!-- Synchronized Logo Emblem Marquee Strip -->
             <div class="marquee-container">
                 <div class="marquee-content">
-                    <span>Maruti Suzuki</span> <span class="text-brand-gold">✦</span>
-                    <span>Tata Motors</span> <span class="text-brand-gold">✦</span>
+                    <span class="!inline-flex items-center gap-2.5"><img src="src/assets/logos/suzuki.svg" alt="" class="h-4 w-4"> Maruti Suzuki</span> <span class="text-brand-gold">✦</span>
+                    <span class="!inline-flex items-center gap-2.5"><img src="src/assets/logos/tata.svg" alt="" class="h-4 w-4"> Tata Motors</span> <span class="text-brand-gold">✦</span>
                     <span>Samsung India</span> <span class="text-brand-gold">✦</span>
-                    <span>Reliance Retail</span> <span class="text-brand-gold">✦</span>
-                    <span>Airtel</span> <span class="text-brand-gold">✦</span>
+                    <span class="!inline-flex items-center gap-2.5"><img src="src/assets/logos/reliance.svg" alt="" class="h-4 w-4"> Reliance Retail</span> <span class="text-brand-gold">✦</span>
+                    <span class="!inline-flex items-center gap-2.5"><img src="src/assets/logos/airtel.svg" alt="" class="h-4 w-4"> Airtel</span> <span class="text-brand-gold">✦</span>
                     <span>Wonder Cement</span> <span class="text-brand-gold">✦</span>
-                    <span>ICICI Bank</span> <span class="text-brand-gold">✦</span>
-                    <span>HDFC Bank</span> <span class="text-brand-gold">✦</span>
+                    <span class="!inline-flex items-center gap-2.5"><img src="src/assets/logos/icici-bank.svg" alt="" class="h-4 w-4"> ICICI Bank</span> <span class="text-brand-gold">✦</span>
+                    <span class="!inline-flex items-center gap-2.5"><img src="src/assets/logos/hdfc-bank.svg" alt="" class="h-4 w-4"> HDFC Bank</span> <span class="text-brand-gold">✦</span>
                     <span>Havells</span> <span class="text-brand-gold">✦</span>
                     <span>Pernod Ricard</span> <span class="text-brand-gold">✦</span>
                     <span>Hero MotoCorp</span> <span class="text-brand-gold">✦</span>
                     <span>Raymond Luxury</span> <span class="text-brand-gold">✦</span>
                     <span>Dainik Bhaskar</span> <span class="text-brand-gold">✦</span>
                     <span>JK Tyre</span> <span class="text-brand-gold">✦</span>
-                    <!-- Repeat for smooth loop -->
-                    <span>Maruti Suzuki</span> <span class="text-brand-gold">✦</span>
-                    <span>Tata Motors</span> <span class="text-brand-gold">✦</span>
+                    <!-- Repeat for seamless loop -->
+                    <span class="!inline-flex items-center gap-2.5"><img src="src/assets/logos/suzuki.svg" alt="" class="h-4 w-4"> Maruti Suzuki</span> <span class="text-brand-gold">✦</span>
+                    <span class="!inline-flex items-center gap-2.5"><img src="src/assets/logos/tata.svg" alt="" class="h-4 w-4"> Tata Motors</span> <span class="text-brand-gold">✦</span>
                     <span>Samsung India</span> <span class="text-brand-gold">✦</span>
-                    <span>Reliance Retail</span> <span class="text-brand-gold">✦</span>
-                    <span>Airtel</span> <span class="text-brand-gold">✦</span>
+                    <span class="!inline-flex items-center gap-2.5"><img src="src/assets/logos/reliance.svg" alt="" class="h-4 w-4"> Reliance Retail</span> <span class="text-brand-gold">✦</span>
+                    <span class="!inline-flex items-center gap-2.5"><img src="src/assets/logos/airtel.svg" alt="" class="h-4 w-4"> Airtel</span> <span class="text-brand-gold">✦</span>
                     <span>Wonder Cement</span> <span class="text-brand-gold">✦</span>
-                    <span>ICICI Bank</span> <span class="text-brand-gold">✦</span>
-                    <span>HDFC Bank</span> <span class="text-brand-gold">✦</span>
+                    <span class="!inline-flex items-center gap-2.5"><img src="src/assets/logos/icici-bank.svg" alt="" class="h-4 w-4"> ICICI Bank</span> <span class="text-brand-gold">✦</span>
+                    <span class="!inline-flex items-center gap-2.5"><img src="src/assets/logos/hdfc-bank.svg" alt="" class="h-4 w-4"> HDFC Bank</span> <span class="text-brand-gold">✦</span>
                     <span>Havells</span> <span class="text-brand-gold">✦</span>
                     <span>Pernod Ricard</span> <span class="text-brand-gold">✦</span>
                     <span>Hero MotoCorp</span> <span class="text-brand-gold">✦</span>

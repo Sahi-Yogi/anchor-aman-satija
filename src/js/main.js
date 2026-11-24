@@ -352,22 +352,77 @@ document.addEventListener('DOMContentLoaded', () => {
                 btn.classList.add('is-active');
 
                 let visibleCount = 0;
+                let firstVisibleBrand = null;
                 items.forEach(item => {
                     const cats = (item.getAttribute('data-category') || '').split(/\s+/);
                     const match = value === 'all' || cats.includes(value);
                     item.style.display = match ? '' : 'none';
                     if (match) {
-                        visibleCount++;
+                        if (!cats.includes('all-feature')) {
+                            visibleCount++;
+                        }
+                        if (!firstVisibleBrand && item.hasAttribute('data-brand-card')) {
+                            firstVisibleBrand = item;
+                        }
                         item.classList.add('active');
                     }
                 });
 
+                if (firstVisibleBrand && targetId === 'brand-showcase-grid') {
+                    firstVisibleBrand.click();
+                }
+
                 if (countEl) {
-                    countEl.textContent = `${visibleCount} ${visibleCount === 1 ? 'Item' : 'Items'}`;
+                    const unit = countEl.getAttribute('data-unit') || 'Item';
+                    const plural = countEl.getAttribute('data-unit-plural') || `${unit}s`;
+                    countEl.textContent = `${visibleCount} ${visibleCount === 1 ? unit : plural}`;
                 }
             });
         });
     });
+
+    // 10b. Interactive Brand Showcase Inspector ([data-brand-card])
+    const brandCards = Array.from(document.querySelectorAll('[data-brand-card]'));
+    const brandSpotlight = document.getElementById('brand-spotlight-panel');
+    if (brandCards.length > 0 && brandSpotlight) {
+        const spLogo = document.getElementById('brand-sp-logo');
+        const spLogoText = document.getElementById('brand-sp-logo-text');
+        const spSector = document.getElementById('brand-sp-sector');
+        const spName = document.getElementById('brand-sp-name');
+        const spDesc = document.getElementById('brand-sp-desc');
+        const spTags = document.getElementById('brand-sp-tags');
+
+        const selectBrand = (card) => {
+            brandCards.forEach(c => {
+                c.classList.remove('is-selected');
+                c.setAttribute('aria-pressed', 'false');
+            });
+            card.classList.add('is-selected');
+            card.setAttribute('aria-pressed', 'true');
+
+            if (spLogo) {
+                spLogo.src = card.getAttribute('data-brand-logo') || '';
+                spLogo.alt = card.getAttribute('data-brand-name') || 'Brand Logo';
+                spLogo.className = card.getAttribute('data-brand-logo-class') || 'max-h-11 w-auto object-contain';
+            }
+            if (spLogoText) {
+                const wordmark = card.getAttribute('data-brand-wordmark') || '';
+                spLogoText.textContent = wordmark;
+                spLogoText.className = wordmark ? (card.getAttribute('data-brand-wordmark-class') || 'font-serif font-extrabold text-[#111827] text-sm ml-2') : 'hidden';
+            }
+            if (spSector) spSector.textContent = card.getAttribute('data-brand-sector') || '';
+            if (spName) spName.textContent = card.getAttribute('data-brand-name') || '';
+            if (spDesc) spDesc.textContent = card.getAttribute('data-brand-desc') || '';
+            if (spTags) {
+                const formats = (card.getAttribute('data-brand-formats') || '').split('|').filter(Boolean);
+                spTags.innerHTML = formats.map(f => `<span class="px-3 py-1 rounded-full bg-[#13141f] border border-white/10 text-xs text-white/80 font-medium">${f.trim()}</span>`).join('');
+            }
+        };
+
+        brandCards.forEach(card => {
+            card.addEventListener('click', () => selectBrand(card));
+        });
+    }
 
     // 11. Interactive Stage Pillars Switcher ([data-pillar-group])
     document.querySelectorAll('[data-pillar-group]').forEach(group => {
