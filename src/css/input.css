@@ -714,3 +714,66 @@ body {
         display: none;
     }
 }
+
+/* ==========================================================================
+   Hero Royal Arch & Rotating Badge Keyframes
+   ========================================================================== */
+.royal-arch-frame {
+    border-top-left-radius: 220px;
+    border-top-right-radius: 220px;
+    border-bottom-left-radius: 28px;
+    border-bottom-right-radius: 28px;
+}
+
+@media (max-width: 640px) {
+    .royal-arch-frame {
+        border-top-left-radius: 150px;
+        border-top-right-radius: 150px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+}
+
+@keyframes spinSlow {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.animate-spin-slow {
+    animation: spinSlow 20s linear infinite;
+    transform-origin: center center;
+}
+
+.animate-spin-slow:hover {
+    animation-play-state: paused;
+}
+
+@keyframes floatSlow {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+.animate-float-slow {
+    animation: floatSlow 5s ease-in-out infinite;
+}
+
+@keyframes floatDelay {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-7px);
+    }
+}
+
+.animate-float-delay {
+    animation: floatDelay 6s ease-in-out 2.5s infinite;
+}

@@ -31,51 +31,198 @@
 <body class="bg-brand-dark text-white font-sans antialiased overflow-x-hidden">
 
     <div id="app">
-        <!-- Hero Section -->
-        <section class="relative h-screen flex items-center justify-center overflow-hidden spotlight-container">
-            <div class="absolute inset-0 z-0">
-                <picture>
-                    <source srcset="src/assets/images/real-hero-aman.webp" type="image/webp">
-                    <img src="src/assets/images/real-hero-aman.jpg" alt="Anchor Aman Satija - Tiger of Alwar" width="1920" height="2560" fetchpriority="high" decoding="async"
-                        class="w-full h-full object-cover object-[center_15%] sm:scale-105 lg:scale-100 opacity-65">
-                </picture>
-                <div class="absolute inset-0 bg-gradient-to-t from-brand-dark via-brand-dark/20 to-transparent"></div>
-                <div class="absolute inset-0 spotlight"></div>
+        <!-- Hero Section: Editorial Luxury Arch & Moniker Layout -->
+        <section class="relative min-h-screen flex items-center justify-center overflow-hidden spotlight-container pt-28 sm:pt-32 pb-16 lg:pt-36 lg:pb-24 bg-[#07080c]">
+            <!-- Background Ambient Glow & Spotlight -->
+            <div class="absolute inset-0 pointer-events-none z-0 overflow-hidden">
+                <div class="absolute top-1/4 -right-20 w-[450px] sm:w-[600px] h-[450px] sm:h-[600px] bg-brand-gold/10 blur-[160px] rounded-full"></div>
+                <div class="absolute bottom-1/4 -left-20 w-[350px] sm:w-[500px] h-[350px] sm:h-[500px] bg-white/[0.03] blur-[140px] rounded-full"></div>
+                <div class="absolute inset-0 bg-gradient-to-b from-[#07080c]/60 via-transparent to-[#07080c]"></div>
+                <div class="absolute inset-0 spotlight opacity-35"></div>
             </div>
 
-            <div class="container mx-auto px-6 relative z-10 text-center">
-                <p class="text-brand-gold uppercase tracking-[0.4em] mb-3 text-xs md:text-sm font-semibold reveal">Since 2012 • Alwar | Jaipur | Delhi-NCR | Pan India</p>
-                <h1 class="text-6xl md:text-8xl font-serif font-bold mb-3 tracking-tighter reveal">
-                    AMAN <span class="text-brand-gold">SATIJA</span>
-                </h1>
-                <p class="text-xs md:text-sm uppercase tracking-[0.3em] text-white/60 mb-6 reveal">
-                    The "Tiger of Alwar" • High-Energy Wedding & Corporate Emcee
-                </p>
-                <p class="text-xl md:text-2xl text-white/80 max-w-2xl mx-auto mb-10 leading-relaxed reveal">
-                    Professional Event Anchor & Stage Host. <br class="hidden md:block">
-                    Turning your celebrations into <span class="text-brand-gold italic">Grand Memories</span>.
-                </p>
-                <div class="flex flex-col sm:flex-row justify-center items-center gap-4 reveal">
-                    <a href="contact.html" class="btn-gold w-full sm:w-auto">Book Now</a>
-                    <a href="https://wa.me/919057529067?text=Hi%20Aman%2C%20I%20would%20like%20to%20inquire%20about%20booking%20you%20for%20an%20event." target="_blank" rel="noopener noreferrer" class="btn-gold !bg-[#25D366] !text-white hover:!bg-[#1ebe5d] w-full sm:w-auto flex items-center justify-center gap-2">
-                        <i class="fa-brands fa-whatsapp text-lg"></i>
-                        <span>WhatsApp Quick Book</span>
-                    </a>
-                    <a href="gallery.html" class="btn-outline w-full sm:w-auto">View Portfolio</a>
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <!-- Top Sub-Header Meta Strip (Location & Languages) -->
+                <div class="flex flex-wrap items-center justify-between gap-3 pb-4 sm:pb-5 mb-8 sm:mb-12 border-b border-white/10 text-[10px] sm:text-xs uppercase font-mono tracking-[0.2em] reveal">
+                    <div class="flex items-center gap-2 text-white/70">
+                        <i class="fa-solid fa-location-dot text-brand-gold text-xs"></i>
+                        <span class="font-medium text-white/90">ALWAR &bull; JAIPUR &bull; DELHI-NCR &bull; DUBAI &bull; PAN-INDIA</span>
+                    </div>
+                    <div class="flex items-center gap-2 text-brand-gold font-semibold">
+                        <i class="fa-solid fa-language text-xs"></i>
+                        <span>HINDI &bull; ENGLISH &bull; PUNJABI &bull; MARWARI</span>
+                    </div>
+                </div>
+
+                <!-- 2-Column Asymmetric Grid (Mobile-friendly Stack / Desktop Grid) -->
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 xl:gap-14 items-center">
+                    
+                    <!-- Left Column: Editorial Typography & Narrative -->
+                    <div class="lg:col-span-7 flex flex-col justify-center text-left">
+                        <!-- Eyebrow Tag -->
+                        <div class="flex items-center gap-2.5 sm:gap-3 text-brand-gold uppercase tracking-[0.28em] text-[11px] sm:text-xs font-bold mb-3 sm:mb-4 reveal">
+                            <span class="w-8 sm:w-10 h-[2px] bg-brand-gold/70 inline-block"></span>
+                            <span>ROYAL WEDDING ANCHOR &bull; CELEBRITY EMCEE &bull; HOST</span>
+                        </div>
+
+                        <!-- Giant Statement Headline: AMAN Satija -->
+                        <div class="mb-4 sm:mb-6 reveal">
+                            <h1 class="text-6xl sm:text-7xl md:text-8xl xl:text-9xl font-black tracking-tighter text-white leading-[0.88] select-none font-sans">
+                                AMAN
+                            </h1>
+                            <div class="text-5xl sm:text-6xl md:text-7xl xl:text-8xl font-serif italic text-brand-gold font-light tracking-tight pl-4 sm:pl-10 lg:pl-14 leading-[0.92] mt-1 sm:mt-2">
+                                Satija
+                            </div>
+                        </div>
+
+                        <!-- Moniker & Verification Badge -->
+                        <div class="flex flex-wrap items-center gap-2 mb-5 sm:mb-6 reveal">
+                            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-gold/10 border border-brand-gold/30 text-brand-gold text-xs sm:text-sm font-bold tracking-wider">
+                                <i class="fa-solid fa-crown text-[11px] text-brand-gold"></i>
+                                <span>The #TigerOfAlwar</span>
+                            </div>
+                            <span class="text-white/40 text-xs hidden sm:inline">&bull;</span>
+                            <span class="text-white/70 text-xs sm:text-sm font-medium tracking-wide">2,500+ Live Stage Shows</span>
+                        </div>
+
+                        <!-- Mobile-Only Arch Visual (Positioned right after Moniker for high visual impact on mobile) -->
+                        <div class="block lg:hidden my-6 sm:my-8 relative mx-auto w-fit reveal">
+                            <!-- Background Outline Arch -->
+                            <div class="absolute -inset-2.5 sm:-inset-3 royal-arch-frame border-2 border-brand-gold/35 pointer-events-none translate-x-2.5 translate-y-2.5 -z-10"></div>
+                            
+                            <!-- Main Arch Frame -->
+                            <div class="relative royal-arch-frame overflow-hidden w-[270px] sm:w-[320px] h-[370px] sm:h-[440px] border-2 border-brand-gold/70 shadow-[0_20px_50px_rgba(0,0,0,0.9),0_0_25px_rgba(212,175,55,0.2)] bg-[#0d0e14]">
+                                <picture>
+                                    <source srcset="src/assets/images/real-hero-aman.webp" type="image/webp">
+                                    <img src="src/assets/images/real-hero-aman.jpg" alt="Anchor Aman Satija on stage - Tiger of Alwar" width="1920" height="2559" fetchpriority="high" decoding="async" class="w-full h-full object-cover object-[center_12%]">
+                                </picture>
+                                <div class="absolute inset-0 bg-gradient-to-t from-[#07080c]/85 via-transparent to-transparent pointer-events-none"></div>
+                            </div>
+
+                            <!-- Mobile Rotating Circular Mic Badge -->
+                            <div class="absolute -bottom-6 -left-6 z-20">
+                                <div class="relative w-24 h-24 sm:w-28 sm:h-28 flex items-center justify-center">
+                                    <svg class="w-full h-full animate-spin-slow select-none pointer-events-none" viewBox="0 0 140 140">
+                                        <defs>
+                                            <path id="circlePathMobile" d="M 70, 70 m -50, 0 a 50,50 0 1,1 100,0 a 50,50 0 1,1 -100,0" />
+                                        </defs>
+                                        <text font-size="8.5" font-family="'Plus Jakarta Sans', monospace" font-weight="700" letter-spacing="0.22em" fill="#D4AF37">
+                                            <textPath href="#circlePathMobile" startOffset="0%">
+                                                HINDI &bull; ENGLISH &bull; PUNJABI &bull; MARWARI &bull;
+                                            </textPath>
+                                        </text>
+                                    </svg>
+                                    <div class="absolute inset-0 m-auto w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-[#07080c] border border-brand-gold/70 shadow-[0_0_15px_rgba(212,175,55,0.4)] flex items-center justify-center">
+                                        <i class="fa-solid fa-microphone text-brand-gold text-xs sm:text-sm"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Mobile 5.0 Star Float Badge -->
+                            <div class="absolute -top-3 -right-3 z-20 flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#090a0f]/90 backdrop-blur-xl border border-brand-gold/40 shadow-lg text-[10px] text-brand-gold font-bold">
+                                <i class="fa-solid fa-star text-[9px]"></i>
+                                <span>5.0★ Rated</span>
+                            </div>
+                        </div>
+
+                        <!-- Signature Impact Quote -->
+                        <blockquote class="text-lg sm:text-xl md:text-2xl font-serif text-white/95 leading-snug mb-3.5 sm:mb-4 reveal">
+                            “I don’t just anchor your celebration &mdash; <span class="text-brand-gold italic font-normal">I make it an unforgettable royal legacy.</span>”
+                        </blockquote>
+
+                        <!-- Bio Narrative -->
+                        <p class="text-white/70 text-sm sm:text-base leading-relaxed max-w-xl mb-7 sm:mb-8 font-sans reveal">
+                            14+ years of stage mastery across Rajasthan's grand palace weddings, destination sangeets, and high-energy celebrity concerts. Delivering spontaneous wit, electric crowd engagement, and effortless multilingual command in Hindi, English, Punjabi & Marwari.
+                        </p>
+
+                        <!-- Action CTA Strip -->
+                        <div class="flex flex-col sm:flex-row flex-wrap items-stretch sm:items-center gap-3 sm:gap-4 reveal">
+                            <a href="contact.html" class="btn-gold !py-3.5 !px-7 !text-xs sm:!text-sm !tracking-wider flex items-center justify-center gap-2.5 shadow-[0_4px_25px_rgba(212,175,55,0.4)] hover:shadow-[0_4px_30px_rgba(212,175,55,0.6)] group">
+                                <span>BOOK ANCHOR AMAN SATIJA</span>
+                                <i class="fa-solid fa-arrow-right text-xs group-hover:translate-x-1 transition-transform"></i>
+                            </a>
+                            <a href="https://wa.me/919057529067?text=Hi%20Aman%2C%20I%20would%20like%20to%20inquire%20about%20booking%20you%20for%20an%20event." target="_blank" rel="noopener noreferrer" class="btn-gold !bg-[#25D366] !text-white hover:!bg-[#1ebe5d] !py-3.5 !px-6 !text-xs sm:!text-sm flex items-center justify-center gap-2 shadow-[0_4px_20px_rgba(37,211,102,0.3)]">
+                                <i class="fa-brands fa-whatsapp text-lg"></i>
+                                <span>WhatsApp Direct</span>
+                            </a>
+                            <a href="gallery.html" class="btn-outline !py-3.5 !px-6 !text-xs sm:!text-sm flex items-center justify-center gap-2">
+                                <i class="fa-brands fa-instagram text-base text-brand-gold"></i>
+                                <span>Watch Live Highlights</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Desktop Architectural Royal Arch Masterpiece -->
+                    <div class="hidden lg:flex lg:col-span-5 justify-end relative reveal">
+                        <!-- Background Architectural Offset Arch Outline (3D Depth) -->
+                        <div class="absolute -inset-3.5 xl:-inset-4 royal-arch-frame border-2 border-brand-gold/35 pointer-events-none translate-x-3.5 translate-y-3.5 xl:translate-x-4 xl:translate-y-4 -z-10"></div>
+                        
+                        <!-- Main Royal Arch Container -->
+                        <div class="relative royal-arch-frame overflow-hidden w-[330px] xl:w-[380px] h-[520px] xl:h-[590px] border-2 border-brand-gold/70 shadow-[0_25px_70px_rgba(0,0,0,0.9),0_0_35px_rgba(212,175,55,0.22)] bg-[#0d0e14] group">
+                            <picture>
+                                <source srcset="src/assets/images/real-hero-aman.webp" type="image/webp">
+                                <img src="src/assets/images/real-hero-aman.jpg" alt="Anchor Aman Satija on stage - Tiger of Alwar" width="1920" height="2559" fetchpriority="high" decoding="async" class="w-full h-full object-cover object-[center_12%] group-hover:scale-105 transition-transform duration-700">
+                            </picture>
+                            <div class="absolute inset-0 bg-gradient-to-t from-[#07080c]/90 via-transparent to-transparent pointer-events-none"></div>
+                        </div>
+
+                        <!-- Rotating Circular Seal with Microphone Badge -->
+                        <div class="absolute -bottom-7 -left-7 xl:-bottom-8 xl:-left-8 z-30">
+                            <div class="relative w-28 h-28 xl:w-32 xl:h-32 flex items-center justify-center group cursor-pointer" title="Hindi, English, Punjabi, Marwari Emcee">
+                                <!-- Rotating SVG Text -->
+                                <svg class="w-full h-full animate-spin-slow select-none pointer-events-none" viewBox="0 0 140 140">
+                                    <defs>
+                                        <path id="circlePathDesktop" d="M 70, 70 m -50, 0 a 50,50 0 1,1 100,0 a 50,50 0 1,1 -100,0" />
+                                    </defs>
+                                    <text font-size="8.8" font-family="'Plus Jakarta Sans', monospace" font-weight="700" letter-spacing="0.22em" fill="#D4AF37">
+                                        <textPath href="#circlePathDesktop" startOffset="0%">
+                                            HINDI &bull; ENGLISH &bull; PUNJABI &bull; MARWARI &bull;
+                                        </textPath>
+                                    </text>
+                                </svg>
+                                <!-- Center Microphone Button -->
+                                <div class="absolute inset-0 m-auto w-12 h-12 xl:w-14 xl:h-14 rounded-full bg-[#07080c] border border-brand-gold/70 shadow-[0_0_20px_rgba(212,175,55,0.45)] flex items-center justify-center group-hover:scale-110 group-hover:border-brand-gold transition-all duration-300">
+                                    <i class="fa-solid fa-microphone text-brand-gold text-sm xl:text-base"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Floating Top-Right Card: 5.0 Star Rating -->
+                        <div class="absolute -top-4 -right-4 xl:-top-6 xl:-right-6 z-20 animate-float-slow flex items-center gap-2.5 px-4 py-2.5 rounded-2xl bg-[#090a0f]/90 backdrop-blur-xl border border-brand-gold/40 shadow-[0_12px_35px_rgba(0,0,0,0.85)]">
+                            <div class="w-8 h-8 rounded-full bg-brand-gold/15 border border-brand-gold/40 flex items-center justify-center text-brand-gold shrink-0">
+                                <i class="fa-solid fa-star text-xs"></i>
+                            </div>
+                            <div class="flex flex-col">
+                                <span class="text-xs font-bold text-white leading-tight">5.0★ Google Rated</span>
+                                <span class="text-[9px] uppercase tracking-wider text-brand-gold font-semibold leading-tight mt-0.5">2,500+ Grand Shows</span>
+                            </div>
+                        </div>
+
+                        <!-- Floating Bottom-Right Card: Live Booking Availability -->
+                        <div class="absolute bottom-6 -right-3 xl:bottom-8 xl:-right-6 z-20 animate-float-delay flex items-center gap-2.5 px-3.5 py-2 rounded-xl bg-[#090a0f]/90 backdrop-blur-xl border border-white/15 shadow-[0_12px_35px_rgba(0,0,0,0.85)]">
+                            <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse shrink-0"></span>
+                            <div class="flex flex-col">
+                                <span class="text-[11px] font-semibold text-white tracking-wide leading-tight">Booking Open 2024–25</span>
+                                <span class="text-[8.5px] uppercase tracking-widest text-white/50 leading-tight">Palace & Destination</span>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
 
             <!-- Scroll Indicator -->
-            <div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce opacity-40">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-                </svg>
+            <div class="absolute bottom-4 left-1/2 -translate-x-1/2 animate-bounce opacity-40 hover:opacity-100 transition-opacity">
+                <a href="#highlights" aria-label="Scroll down to highlights">
+                    <svg class="w-5 h-5 text-brand-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                    </svg>
+                </a>
             </div>
         </section>
 
         <!-- Instagram Story Highlights Bar -->
-        <section class="py-10 bg-brand-charcoal/40 border-b border-white/5 overflow-x-auto scrollbar-none">
+        <section id="highlights" class="py-10 bg-brand-charcoal/40 border-b border-white/5 overflow-x-auto scrollbar-none">
             <div class="container mx-auto px-6">
                 <div class="flex items-center justify-center gap-6 sm:gap-10 min-w-max">
                     <a href="gallery.html#showreels" class="story-highlight-item group">
