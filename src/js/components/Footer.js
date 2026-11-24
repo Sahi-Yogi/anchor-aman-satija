@@ -98,23 +98,37 @@ export const Footer = () => {
                             <a href="https://wa.me/918239202921" target="_blank" rel="noopener noreferrer" class="text-white/90 hover:text-brand-gold transition-colors text-base font-serif">+91 82392 02921</a>
                         </li>
                         <li>
+                            <span class="block text-brand-gold/60 text-[10px] uppercase tracking-[0.2em] mb-1">Official Email</span>
+                            <a href="mailto:info@amansatija.com" class="text-white/80 hover:text-brand-gold transition-colors text-sm font-mono">info@amansatija.com</a>
+                        </li>
+                        <li>
                             <span class="block text-brand-gold/60 text-[10px] uppercase tracking-[0.2em] mb-1">Headquarters</span>
-                            <p class="text-white/70 text-xs">Alwar & Jaipur, Rajasthan • Serving Pan-India</p>
+                            <p class="text-white/70 text-xs">Alwar & Jaipur, Rajasthan • Serving Pan-India & Global</p>
                         </li>
                     </ul>
                 </div>
             </div>
+
+            <!-- Cities & Destination Footprint Strip -->
+            <div class="border-t border-white/10 py-5 mb-2 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-[11px] font-mono uppercase tracking-[0.18em] text-white/45">
+                <span class="text-brand-gold font-bold shrink-0"><i class="fa-solid fa-plane-departure mr-1.5"></i>Destinations Hosted:</span>
+                <span class="leading-relaxed sm:text-right">Alwar &bull; Jaipur &bull; Udaipur &bull; Jodhpur &bull; Jaisalmer &bull; Pushkar &bull; Delhi-NCR &bull; Chandigarh &bull; Mumbai &bull; Goa &bull; Dubai</span>
+            </div>
             
             <!-- Bottom Copyright & Social Strip -->
-            <div class="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center text-white/30 text-[11px] font-semibold tracking-wider">
+            <div class="border-t border-white/5 pt-6 flex flex-col md:flex-row justify-between items-center text-white/35 text-[11px] font-semibold tracking-wider">
                 <p>&copy; 2026 AMAN SATIJA ENTERTAINMENT • ALL RIGHTS RESERVED.</p>
-                <div class="mt-4 md:mt-0 flex items-center space-x-6">
+                <div class="mt-4 md:mt-0 flex flex-wrap items-center justify-center gap-4 sm:gap-6">
                     <a href="https://www.instagram.com/anchor_aman_satijaaa/" target="_blank" rel="noopener noreferrer" class="hover:text-brand-gold transition-colors flex items-center gap-1.5">
                         <i class="fa-brands fa-instagram text-brand-gold"></i>
                         <span>@anchor_aman_satijaaa</span>
                     </a>
                     <span>•</span>
-                    <a href="contact.html" class="hover:text-white transition-colors">Book Emcee</a>
+                    <a href="index.html#faqs" class="hover:text-white transition-colors">Booking FAQs</a>
+                    <span>•</span>
+                    <a href="press-kit.html#rider" class="hover:text-white transition-colors">Tech Rider</a>
+                    <span>•</span>
+                    <a href="contact.html" class="hover:text-white transition-colors">Check Dates</a>
                 </div>
             </div>
         </div>

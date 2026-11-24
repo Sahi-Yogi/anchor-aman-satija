@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services | Aman Satija - Premium Event Anchoring</title>
-    <meta name="description" content="Explore Aman Satija's event hosting services: Destination Weddings & Sangeet Games, Corporate Galas, and Celebrity Shows.">
+    <title>Anchoring Services | Weddings, Sangeet, Corporate &amp; Live Shows | Aman Satija</title>
+    <meta name="description" content="Explore Aman Satija's complete event hosting services: Destination Weddings, Haldi, Mehndi, Sangeet Couple Games, Corporate Galas, Celebrity Concerts & Private Milestones.">
     <link rel="icon" type="image/webp" href="src/assets/images/Aman-Satija-Anchor-Emblem-logo.webp">
     
     <!-- Preconnect to external origins -->
@@ -24,119 +24,347 @@
     <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></noscript>
 </head>
 
-<body class="bg-brand-dark text-white font-sans antialiased">
+<body class="bg-[#07080c] text-white font-sans antialiased">
 
     <div id="app">
         <!-- Page Header -->
-        <section class="pt-40 pb-20 border-b border-white/5 bg-brand-charcoal">
+        <section class="pt-36 sm:pt-40 pb-16 border-b border-white/10 bg-[#090a0f]">
             <div class="container mx-auto px-6 text-center">
-                <h1 class="text-5xl md:text-7xl font-serif font-bold mb-6">Our <span
-                        class="text-brand-gold italic">Expertise</span></h1>
-                <p class="text-white/60 tracking-widest uppercase">Tailored Hosting Experiences for Royal Weddings & High-Stakes Events</p>
+                <div class="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-[0.22em] text-white/50 mb-5">
+                    <a href="index.html" class="hover:text-brand-gold transition-colors">Home</a>
+                    <span>/</span>
+                    <span class="text-brand-gold font-bold">Services</span>
+                </div>
+
+                <h1 class="text-5xl md:text-7xl font-serif font-bold mb-5">Tailored <span class="text-brand-gold italic font-normal">Expertise</span></h1>
+                <p class="text-white/65 tracking-[0.18em] uppercase text-xs sm:text-sm font-mono max-w-2xl mx-auto">
+                    Every Event &bull; Custom-Scripted &bull; Hindi, English, Punjabi &amp; Marwari
+                </p>
+
+                <!-- Quick Category Navigation Pills -->
+                <div class="mt-8 flex flex-wrap items-center justify-center gap-2.5 sm:gap-3">
+                    <a href="#directory" class="filter-pill is-active">Occasion Index</a>
+                    <a href="#wedding" class="filter-pill">Weddings &amp; Sangeet</a>
+                    <a href="#corporate" class="filter-pill">Corporate &amp; Awards</a>
+                    <a href="#celebrity" class="filter-pill">Celebrity &amp; Concerts</a>
+                    <a href="#social" class="filter-pill">Private Milestones</a>
+                    <a href="#process" class="filter-pill">Hosting Process</a>
+                </div>
             </div>
         </section>
 
-        <!-- Services Detail -->
-        <section class="py-16 md:py-24 space-y-16 md:space-y-32">
-            <!-- Weddings -->
-            <div id="wedding" class="container mx-auto px-6 reveal">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+        <!-- 6-Category Quick Occasion Directory (No. 01 - No. 06) -->
+        <section id="directory" class="py-16 bg-[#07080c] border-b border-white/10">
+            <div class="container mx-auto px-6">
+                <div class="text-center max-w-2xl mx-auto mb-12 reveal">
+                    <span class="text-brand-gold uppercase tracking-[0.25em] text-xs font-bold block mb-2">Which Service Fits Your Event?</span>
+                    <h2 class="text-3xl md:text-4xl font-serif font-bold text-white">Every Occasion, <span class="text-brand-gold italic">Custom Crafted</span></h2>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+                    <a href="#wedding" class="group p-6 rounded-2xl bg-[#0c0d14] border border-white/10 hover:border-brand-gold/50 transition-all reveal">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="text-xs font-mono text-brand-gold font-bold">NO. 01</span>
+                            <i class="fa-solid fa-arrow-right text-xs text-white/30 group-hover:text-brand-gold group-hover:translate-x-1 transition-all"></i>
+                        </div>
+                        <h3 class="text-lg font-serif font-bold text-white mb-1.5">Destination Weddings &amp; Pheras</h3>
+                        <p class="text-white/60 text-xs leading-relaxed">Haldi, Mehndi, Baraat welcome, Royal Varmala commentary &amp; Reception hosting.</p>
+                    </a>
+
+                    <a href="#wedding-rituals" class="group p-6 rounded-2xl bg-[#0c0d14] border border-white/10 hover:border-brand-gold/50 transition-all reveal" style="transition-delay: 60ms;">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="text-xs font-mono text-brand-gold font-bold">NO. 02</span>
+                            <i class="fa-solid fa-arrow-right text-xs text-white/30 group-hover:text-brand-gold group-hover:translate-x-1 transition-all"></i>
+                        </div>
+                        <h3 class="text-lg font-serif font-bold text-white mb-1.5">Sangeet Night &amp; Couple Games</h3>
+                        <p class="text-white/60 text-xs leading-relaxed">Family performance intros, Shoe Game, Couple Trivia &amp; unbroken dance-floor energy.</p>
+                    </a>
+
+                    <a href="#corporate" class="group p-6 rounded-2xl bg-[#0c0d14] border border-white/10 hover:border-brand-gold/50 transition-all reveal" style="transition-delay: 120ms;">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="text-xs font-mono text-brand-gold font-bold">NO. 03</span>
+                            <i class="fa-solid fa-arrow-right text-xs text-white/30 group-hover:text-brand-gold group-hover:translate-x-1 transition-all"></i>
+                        </div>
+                        <h3 class="text-lg font-serif font-bold text-white mb-1.5">Corporate Summits &amp; Product Launches</h3>
+                        <p class="text-white/60 text-xs leading-relaxed">AGMs, CXO panels, dealer meets, teleprompter discipline &amp; sharp brand protocol.</p>
+                    </a>
+
+                    <a href="#corporate" class="group p-6 rounded-2xl bg-[#0c0d14] border border-white/10 hover:border-brand-gold/50 transition-all reveal" style="transition-delay: 180ms;">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="text-xs font-mono text-brand-gold font-bold">NO. 04</span>
+                            <i class="fa-solid fa-arrow-right text-xs text-white/30 group-hover:text-brand-gold group-hover:translate-x-1 transition-all"></i>
+                        </div>
+                        <h3 class="text-lg font-serif font-bold text-white mb-1.5">Award Nights &amp; Annual Galas</h3>
+                        <p class="text-white/60 text-xs leading-relaxed">Red-carpet glamour, accurate awardee pronunciation &amp; high-morale celebrations.</p>
+                    </a>
+
+                    <a href="#celebrity" class="group p-6 rounded-2xl bg-[#0c0d14] border border-white/10 hover:border-brand-gold/50 transition-all reveal" style="transition-delay: 240ms;">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="text-xs font-mono text-brand-gold font-bold">NO. 05</span>
+                            <i class="fa-solid fa-arrow-right text-xs text-white/30 group-hover:text-brand-gold group-hover:translate-x-1 transition-all"></i>
+                        </div>
+                        <h3 class="text-lg font-serif font-bold text-white mb-1.5">Celebrity Star Shows &amp; Concerts</h3>
+                        <p class="text-white/60 text-xs leading-relaxed">Controlling 5,000–20,000+ arena crowds, live star Q&amp;As &amp; beauty pageants.</p>
+                    </a>
+
+                    <a href="#social" class="group p-6 rounded-2xl bg-[#0c0d14] border border-white/10 hover:border-brand-gold/50 transition-all reveal" style="transition-delay: 300ms;">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="text-xs font-mono text-brand-gold font-bold">NO. 06</span>
+                            <i class="fa-solid fa-arrow-right text-xs text-white/30 group-hover:text-brand-gold group-hover:translate-x-1 transition-all"></i>
+                        </div>
+                        <h3 class="text-lg font-serif font-bold text-white mb-1.5">Milestone Birthdays &amp; Theme Nights</h3>
+                        <p class="text-white/60 text-xs leading-relaxed">25th/50th anniversaries, sundowners, cocktail nights &amp; family carnivals.</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Deep Service Sections -->
+        <section class="py-20 md:py-28 space-y-24 md:space-y-32">
+            <!-- 1. Destination Weddings & Complete Ritual Breakdown -->
+            <div id="wedding" class="container mx-auto px-6">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center reveal">
                     <div>
-                        <span
-                            class="text-brand-gold font-bold tracking-widest uppercase text-sm mb-4 block">Celebration & Glamour</span>
-                        <h2 class="text-4xl font-serif font-bold mb-6">Destination Wedding & <span
-                                class="text-brand-gold italic">Sangeet Hosting</span></h2>
-                        <p class="text-white/70 text-lg leading-relaxed mb-6">
-                            A royal Indian wedding needs more than announcements—it demands infectious energy, emotional connection, and rib-tickling family entertainment. Aman specializes in creating unforgettable Sangeet nights, interactive couple moments, and seamless coordination between families.
+                        <span class="text-brand-gold font-bold tracking-widest uppercase text-xs mb-3 block">Celebration &amp; Glamour &bull; 01</span>
+                        <h2 class="text-3xl sm:text-4xl font-serif font-bold mb-6">Destination Wedding &amp; <span class="text-brand-gold italic">Sangeet Hosting</span></h2>
+                        <p class="text-white/75 text-base sm:text-lg leading-relaxed mb-6">
+                            A royal Indian wedding needs more than announcements—it demands infectious energy, emotional sensitivity, and rib-tickling family entertainment. Aman becomes a bridge between both families, crafting interactive couple moments and holding every function effortlessly.
                         </p>
-                        <ul class="space-y-3 text-white/70 mb-8">
-                            <li class="flex items-center gap-3"><i class="fa-solid fa-check text-brand-gold"></i><span>Interactive Couple Games & Family Ice-Breakers</span></li>
-                            <li class="flex items-center gap-3"><i class="fa-solid fa-check text-brand-gold"></i><span>High-Voltage Sangeet, Cocktail & After-Party Emceeing</span></li>
-                            <li class="flex items-center gap-3"><i class="fa-solid fa-check text-brand-gold"></i><span>Grand Royal Varmala Voiceover & Entry Concept Hosting</span></li>
-                            <li class="flex items-center gap-3"><i class="fa-solid fa-check text-brand-gold"></i><span>Rajasthan Destination Weddings (Jaipur, Udaipur, Jodhpur, Alwar) & Pan-India</span></li>
+                        <ul class="space-y-3 text-white/75 mb-8 text-sm sm:text-base">
+                            <li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-gold mt-1"></i><span>Interactive Couple Compatibility Tests ("Shoe Game") &amp; Family Ice-Breakers</span></li>
+                            <li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-gold mt-1"></i><span>High-Voltage Sangeet, Cocktail &amp; After-Party Emceeing</span></li>
+                            <li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-gold mt-1"></i><span>Grand Royal Varmala Voiceover, Poetry &amp; Entry Concept Hosting</span></li>
+                            <li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-gold mt-1"></i><span>Rajasthan Heritage Palaces (Alwar, Jaipur, Udaipur, Jodhpur, Jaisalmer) &amp; Worldwide</span></li>
                         </ul>
-                        <a href="https://wa.me/919057529067?text=Hi%20Aman%2C%20I%20want%20to%20inquire%20about%20Wedding%2FSangeet%20anchoring%20for%20my%20event." target="_blank" rel="noopener noreferrer" class="btn-whatsapp inline-flex items-center gap-2">
-                            <i class="fa-brands fa-whatsapp text-lg"></i>
-                            <span>Inquire for Wedding Dates</span>
-                        </a>
+                        <div class="flex flex-wrap gap-3">
+                            <a href="https://wa.me/919057529067?text=Hi%20Aman%2C%20I%20want%20to%20inquire%20about%20Wedding%2FSangeet%20anchoring%20for%20my%20event." target="_blank" rel="noopener noreferrer" class="btn-whatsapp inline-flex items-center gap-2">
+                                <i class="fa-brands fa-whatsapp text-lg"></i>
+                                <span>Inquire Wedding Dates</span>
+                            </a>
+                            <a href="gallery.html" class="btn-outline">See Wedding Clips</a>
+                        </div>
                     </div>
-                    <div>
+                    <div class="rounded-3xl overflow-hidden border border-brand-gold/30 shadow-2xl bg-[#0c0d14]">
                         <picture>
                             <source srcset="src/assets/images/real-wedding-aman.webp" type="image/webp">
-                            <img src="src/assets/images/real-wedding-aman.jpg" alt="Wedding Anchoring by Aman Satija" width="800" height="500" loading="lazy" decoding="async" class="w-full gold-glow">
+                            <img src="src/assets/images/real-wedding-aman.jpg" alt="Wedding Anchoring by Aman Satija" width="800" height="500" loading="lazy" decoding="async" class="w-full h-full object-cover">
                         </picture>
+                    </div>
+                </div>
+
+                <!-- 5-Ritual Wedding Flow Grid -->
+                <div id="wedding-rituals" class="mt-14 pt-12 border-t border-white/10 reveal">
+                    <span class="text-[11px] font-mono uppercase tracking-[0.25em] text-brand-gold font-bold block mb-6">Complete Multi-Day Wedding Coverage</span>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+                        <div class="p-5 rounded-2xl bg-[#0c0d14] border border-white/10">
+                            <h4 class="font-serif font-bold text-brand-gold text-base mb-1.5">Haldi &amp; Pool Brunch</h4>
+                            <p class="text-white/60 text-xs leading-relaxed">Sunshine madness, playful tug-of-war/group games, dhol beats &amp; lively family interaction.</p>
+                        </div>
+                        <div class="p-5 rounded-2xl bg-[#0c0d14] border border-white/10">
+                            <h4 class="font-serif font-bold text-brand-gold text-base mb-1.5">Mehndi Carnival</h4>
+                            <p class="text-white/60 text-xs leading-relaxed">Bole Chudiyan games, custom couple trivia, storytelling &amp; warm afternoon hosting.</p>
+                        </div>
+                        <div class="p-5 rounded-2xl bg-[#0c0d14] border border-white/10">
+                            <h4 class="font-serif font-bold text-brand-gold text-base mb-1.5">Sangeet Night</h4>
+                            <p class="text-white/60 text-xs leading-relaxed">Bespoke script for every family act, transition banter, couple roast &amp; dance-floor ignite.</p>
+                        </div>
+                        <div class="p-5 rounded-2xl bg-[#0c0d14] border border-white/10">
+                            <h4 class="font-serif font-bold text-brand-gold text-base mb-1.5">Baraat &amp; Varmala</h4>
+                            <p class="text-white/60 text-xs leading-relaxed">High-hype baraat coordination plus soulful royal shayari &amp; ceremonial voiceovers.</p>
+                        </div>
+                        <div class="p-5 rounded-2xl bg-[#0c0d14] border border-white/10">
+                            <h4 class="font-serif font-bold text-brand-gold text-base mb-1.5">Grand Reception</h4>
+                            <p class="text-white/60 text-xs leading-relaxed">Gracious VIP welcomes, champagne toasts, family speeches &amp; elegant musical pacing.</p>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Corporate -->
-            <div id="corporate" class="container mx-auto px-6 reveal">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center md:flex-row-reverse">
-                    <div class="md:order-2">
-                        <span
-                            class="text-brand-gold font-bold tracking-widest uppercase text-sm mb-4 block">Corporate Prestige</span>
-                        <h2 class="text-4xl font-serif font-bold mb-6">Corporate Galas & <span
-                                class="text-brand-gold italic">Leadership Summits</span></h2>
-                        <p class="text-white/70 text-lg leading-relaxed mb-6">
-                            Refined, articulate, and poised. Aman represents Fortune 500 brands and business institutions with the professionalism their audience expects. He understands brand protocol, manages teleprompter and run-of-show cues flawlessly, and keeps leadership summits on schedule.
+            <!-- 2. Corporate Galas, Summits & Award Nights -->
+            <div id="corporate" class="container mx-auto px-6 pt-8 border-t border-white/10">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center reveal">
+                    <div class="lg:order-2">
+                        <span class="text-brand-gold font-bold tracking-widest uppercase text-xs mb-3 block">Corporate Prestige &bull; 02</span>
+                        <h2 class="text-3xl sm:text-4xl font-serif font-bold mb-6">Corporate Galas &amp; <span class="text-brand-gold italic">Leadership Summits</span></h2>
+                        <p class="text-white/75 text-base sm:text-lg leading-relaxed mb-6">
+                            Refined, articulate, and brand-safe. Trusted by marquee organizations including <strong class="text-white">Maruti Suzuki, Tata Motors, Samsung India, Reliance Retail, HDFC Bank, ICICI Bank, Airtel, Havells &amp; Hero MotoCorp</strong>—Aman manages tight run-of-show cues, teleprompters, and executive protocol while keeping post-conference energy electric.
                         </p>
-                        <ul class="space-y-3 text-white/70 mb-8">
-                            <li class="flex items-center gap-3"><i class="fa-solid fa-check text-brand-gold"></i><span>Annual Award Nights & Recognition Ceremonies</span></li>
-                            <li class="flex items-center gap-3"><i class="fa-solid fa-check text-brand-gold"></i><span>Global Tech Summits, AGMs & Leadership Conferences</span></li>
-                            <li class="flex items-center gap-3"><i class="fa-solid fa-check text-brand-gold"></i><span>National Product Launches & Dealer Meets</span></li>
-                            <li class="flex items-center gap-3"><i class="fa-solid fa-check text-brand-gold"></i><span>Formal Protocol & VIP Guest Welcome</span></li>
+                        <ul class="space-y-3 text-white/75 mb-8 text-sm sm:text-base">
+                            <li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-gold mt-1"></i><span>Annual Award Nights, R&amp;R Ceremonies &amp; Exact Awardee Pronunciations</span></li>
+                            <li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-gold mt-1"></i><span>National Product Launches, Unveils &amp; Dealer / Distributor Meets</span></li>
+                            <li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-gold mt-1"></i><span>AGMs, Town Halls &amp; High-Stakes Executive Fireside Panels</span></li>
+                            <li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-gold mt-1"></i><span>Team-Building Energizers &amp; Conference Break Ice-Breakers</span></li>
                         </ul>
-                        <a href="contact.html" class="btn-gold">Book for Corporate Event</a>
+                        <div class="flex flex-wrap gap-3">
+                            <a href="contact.html" class="btn-gold">Book Corporate Event</a>
+                            <a href="press-kit.html#rider" class="btn-outline">View Corporate AV Rider</a>
+                        </div>
                     </div>
-                    <div class="md:order-1">
+                    <div class="lg:order-1 rounded-3xl overflow-hidden border border-brand-gold/30 shadow-2xl bg-[#0c0d14]">
                         <picture>
                             <source srcset="src/assets/images/real-corporate-aman.webp" type="image/webp">
-                            <img src="src/assets/images/real-corporate-aman.jpg" alt="Corporate Galas by Aman Satija" width="800" height="500" loading="lazy" decoding="async" class="w-full gold-glow">
+                            <img src="src/assets/images/real-corporate-aman.jpg" alt="Corporate Galas by Aman Satija" width="800" height="500" loading="lazy" decoding="async" class="w-full h-full object-cover">
                         </picture>
                     </div>
                 </div>
             </div>
 
-            <!-- Celebrity -->
-            <div id="celebrity" class="container mx-auto px-6 reveal">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+            <!-- 3. Celebrity Concerts & Live Mega Shows -->
+            <div id="celebrity" class="container mx-auto px-6 pt-8 border-t border-white/10">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center reveal">
                     <div>
-                        <span
-                            class="text-brand-gold font-bold tracking-widest uppercase text-sm mb-4 block">Crowd Command</span>
-                        <h2 class="text-4xl font-serif font-bold mb-6">Celebrity Concerts & <span
-                                class="text-brand-gold italic">Live Mega Shows</span></h2>
-                        <p class="text-white/70 text-lg leading-relaxed mb-6">
-                            Handling crowds of 5,000 to 20,000+ requires genuine charisma and rapid stage wit. Aman controls mass festival audiences effortlessly, conducts engaging celebrity on-stage Q&As, and builds palpable anticipation for headlining acts.
+                        <span class="text-brand-gold font-bold tracking-widest uppercase text-xs mb-3 block">Arena Crowd Command &bull; 03</span>
+                        <h2 class="text-3xl sm:text-4xl font-serif font-bold mb-6">Celebrity Concerts &amp; <span class="text-brand-gold italic">Live Mega Shows</span></h2>
+                        <p class="text-white/75 text-base sm:text-lg leading-relaxed mb-6">
+                            Holding stadiums and festival grounds of <strong class="text-white">5,000 to 20,000+ people</strong> demands massive vocal command, split-second crowd psychology, and genuine stage fire. Whether warming up a festival crowd or interviewing Bollywood artists live on stage, Aman turns passive spectators into roaring participants.
                         </p>
-                        <ul class="space-y-3 text-white/70 mb-8">
-                            <li class="flex items-center gap-3"><i class="fa-solid fa-check text-brand-gold"></i><span>Live Music Festivals & Star Concerts</span></li>
-                            <li class="flex items-center gap-3"><i class="fa-solid fa-check text-brand-gold"></i><span>Bollywood Celebrity Stage Interactions</span></li>
-                            <li class="flex items-center gap-3"><i class="fa-solid fa-check text-brand-gold"></i><span>Fashion Shows, Beauty Pageants & Star Nights</span></li>
-                            <li class="flex items-center gap-3"><i class="fa-solid fa-check text-brand-gold"></i><span>Mass Public Events & City Carnivals</span></li>
+                        <ul class="space-y-3 text-white/75 mb-8 text-sm sm:text-base">
+                            <li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-gold mt-1"></i><span>Live Music Festivals, Singer Star Nights &amp; University Concerts</span></li>
+                            <li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-gold mt-1"></i><span>Celebrity Stage Conversations, Rapid-Fire Q&amp;A &amp; Fan Engagement</span></li>
+                            <li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-gold mt-1"></i><span>Fashion Shows, Beauty Pageants &amp; Regional State Carnivals</span></li>
+                            <li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-gold mt-1"></i><span>Sponsor Shoutouts Woven Naturally Without Breaking Show Energy</span></li>
                         </ul>
-                        <a href="https://wa.me/919057529067?text=Hi%20Aman%2C%20I%20want%20to%20discuss%20a%20Celebrity%2FLive%20Concert%20hosting." target="_blank" rel="noopener noreferrer" class="btn-outline">Discuss Live Show</a>
+                        <a href="https://wa.me/919057529067?text=Hi%20Aman%2C%20I%20want%20to%20discuss%20a%20Celebrity%2FLive%20Concert%20hosting." target="_blank" rel="noopener noreferrer" class="btn-outline">Discuss Live Concert / Show</a>
                     </div>
-                    <div>
+                    <div class="rounded-3xl overflow-hidden border border-brand-gold/30 shadow-2xl bg-[#0c0d14]">
                         <picture>
                             <source srcset="src/assets/images/real-stage-aman.webp" type="image/webp">
-                            <img src="src/assets/images/real-stage-aman.jpg" alt="Celebrity Shows & Live Concerts by Aman Satija" width="800" height="500" loading="lazy" decoding="async" class="w-full gold-glow">
+                            <img src="src/assets/images/real-stage-aman.jpg" alt="Celebrity Shows & Live Concerts by Aman Satija" width="800" height="500" loading="lazy" decoding="async" class="w-full h-full object-cover">
                         </picture>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4. Private Milestones & After-Dark Theme Nights -->
+            <div id="social" class="container mx-auto px-6 pt-8 border-t border-white/10">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center reveal">
+                    <div class="lg:order-2">
+                        <span class="text-brand-gold font-bold tracking-widest uppercase text-xs mb-3 block">Social &amp; Theme Nights &bull; 04</span>
+                        <h2 class="text-3xl sm:text-4xl font-serif font-bold mb-6">Private Milestones &amp; <span class="text-brand-gold italic">Luxury Theme Nights</span></h2>
+                        <p class="text-white/75 text-base sm:text-lg leading-relaxed mb-6">
+                            Not every landmark celebration is a wedding. From silver/golden jubilee anniversaries and 50th/60th milestone birthdays to sundowner cocktail nights and festive community galas—Aman crafts heartfelt nostalgia alongside interactive family games that keep guests seated till the very last toast.
+                        </p>
+                        <ul class="space-y-3 text-white/75 mb-8 text-sm sm:text-base">
+                            <li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-gold mt-1"></i><span>25th &amp; 50th Wedding Anniversaries with Tribute Storylines</span></li>
+                            <li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-gold mt-1"></i><span>50th / 60th Milestone Birthdays &amp; Family Reunion Storytelling</span></li>
+                            <li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-gold mt-1"></i><span>After-Dark Cocktail Nights, Sundowners &amp; Casino/Retro Theme Evenings</span></li>
+                            <li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-gold mt-1"></i><span>Community Galas, Festive Nights &amp; Chamber Gatherings</span></li>
+                        </ul>
+                        <a href="contact.html" class="btn-whatsapp inline-flex items-center gap-2">
+                            <i class="fa-brands fa-whatsapp text-lg"></i>
+                            <span>Plan Your Milestone Celebration</span>
+                        </a>
+                    </div>
+                    <div class="lg:order-1 rounded-3xl overflow-hidden border border-brand-gold/30 shadow-2xl bg-[#0c0d14]">
+                        <img src="src/assets/images/aman-satija-2.jpg" alt="Private Milestone Celebrations by Aman Satija" width="1200" height="1600" loading="lazy" decoding="async" class="w-full max-h-[520px] object-cover object-top">
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- CTA -->
-        <section class="py-24 border-t border-white/5 bg-brand-charcoal text-center">
-            <div class="container mx-auto px-6 max-w-3xl">
-                <h2 class="text-3xl md:text-4xl font-serif font-bold mb-6">Looking for custom anchoring packages for your city?</h2>
-                <p class="text-white/60 mb-8 text-lg">Whether it's a 3-day royal palace wedding in Rajasthan or a multi-city corporate roadshow, get in touch for custom dates and riders.</p>
+        <!-- 5-Step Process Flow -->
+        <section id="process" class="py-24 bg-[#090a0f] border-y border-white/10">
+            <div class="container mx-auto px-6">
+                <div class="text-center max-w-2xl mx-auto mb-14 reveal">
+                    <span class="text-brand-gold uppercase tracking-[0.25em] text-xs font-bold block mb-2">Our Workflow</span>
+                    <h2 class="text-3xl md:text-5xl font-serif font-bold text-white mb-4">How We Build <span class="text-brand-gold italic">Your Event</span></h2>
+                    <p class="text-white/60 text-sm sm:text-base">Structured preparation so your event feels completely effortless on the night.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-5">
+                    <div class="p-6 rounded-2xl bg-[#0c0d14] border border-white/10 reveal">
+                        <span class="text-brand-gold font-mono text-xs font-bold block mb-3">01 / ENQUIRY</span>
+                        <h4 class="font-serif font-bold text-white text-lg mb-2">Date &amp; Vision Check</h4>
+                        <p class="text-white/60 text-xs leading-relaxed">Share event type, dates, city &amp; crowd profile; receive direct confirmation and customized quote.</p>
+                    </div>
+                    <div class="p-6 rounded-2xl bg-[#0c0d14] border border-white/10 reveal" style="transition-delay: 80ms;">
+                        <span class="text-brand-gold font-mono text-xs font-bold block mb-3">02 / BRIEFING</span>
+                        <h4 class="font-serif font-bold text-white text-lg mb-2">Personal Discovery Call</h4>
+                        <p class="text-white/60 text-xs leading-relaxed">We note VIP names, couple story, family jokes, corporate goals, and performance lineups.</p>
+                    </div>
+                    <div class="p-6 rounded-2xl bg-[#0c0d14] border border-white/10 reveal" style="transition-delay: 160ms;">
+                        <span class="text-brand-gold font-mono text-xs font-bold block mb-3">03 / CRAFTING</span>
+                        <h4 class="font-serif font-bold text-white text-lg mb-2">Custom Script &amp; Games</h4>
+                        <p class="text-white/60 text-xs leading-relaxed">Curated game formats, opening entries, shayari, and seamless transition bridges.</p>
+                    </div>
+                    <div class="p-6 rounded-2xl bg-[#0c0d14] border border-white/10 reveal" style="transition-delay: 240ms;">
+                        <span class="text-brand-gold font-mono text-xs font-bold block mb-3">04 / TECH SYNC</span>
+                        <h4 class="font-serif font-bold text-white text-lg mb-2">Soundcheck &amp; Crew Align</h4>
+                        <p class="text-white/60 text-xs leading-relaxed">Early venue arrival, wireless mic check, and direct sync with planner, DJ &amp; photo team.</p>
+                    </div>
+                    <div class="p-6 rounded-2xl bg-[#0c0d14] border border-white/10 reveal" style="transition-delay: 320ms;">
+                        <span class="text-brand-gold font-mono text-xs font-bold block mb-3">05 / LIVE STAGE</span>
+                        <h4 class="font-serif font-bold text-white text-lg mb-2">Command &amp; Applause</h4>
+                        <p class="text-white/60 text-xs leading-relaxed">High-energy stage hosting with crisp pacing and unforgettable audience participation.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Service FAQs -->
+        <section class="py-20 bg-[#07080c]">
+            <div class="container mx-auto px-6 max-w-4xl">
+                <div class="text-center mb-12 reveal">
+                    <span class="text-brand-gold uppercase tracking-[0.25em] text-xs font-bold block mb-2">Service Clarifications</span>
+                    <h2 class="text-3xl md:text-4xl font-serif font-bold text-white">Frequently Asked <span class="text-brand-gold italic">Questions</span></h2>
+                </div>
+
+                <div class="faq-group space-y-4 reveal">
+                    <div class="faq-item is-open">
+                        <button type="button" class="faq-trigger" aria-expanded="true">
+                            <span class="text-base font-serif font-bold text-white">Can we book Aman for all 2–3 days of a destination wedding?</span>
+                            <span class="faq-icon"><i class="fa-solid fa-plus"></i></span>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">
+                                <div class="px-6 pb-5 text-white/70 text-sm leading-relaxed border-t border-white/5 pt-4">
+                                    Yes! Most destination families book Aman across the entire 2–3 day celebration (Welcome Dinner, Haldi, Mehndi, Sangeet, Baraat, Varmala &amp; Reception). Multi-function packages ensure guests bond with one familiar voice throughout the wedding.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button type="button" class="faq-trigger" aria-expanded="false">
+                            <span class="text-base font-serif font-bold text-white">How are corporate pricing and technical requirements handled?</span>
+                            <span class="faq-icon"><i class="fa-solid fa-plus"></i></span>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">
+                                <div class="px-6 pb-5 text-white/70 text-sm leading-relaxed border-t border-white/5 pt-4">
+                                    Pricing depends on event format, duration, city, and production scale. Full technical requirements (Sennheiser/Shure wireless mics, stage line-of-sight &amp; soundcheck specs) are listed in our <a href="press-kit.html#rider" class="text-brand-gold underline">Technical Rider</a>.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button type="button" class="faq-trigger" aria-expanded="false">
+                            <span class="text-base font-serif font-bold text-white">Do planners and agencies work with Aman on turnkey events?</span>
+                            <span class="faq-icon"><i class="fa-solid fa-plus"></i></span>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">
+                                <div class="px-6 pb-5 text-white/70 text-sm leading-relaxed border-t border-white/5 pt-4">
+                                    Yes. Event agencies, corporate PR houses, and wedding planners regularly partner with Aman Satija across India. Call <strong class="text-white">+91 90575 29067</strong> or view the <a href="press-kit.html" class="text-brand-gold underline">Press &amp; Agency Kit</a>.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA -->
+        <section class="py-20 border-t border-white/10 bg-[#090a0f] text-center">
+            <div class="container mx-auto px-6 max-w-3xl reveal">
+                <span class="inline-block px-3.5 py-1.5 rounded-full bg-brand-gold/10 border border-brand-gold/30 text-brand-gold text-xs font-bold uppercase tracking-wider mb-5">Booking Open 2026–27</span>
+                <h2 class="text-3xl md:text-4xl font-serif font-bold mb-5">Looking for a Custom Anchoring Package for Your City?</h2>
+                <p class="text-white/65 mb-8 text-base sm:text-lg">Whether it’s a 3-day royal palace wedding in Rajasthan or a national corporate conference, get an instant custom quote directly.</p>
                 <div class="flex flex-col sm:flex-row justify-center gap-4">
                     <a href="https://wa.me/919057529067?text=Hi%20Aman%2C%20I%20would%20like%20to%20inquire%20about%20event%20packages." target="_blank" rel="noopener noreferrer" class="btn-whatsapp inline-flex items-center justify-center gap-2">
                         <i class="fa-brands fa-whatsapp text-lg"></i>
                         <span>WhatsApp Quick Quote</span>
                     </a>
-                    <a href="contact.html" class="btn-outline">Open Inquiry Form</a>
+                    <a href="contact.html" class="btn-gold">Open Booking Form</a>
                 </div>
             </div>
         </section>

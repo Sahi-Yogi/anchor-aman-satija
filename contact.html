@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact & Booking | Hire Aman Satija for Your Event</title>
-    <meta name="description" content="Secure your event dates with Anchor Aman Satija. Direct booking numbers, WhatsApp quick-connect, and inquiry form for weddings & corporate events.">
+    <title>Contact &amp; Book Aman Satija | Check 2026–27 Dates &amp; Availability</title>
+    <meta name="description" content="Check availability &amp; book Anchor Aman Satija for weddings, sangeet couple games, corporate galas &amp; concerts. Instant WhatsApp booking desk &amp; direct phone +91 90575 29067.">
     <link rel="icon" type="image/webp" href="src/assets/images/Aman-Satija-Anchor-Emblem-logo.webp">
     
     <!-- Preconnect to external origins -->
@@ -24,119 +24,273 @@
     <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></noscript>
 </head>
 
-<body class="bg-brand-dark text-white font-sans antialiased">
+<body class="bg-[#07080c] text-white font-sans antialiased">
 
     <div id="app">
         <!-- Page Header -->
-        <section class="pt-40 pb-20 border-b border-white/5 bg-brand-charcoal">
+        <section class="pt-36 sm:pt-40 pb-16 border-b border-white/10 bg-[#090a0f]">
             <div class="container mx-auto px-6 text-center">
-                <h1 class="text-5xl md:text-7xl font-serif font-bold mb-6">Let's <span
-                        class="text-brand-gold italic">Connect</span></h1>
-                <p class="text-white/60 tracking-widest uppercase">Direct Bookings • Alwar • Jaipur • Delhi-NCR • Pan India</p>
+                <div class="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-[0.22em] text-white/50 mb-5">
+                    <a href="index.html" class="hover:text-brand-gold transition-colors">Home</a>
+                    <span>/</span>
+                    <span class="text-brand-gold font-bold">Book Aman Satija</span>
+                </div>
+
+                <h1 class="text-5xl md:text-7xl font-serif font-bold mb-5">Check Dates &amp; <span class="text-brand-gold italic font-normal">Connect</span></h1>
+                <p class="text-white/65 tracking-[0.18em] uppercase text-xs sm:text-sm font-mono max-w-2xl mx-auto">
+                    Alwar &bull; Jaipur &bull; Delhi-NCR &bull; Dubai &bull; Pan-India Bookings Open 2026–27
+                </p>
+
+                <!-- Quick Response Assurance Bar -->
+                <div class="mt-8 flex flex-wrap justify-center items-center gap-3 text-xs font-mono uppercase tracking-wider">
+                    <span class="px-4 py-2 rounded-full bg-[#0e0f16] border border-brand-gold/30 text-brand-gold flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> Fast Replies Within 2–4 Hours
+                    </span>
+                    <span class="px-4 py-2 rounded-full bg-[#0e0f16] border border-white/10 text-white/75">Zero Middlemen Markup</span>
+                    <span class="px-4 py-2 rounded-full bg-[#0e0f16] border border-white/10 text-white/75">4 Languages Hosted</span>
+                </div>
             </div>
         </section>
 
-        <!-- Contact Section -->
-        <section class="py-24">
+        <!-- Booking Enquiry Form & Direct Desk -->
+        <section class="py-20 lg:py-24 bg-[#07080c]">
             <div class="container mx-auto px-6">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-20">
-                    <!-- Contact Form -->
-                    <div class="reveal">
-                        <div class="flex items-center justify-between mb-8">
-                            <h2 class="text-3xl font-serif font-bold">Send an <span
-                                    class="text-brand-gold italic">Enquiry</span></h2>
-                            <span class="text-xs text-brand-gold uppercase tracking-widest flex items-center gap-1">
-                                <i class="fa-brands fa-whatsapp text-green-400"></i> Instant WhatsApp Connect
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+                    <!-- Left Column: Full Structured Booking Enquiry Form -->
+                    <div class="lg:col-span-7 p-7 sm:p-10 rounded-3xl bg-[#0c0d14] border border-brand-gold/30 shadow-2xl reveal">
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-8 pb-6 border-b border-white/10">
+                            <div>
+                                <h2 class="text-2xl sm:text-3xl font-serif font-bold">Send Event <span class="text-brand-gold italic">Enquiry</span></h2>
+                                <p class="text-white/55 text-xs sm:text-sm mt-1">Share your event brief—dates &amp; packages are confirmed personally.</p>
+                            </div>
+                            <span class="px-3 py-1.5 rounded-full bg-[#25D366]/15 border border-[#25D366]/35 text-[#25D366] text-[11px] font-bold uppercase tracking-wider flex items-center gap-1.5 w-fit">
+                                <i class="fa-brands fa-whatsapp"></i> Instant WhatsApp Sync
                             </span>
                         </div>
+
                         <form id="booking-form" class="space-y-6">
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
                                 <div>
-                                    <label class="block text-xs uppercase tracking-widest text-white/40 mb-2">Full
-                                        Name *</label>
-                                    <input type="text" required placeholder="Your Name" autocomplete="name"
-                                        class="w-full bg-transparent border-b border-white/20 py-3 focus:outline-none focus:border-brand-gold transition-colors text-white">
+                                    <label for="booking-name" class="block text-xs font-mono uppercase tracking-widest text-white/55 mb-2">Full Name *</label>
+                                    <input id="booking-name" type="text" required placeholder="Your Name" autocomplete="name" class="luxury-input">
                                 </div>
                                 <div>
-                                    <label class="block text-xs uppercase tracking-widest text-white/40 mb-2">Contact
-                                        Number *</label>
-                                    <input type="tel" required placeholder="e.g. +91 98765 43210" autocomplete="tel"
-                                        class="w-full bg-transparent border-b border-white/20 py-3 focus:outline-none focus:border-brand-gold transition-colors text-white">
+                                    <label for="booking-phone" class="block text-xs font-mono uppercase tracking-widest text-white/55 mb-2">Phone / WhatsApp Number *</label>
+                                    <input id="booking-phone" type="tel" required placeholder="+91 98765 43210" autocomplete="tel" class="luxury-input">
                                 </div>
                             </div>
-                            <div>
-                                <label class="block text-xs uppercase tracking-widest text-white/40 mb-2">Event
-                                    Type *</label>
-                                <select
-                                    class="w-full bg-transparent border-b border-white/20 py-3 focus:outline-none focus:border-brand-gold transition-colors text-white/80 appearance-none">
-                                    <option class="bg-brand-dark" value="Wedding / Sangeet Hosting">Wedding / Sangeet (With Couple Games)</option>
-                                    <option class="bg-brand-dark" value="Corporate Gala / Award Night">Corporate Gala / Award Night / AGM</option>
-                                    <option class="bg-brand-dark" value="Celebrity Show / Music Concert">Celebrity Show / Music Concert</option>
-                                    <option class="bg-brand-dark" value="Destination Wedding Package">Destination Wedding (Multi-Day Hosting)</option>
-                                    <option class="bg-brand-dark" value="Private Luxury Celebration">Private Luxury Celebration</option>
-                                </select>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                                <div>
+                                    <label for="booking-org" class="block text-xs font-mono uppercase tracking-widest text-white/55 mb-2">Family / Company / Agency Name</label>
+                                    <input id="booking-org" type="text" placeholder="e.g. Singhania Family / HDFC Events" class="luxury-input">
+                                </div>
+                                <div>
+                                    <label for="booking-email" class="block text-xs font-mono uppercase tracking-widest text-white/55 mb-2">Email Address</label>
+                                    <input id="booking-email" type="email" placeholder="you@company.com" autocomplete="email" class="luxury-input">
+                                </div>
                             </div>
-                            <div>
-                                <label class="block text-xs uppercase tracking-widest text-white/40 mb-2">Event Date &
-                                    City *</label>
-                                <input type="text" required placeholder="e.g. 24th Nov 2026, Jaipur / Delhi"
-                                    class="w-full bg-transparent border-b border-white/20 py-3 focus:outline-none focus:border-brand-gold transition-colors text-white">
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                                <div>
+                                    <label for="booking-type" class="block text-xs font-mono uppercase tracking-widest text-white/55 mb-2">Event Type *</label>
+                                    <select id="booking-type" class="luxury-input">
+                                        <option class="bg-[#0c0d14]" value="Destination Wedding (Multi-Day Block)">Destination Wedding (Multi-Day Block)</option>
+                                        <option class="bg-[#0c0d14]" value="Sangeet Night & Couple Games">Sangeet Night &amp; Couple Games</option>
+                                        <option class="bg-[#0c0d14]" value="Haldi / Mehndi / Varmala">Haldi / Mehndi / Varmala Function</option>
+                                        <option class="bg-[#0c0d14]" value="Corporate Gala / Leadership Summit / AGM">Corporate Gala / Leadership Summit / AGM</option>
+                                        <option class="bg-[#0c0d14]" value="Product Launch / Dealer Meet">Product Launch / Dealer Meet</option>
+                                        <option class="bg-[#0c0d14]" value="Celebrity Show / Live Concert">Celebrity Show / Live Concert</option>
+                                        <option class="bg-[#0c0d14]" value="Milestone Birthday / Anniversary">Milestone Birthday / 25th Anniversary</option>
+                                        <option class="bg-[#0c0d14]" value="Other Event">Other Private or Public Event</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="booking-crowd" class="block text-xs font-mono uppercase tracking-widest text-white/55 mb-2">Expected Guest / Crowd Size</label>
+                                    <select id="booking-crowd" class="luxury-input">
+                                        <option class="bg-[#0c0d14]" value="Intimate (Under 150 Guests)">Intimate (Under 150 Guests)</option>
+                                        <option class="bg-[#0c0d14]" value="Medium (150 - 400 Guests)" selected>Grand Ballroom (150 – 400 Guests)</option>
+                                        <option class="bg-[#0c0d14]" value="Large Palace / Convention (400 - 1000+ Guests)">Large Palace / Convention (400 – 1,000 Guests)</option>
+                                        <option class="bg-[#0c0d14]" value="Mega Arena / Stadium (1,000 - 20,000+)">Mega Arena / Concert (1,000 – 20,000+)</option>
+                                    </select>
+                                </div>
                             </div>
-                            <div>
-                                <label class="block text-xs uppercase tracking-widest text-white/40 mb-2">Additional
-                                    Details (Crowd Size, Venue, Expectations)</label>
-                                <textarea rows="4" placeholder="Share your event flow or requirements..."
-                                    class="w-full bg-transparent border-b border-white/20 py-3 focus:outline-none focus:border-brand-gold transition-colors text-white"></textarea>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                                <div>
+                                    <label for="booking-date" class="block text-xs font-mono uppercase tracking-widest text-white/55 mb-2">Event Date(s) *</label>
+                                    <input id="booking-date" type="text" required placeholder="e.g. 24–26 Nov 2026 (or Tentative)" class="luxury-input">
+                                </div>
+                                <div>
+                                    <label for="booking-city" class="block text-xs font-mono uppercase tracking-widest text-white/55 mb-2">City &amp; Venue *</label>
+                                    <input id="booking-city" type="text" required placeholder="e.g. Jaipur Palace / Delhi-NCR" class="luxury-input">
+                                </div>
                             </div>
-                            <button type="submit" class="btn-gold w-full mt-8 flex items-center justify-center gap-2">
+
+                            <!-- Language Preferences -->
+                            <div>
+                                <span class="block text-xs font-mono uppercase tracking-widest text-white/55 mb-3">Preferred Hosting Languages</span>
+                                <div class="flex flex-wrap gap-3 text-xs">
+                                    <label class="inline-flex items-center gap-2 px-3.5 py-2 rounded-full bg-[#13141f] border border-white/10 cursor-pointer hover:border-brand-gold/40">
+                                        <input type="checkbox" name="languages" value="Hindi" checked class="accent-brand-gold">
+                                        <span>Hindi</span>
+                                    </label>
+                                    <label class="inline-flex items-center gap-2 px-3.5 py-2 rounded-full bg-[#13141f] border border-white/10 cursor-pointer hover:border-brand-gold/40">
+                                        <input type="checkbox" name="languages" value="English" checked class="accent-brand-gold">
+                                        <span>English</span>
+                                    </label>
+                                    <label class="inline-flex items-center gap-2 px-3.5 py-2 rounded-full bg-[#13141f] border border-white/10 cursor-pointer hover:border-brand-gold/40">
+                                        <input type="checkbox" name="languages" value="Punjabi" class="accent-brand-gold">
+                                        <span>Punjabi</span>
+                                    </label>
+                                    <label class="inline-flex items-center gap-2 px-3.5 py-2 rounded-full bg-[#13141f] border border-white/10 cursor-pointer hover:border-brand-gold/40">
+                                        <input type="checkbox" name="languages" value="Marwari" class="accent-brand-gold">
+                                        <span>Marwari</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label for="booking-details" class="block text-xs font-mono uppercase tracking-widest text-white/55 mb-2">Event Flow &amp; Special Expectations</label>
+                                <textarea id="booking-details" rows="4" placeholder="Tell us about functions to host, couple games, celebrity lineup, or corporate run-of-show..." class="luxury-input"></textarea>
+                            </div>
+
+                            <button type="submit" class="btn-whatsapp w-full !py-4 !text-sm flex items-center justify-center gap-2.5">
                                 <i class="fa-brands fa-whatsapp text-xl"></i>
-                                <span>Submit & Connect on WhatsApp</span>
+                                <span>Check Dates &amp; Send on WhatsApp</span>
                             </button>
-                            <p class="text-xs text-white/40 text-center tracking-wider">Submitting immediately opens WhatsApp with your pre-filled inquiry details for instant response.</p>
+
+                            <p class="text-xs text-white/45 text-center leading-relaxed">
+                                Note: Submitting this form is an availability &amp; pricing enquiry—dates are confirmed directly once our management desk finalizes your schedule.
+                            </p>
+
+                            <!-- Confirmation Alert Box -->
+                            <div id="booking-form-status" class="hidden p-4 rounded-2xl bg-emerald-500/10 border border-emerald-500/40 text-center space-y-2">
+                                <p class="text-emerald-300 text-sm font-bold"><i class="fa-solid fa-circle-check mr-1.5"></i>Your enquiry brief is ready!</p>
+                                <p class="text-white/70 text-xs">If WhatsApp didn’t open automatically, click below to open your pre-filled chat:</p>
+                                <a id="booking-wa-fallback" href="https://wa.me/919057529067" target="_blank" rel="noopener noreferrer" class="text-brand-gold text-xs font-bold underline">Open WhatsApp Chat Directly &rarr;</a>
+                            </div>
                         </form>
                     </div>
 
-                    <!-- Contact Details -->
-                    <div class="reveal" style="transition-delay: 100ms;">
-                        <h2 class="text-3xl font-serif font-bold mb-8">Direct <span
-                                class="text-brand-gold italic">Contact Desk</span></h2>
-                        <div class="space-y-10">
+                    <!-- Right Column: Direct Contact Channels + Process Clarity -->
+                    <div class="lg:col-span-5 space-y-8 reveal" style="transition-delay: 100ms;">
+                        <!-- Direct Contact Panel -->
+                        <div class="p-8 rounded-3xl bg-[#0c0d14] border border-white/10 space-y-7">
                             <div>
-                                <h4 class="text-brand-gold font-bold uppercase tracking-widest text-xs mb-3">Primary Booking Line</h4>
-                                <a href="tel:+919057529067" class="text-3xl font-serif hover:text-brand-gold transition-colors block mb-1">+91 90575 29067</a>
-                                <p class="text-white/40 text-xs">Direct calls & management inquiries</p>
+                                <span class="text-brand-gold uppercase font-mono tracking-[0.22em] text-[10px] font-bold block mb-1">Direct Management Desk</span>
+                                <h2 class="text-2xl font-serif font-bold text-white">Speak With <span class="text-brand-gold italic">Us Directly</span></h2>
                             </div>
-                            <div>
-                                <h4 class="text-brand-gold font-bold uppercase tracking-widest text-xs mb-3">Secondary / WhatsApp Line</h4>
-                                <a href="https://wa.me/918239202921" target="_blank" rel="noopener noreferrer" class="text-2xl font-serif hover:text-brand-gold transition-colors block mb-1">+91 82392 02921</a>
-                                <a href="https://wa.me/919057529067?text=Hi%20Aman%2C%20I%20would%20like%20to%20inquire%20about%20booking%20you%20for%20an%20event." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-sm text-[#25D366] hover:underline">
-                                    <i class="fa-brands fa-whatsapp"></i> Chat directly on WhatsApp &rarr;
-                                </a>
-                            </div>
-                            <div>
-                                <h4 class="text-brand-gold font-bold uppercase tracking-widest text-xs mb-3">Base & Head Office</h4>
-                                <p class="text-2xl font-serif">Alwar & Jaipur, Rajasthan</p>
-                                <p class="text-white/60">Operating extensively across Rajasthan, Delhi-NCR & Worldwide Destination Events</p>
-                            </div>
-                            <div>
-                                <h4 class="text-brand-gold font-bold uppercase tracking-widest text-xs mb-3">Official Email</h4>
-                                <a href="mailto:info@amansatija.com"
-                                    class="text-xl font-serif hover:text-brand-gold transition-colors">info@amansatija.com</a>
-                            </div>
-                            <hr class="border-white/10">
-                            <div>
-                                <h4 class="text-brand-gold font-bold uppercase tracking-widest text-xs mb-4">Official Social Profiles
-                                </h4>
-                                <div class="flex items-center space-x-6 text-2xl">
-                                    <a href="https://www.instagram.com/anchor_aman_satijaaa/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"
-                                        class="text-white/40 hover:text-brand-gold transition-colors flex items-center gap-2">
-                                        <i class="fa-brands fa-instagram"></i>
-                                        <span class="text-sm">@anchor_aman_satijaaa</span>
+
+                            <div class="space-y-6">
+                                <div class="pb-5 border-b border-white/10">
+                                    <h4 class="text-brand-gold font-bold uppercase font-mono tracking-widest text-[10px] mb-2">Primary Booking Line</h4>
+                                    <a href="tel:+919057529067" class="text-2xl sm:text-3xl font-serif font-bold text-white hover:text-brand-gold transition-colors block">+91 90575 29067</a>
+                                    <p class="text-white/45 text-xs mt-1">Urgent dates, direct management &amp; planner coordination</p>
+                                </div>
+
+                                <div class="pb-5 border-b border-white/10">
+                                    <h4 class="text-brand-gold font-bold uppercase font-mono tracking-widest text-[10px] mb-2">Secondary / WhatsApp Line</h4>
+                                    <a href="https://wa.me/918239202921" target="_blank" rel="noopener noreferrer" class="text-xl sm:text-2xl font-serif text-white hover:text-brand-gold transition-colors block mb-2">+91 82392 02921</a>
+                                    <a href="https://wa.me/919057529067?text=Hi%20Aman%2C%20I%20would%20like%20to%20inquire%20about%20booking%20you%20for%20an%20event." target="_blank" rel="noopener noreferrer" class="btn-whatsapp !py-2.5 !px-5 !text-xs inline-flex items-center gap-2">
+                                        <i class="fa-brands fa-whatsapp text-base"></i>
+                                        <span>Open WhatsApp Chat</span>
                                     </a>
-                                    <a href="https://www.youtube.com/results?search_query=Anchor+Aman+Satija" target="_blank" rel="noopener noreferrer" aria-label="YouTube" class="text-white/40 hover:text-brand-gold transition-colors"><i
-                                            class="fa-brands fa-youtube"></i></a>
-                                    <a href="https://wa.me/919057529067" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="text-white/40 hover:text-brand-gold transition-colors"><i
-                                            class="fa-brands fa-whatsapp"></i></a>
+                                </div>
+
+                                <div class="pb-5 border-b border-white/10">
+                                    <h4 class="text-brand-gold font-bold uppercase font-mono tracking-widest text-[10px] mb-2">Official Email</h4>
+                                    <a href="mailto:info@amansatija.com" class="text-lg font-serif text-white hover:text-brand-gold transition-colors">info@amansatija.com</a>
+                                    <p class="text-white/45 text-xs mt-1">For corporate RFPs, technical riders &amp; agency proposals</p>
+                                </div>
+
+                                <div>
+                                    <h4 class="text-brand-gold font-bold uppercase font-mono tracking-widest text-[10px] mb-2">Headquarters &amp; Travel</h4>
+                                    <p class="text-lg font-serif text-white">Alwar &amp; Jaipur, Rajasthan</p>
+                                    <p class="text-white/60 text-xs mt-1 leading-relaxed">Serving Udaipur, Jodhpur, Jaisalmer, Delhi-NCR, Chandigarh, Mumbai, Goa, Dubai &amp; Worldwide Destination Events.</p>
+                                </div>
+                            </div>
+
+                            <div class="pt-4 border-t border-white/10 flex items-center justify-between">
+                                <span class="text-xs font-mono uppercase tracking-wider text-white/50">Follow Live Clips</span>
+                                <div class="flex items-center space-x-3">
+                                    <a href="https://www.instagram.com/anchor_aman_satijaaa/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="footer-icon-btn !w-10 !h-10"><i class="fa-brands fa-instagram"></i></a>
+                                    <a href="https://www.youtube.com/results?search_query=Anchor+Aman+Satija" target="_blank" rel="noopener noreferrer" aria-label="YouTube" class="footer-icon-btn !w-10 !h-10"><i class="fa-brands fa-youtube"></i></a>
+                                    <a href="https://wa.me/919057529067" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="footer-icon-btn !w-10 !h-10"><i class="fa-brands fa-whatsapp"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- What Happens Next 4-Step Box -->
+                        <div class="p-8 rounded-3xl bg-[#0e0f16] border border-white/10 space-y-5">
+                            <h3 class="text-xl font-serif font-bold text-white">What Happens <span class="text-brand-gold italic">After You Enquire?</span></h3>
+                            <div class="space-y-4 text-xs">
+                                <div class="flex gap-3">
+                                    <span class="text-brand-gold font-mono font-bold">01</span>
+                                    <div>
+                                        <h5 class="text-white font-bold">Availability &amp; Package Reply</h5>
+                                        <p class="text-white/60 mt-0.5">Our desk confirms date availability &amp; pricing tailored to your event within 2–4 hours.</p>
+                                    </div>
+                                </div>
+                                <div class="flex gap-3">
+                                    <span class="text-brand-gold font-mono font-bold">02</span>
+                                    <div>
+                                        <h5 class="text-white font-bold">Discovery Call With Aman</h5>
+                                        <p class="text-white/60 mt-0.5">Discuss theme, couple dynamics, corporate goals, and custom scripting expectations directly.</p>
+                                    </div>
+                                </div>
+                                <div class="flex gap-3">
+                                    <span class="text-brand-gold font-mono font-bold">03</span>
+                                    <div>
+                                        <h5 class="text-white font-bold">Date Blocking &amp; Planner Sync</h5>
+                                        <p class="text-white/60 mt-0.5">Lock the dates cleanly and connect Aman with your planner, DJ &amp; production crew.</p>
+                                    </div>
+                                </div>
+                                <div class="flex gap-3">
+                                    <span class="text-brand-gold font-mono font-bold">04</span>
+                                    <div>
+                                        <h5 class="text-white font-bold">Showtime &amp; Magic</h5>
+                                        <p class="text-white/60 mt-0.5">Early soundcheck arrival followed by an unforgettable, high-energy celebration.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Booking Quick FAQs -->
+        <section class="py-20 bg-[#090a0f] border-t border-white/10">
+            <div class="container mx-auto px-6 max-w-4xl">
+                <div class="text-center mb-12 reveal">
+                    <span class="text-brand-gold uppercase tracking-[0.25em] text-xs font-bold block mb-2">Booking Help</span>
+                    <h2 class="text-3xl font-serif font-bold">Common <span class="text-brand-gold italic">Booking Questions</span></h2>
+                </div>
+
+                <div class="faq-group space-y-4 reveal">
+                    <div class="faq-item is-open">
+                        <button type="button" class="faq-trigger" aria-expanded="true">
+                            <span class="text-base font-serif font-bold text-white">How far in advance should we book peak wedding or corporate dates?</span>
+                            <span class="faq-icon"><i class="fa-solid fa-plus"></i></span>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">
+                                <div class="px-6 pb-5 text-white/70 text-sm leading-relaxed border-t border-white/5 pt-4">
+                                    Auspicious winter wedding dates (November–February) in Rajasthan &amp; Delhi-NCR often block 3 to 8 months ahead. However, if your event is approaching soon, message us on WhatsApp anyway—last-minute open slots are confirmed immediately.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button type="button" class="faq-trigger" aria-expanded="false">
+                            <span class="text-base font-serif font-bold text-white">Does submitting this enquiry lock the date automatically?</span>
+                            <span class="faq-icon"><i class="fa-solid fa-plus"></i></span>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">
+                                <div class="px-6 pb-5 text-white/70 text-sm leading-relaxed border-t border-white/5 pt-4">
+                                    No—this form checks availability and delivers a tailored quotation. Your dates are formally blocked only once the booking confirmation is completed with our management desk.
                                 </div>
                             </div>
                         </div>

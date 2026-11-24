@@ -311,15 +311,6 @@
     overflow: hidden;
 }
 
-.spotlight-container::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: radial-gradient(800px circle at var(--x) var(--y), rgba(212, 175, 55, 0.08), transparent 40%);
-    pointer-events: none;
-    z-index: 10;
-}
-
 .text-gradient {
     color: #D4AF37;
 }
@@ -469,9 +460,17 @@ html {
 }
 
 .back-to-top:hover {
-    color: #D4AF37;
+    color: #0A0A0A;
+    background-color: #D4AF37;
     border-color: #D4AF37;
-    transform: translateY(-5px);
+    transform: translate3d(0, -4px, 0);
+    box-shadow: 0 8px 20px rgba(212, 175, 55, 0.35);
+}
+
+.back-to-top:active {
+    background-color: #C59B27;
+    transform: translate3d(0, 1px, 0) scale(0.92);
+    transition: transform 0.05s ease;
 }
 
 .footer-glow {
@@ -684,8 +683,14 @@ body.menu-open .back-to-top {
 }
 
 .lightbox-close:hover {
-    background: rgba(212, 175, 55, 0.6);
+    background: #D4AF37;
+    color: #0A0A0A;
     transform: rotate(90deg);
+}
+
+.lightbox-close:active {
+    transform: rotate(90deg) scale(0.9);
+    transition: transform 0.05s ease;
 }
 
 /* Fix for footer to stay at bottom */
@@ -1130,7 +1135,213 @@ body {
     transform: translate3d(0, 0, 0);
 }
 
-/* 7. Respect Reduced Motion */
+/* 7. Scroll Progress Indicator (Solid Royal Gold, GPU scaleX) */
+.scroll-progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #D4AF37;
+    transform-origin: left center;
+    transform: scaleX(0);
+    z-index: 90;
+    pointer-events: none;
+    will-change: transform;
+}
+
+/* 8. Interactive FAQ Accordion (Grid Row Transition - Zero Layout Jump) */
+.faq-item {
+    background-color: #0e0f16;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 1rem;
+    transition: border-color 0.25s ease, background-color 0.25s ease;
+}
+
+.faq-item:hover {
+    border-color: rgba(212, 175, 55, 0.35);
+}
+
+.faq-item.is-open {
+    border-color: rgba(212, 175, 55, 0.55);
+    background-color: #12131c;
+}
+
+.faq-trigger {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    text-align: left;
+    padding: 1.25rem 1.5rem;
+    cursor: pointer;
+    user-select: none;
+}
+
+.faq-trigger:active {
+    opacity: 0.85;
+}
+
+.faq-icon {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 9999px;
+    border: 1px solid rgba(212, 175, 55, 0.35);
+    background-color: rgba(212, 175, 55, 0.08);
+    color: #D4AF37;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    font-size: 0.75rem;
+    transition: transform 0.25s ease, background-color 0.25s ease, color 0.25s ease;
+}
+
+.faq-item.is-open .faq-icon {
+    transform: rotate(45deg);
+    background-color: #D4AF37;
+    color: #0A0A0A;
+}
+
+.faq-answer {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.32s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.faq-item.is-open .faq-answer {
+    grid-template-rows: 1fr;
+}
+
+.faq-answer-inner {
+    overflow: hidden;
+}
+
+/* 9. Filter & Category Pills (Solid Luxury Pattern) */
+.filter-pill {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.625rem 1.35rem;
+    border-radius: 9999px;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    background-color: #0e0f16;
+    color: rgba(255, 255, 255, 0.78);
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    cursor: pointer;
+    user-select: none;
+    transition: transform 0.2s cubic-bezier(0.2, 0.8, 0.2, 1),
+                background-color 0.2s ease,
+                color 0.2s ease,
+                border-color 0.2s ease;
+}
+
+.filter-pill:hover {
+    border-color: rgba(212, 175, 55, 0.6);
+    color: #D4AF37;
+    transform: translate3d(0, -1px, 0);
+}
+
+.filter-pill:active {
+    transform: translate3d(0, 1px, 0) scale(0.96);
+    transition: transform 0.05s ease;
+}
+
+.filter-pill.is-active {
+    background-color: #D4AF37;
+    border-color: #E5C158;
+    color: #0A0A0A;
+    box-shadow: 0 4px 14px rgba(212, 175, 55, 0.3);
+}
+
+.filter-pill.is-active:hover {
+    background-color: #FFFFFF;
+    border-color: #FFFFFF;
+    color: #0A0A0A;
+}
+
+/* 10. Interactive Pillar Selector Tabs */
+.pillar-tab {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1.125rem 1.35rem;
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background-color: #0c0d14;
+    color: rgba(255, 255, 255, 0.75);
+    text-align: left;
+    cursor: pointer;
+    transition: transform 0.2s ease, border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.pillar-tab:hover {
+    border-color: rgba(212, 175, 55, 0.45);
+    background-color: #12131d;
+}
+
+.pillar-tab:active {
+    transform: scale(0.98);
+    transition: transform 0.05s ease;
+}
+
+.pillar-tab.is-active {
+    border-color: #D4AF37;
+    background-color: #151622;
+    color: #FFFFFF;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+}
+
+/* 11. Photo Lightbox Modal */
+.photo-lightbox-overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(5, 6, 10, 0.96);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    z-index: 1000;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    opacity: 0;
+    transition: opacity 0.25s ease;
+}
+
+.photo-lightbox-overlay.active {
+    display: flex;
+    opacity: 1;
+}
+
+/* 12. Clean Solid Form Controls */
+.luxury-input {
+    width: 100%;
+    background-color: #0c0d14;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 0.75rem;
+    padding: 0.875rem 1rem;
+    color: #FFFFFF;
+    transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.luxury-input:focus {
+    outline: none;
+    border-color: #D4AF37;
+    background-color: #11121b;
+}
+
+.luxury-input::placeholder {
+    color: rgba(255, 255, 255, 0.35);
+}
+
+/* 13. Respect Reduced Motion */
 @media (prefers-reduced-motion: reduce) {
     *, ::before, ::after {
         animation-duration: 0.01ms !important;

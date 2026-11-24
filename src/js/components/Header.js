@@ -12,6 +12,8 @@ export const Header = () => {
     };
 
     header.innerHTML = `
+        <!-- Top Solid Gold Scroll Progress Bar -->
+        <div id="scroll-progress-bar" class="scroll-progress-bar"></div>
         <div class="container mx-auto px-3 sm:px-6 pointer-events-auto">
             <!-- Luxury Floating Island Header -->
             <div id="header-main" class="mt-3 lg:mt-5 transition-all duration-500 rounded-full bg-[#090a0f]/92 backdrop-blur-2xl border border-white/15 shadow-[0_12px_45px_rgba(0,0,0,0.65)] px-3.5 py-2 sm:px-5 sm:py-2.5 lg:px-6 lg:py-2.5 2xl:px-8 2xl:py-3 flex justify-between items-center">
