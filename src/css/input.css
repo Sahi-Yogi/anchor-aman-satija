@@ -777,3 +777,43 @@ body {
 .animate-float-delay {
     animation: floatDelay 6s ease-in-out 2.5s infinite;
 }
+
+/* ==========================================================================
+   Luxury Glass Cards & Service Hover Enhancements
+   ========================================================================== */
+.luxury-glass-card {
+    background: rgba(14, 15, 22, 0.75);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.luxury-glass-card:hover {
+    border-color: rgba(212, 175, 55, 0.4);
+    box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.8), 0 0 25px rgba(212, 175, 55, 0.12);
+    transform: translateY(-4px);
+}
+
+.service-card-luxury {
+    position: relative;
+    border-radius: 1.25rem;
+    overflow: hidden;
+    background: #0d0e14;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.service-card-luxury:hover {
+    border-color: rgba(212, 175, 55, 0.45);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.9), 0 0 30px rgba(212, 175, 55, 0.15);
+    transform: translateY(-6px);
+}
+
+.service-card-luxury img {
+    transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.service-card-luxury:hover img {
+    transform: scale(1.08);
+}
