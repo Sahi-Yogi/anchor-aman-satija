@@ -571,6 +571,90 @@ document.addEventListener('DOMContentLoaded', () => {
             window.open(waUrl, '_blank', 'noopener,noreferrer');
         });
     }
+
+    // 15. Interactive Hero Stage Console Mode Switcher ([data-hero-stage])
+    const heroStage = document.querySelector('[data-hero-stage]');
+    if (heroStage) {
+        const modeButtons = Array.from(heroStage.querySelectorAll('[data-hero-mode]'));
+        const slides = Array.from(heroStage.querySelectorAll('[data-hero-slide]'));
+        const badgeEl = document.getElementById('hero-deck-badge');
+        const kickerEl = document.getElementById('hero-deck-kicker');
+        const venueEl = document.getElementById('hero-deck-venue');
+        const quoteEl = document.getElementById('hero-stage-quote');
+        const descEl = document.getElementById('hero-stage-desc');
+        const counterEl = document.getElementById('hero-mode-counter');
+        const deckPlayBtn = document.getElementById('hero-deck-play');
+        const reelCtaBtn = document.getElementById('hero-reel-cta');
+
+        let activeIdx = 0;
+        let autoTimer = null;
+        let userPinned = false;
+
+        const decodeEntities = (str) => {
+            if (!str) return '';
+            const txt = document.createElement('textarea');
+            txt.innerHTML = str;
+            return txt.value;
+        };
+
+        const applyHeroMode = (idx) => {
+            if (modeButtons.length === 0) return;
+            activeIdx = (idx + modeButtons.length) % modeButtons.length;
+            const btn = modeButtons[activeIdx];
+            const mode = btn.getAttribute('data-hero-mode');
+
+            modeButtons.forEach((b, i) => {
+                const isCurrent = i === activeIdx;
+                b.classList.toggle('is-active', isCurrent);
+                b.setAttribute('aria-pressed', isCurrent ? 'true' : 'false');
+            });
+
+            slides.forEach((s) => {
+                s.classList.toggle('is-active', s.getAttribute('data-hero-slide') === mode);
+            });
+
+            if (badgeEl) badgeEl.textContent = decodeEntities(btn.getAttribute('data-badge'));
+            if (kickerEl) kickerEl.textContent = decodeEntities(btn.getAttribute('data-kicker'));
+            if (venueEl) venueEl.textContent = decodeEntities(btn.getAttribute('data-venue'));
+            if (quoteEl) quoteEl.textContent = decodeEntities(btn.getAttribute('data-quote'));
+            if (descEl) descEl.textContent = decodeEntities(btn.getAttribute('data-desc'));
+            if (counterEl) counterEl.textContent = `0${activeIdx + 1} / 0${modeButtons.length}`;
+
+            const videoId = btn.getAttribute('data-video') || 'eqW_SmrCuHs';
+            if (deckPlayBtn) deckPlayBtn.setAttribute('data-video-id', videoId);
+            if (reelCtaBtn) reelCtaBtn.setAttribute('data-video-id', videoId);
+        };
+
+        const stopHeroAuto = () => {
+            if (autoTimer) {
+                clearInterval(autoTimer);
+                autoTimer = null;
+            }
+        };
+
+        const startHeroAuto = () => {
+            const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+            if (userPinned || prefersReduced || autoTimer || modeButtons.length < 2) return;
+            autoTimer = setInterval(() => applyHeroMode(activeIdx + 1), 5500);
+        };
+
+        modeButtons.forEach((btn, idx) => {
+            btn.addEventListener('click', () => {
+                userPinned = true;
+                stopHeroAuto();
+                applyHeroMode(idx);
+            });
+        });
+
+        heroStage.addEventListener('mouseenter', stopHeroAuto);
+        heroStage.addEventListener('mouseleave', startHeroAuto);
+        document.addEventListener('visibilitychange', () => {
+            if (document.hidden) stopHeroAuto();
+            else startHeroAuto();
+        });
+
+        startHeroAuto();
+    }
 });
 
 // App Router / Loader
