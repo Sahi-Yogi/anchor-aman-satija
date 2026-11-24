@@ -12,20 +12,30 @@ export const Header = () => {
     };
 
     header.innerHTML = `
-        <div class="container mx-auto px-4 sm:px-6 pointer-events-auto">
+        <div class="container mx-auto px-3 sm:px-6 pointer-events-auto">
             <!-- Luxury Floating Island Header -->
-            <div id="header-main" class="mt-3 lg:mt-5 transition-all duration-500 rounded-full bg-[#0c0d12]/80 backdrop-blur-xl border border-white/10 shadow-[0_12px_40px_rgba(0,0,0,0.5)] px-4 py-2.5 sm:px-6 sm:py-3 lg:px-7 lg:py-3 flex justify-between items-center">
-                <!-- Logo & Brand Tag -->
-                <a href="index.html" class="flex items-center space-x-3 group relative z-[70]">
-                    <img src="src/assets/images/Anchor-Aman-Satija-logo.webp" alt="Aman Satija Logo" width="160" height="64" decoding="async" class="h-9 sm:h-11 lg:h-12 w-auto group-hover:scale-105 transition-transform duration-500">
-                    <div class="hidden xl:flex flex-col border-l border-white/10 pl-3">
-                        <span class="text-[10px] uppercase font-bold tracking-[0.25em] text-brand-gold">Tiger of Alwar</span>
-                        <span class="text-[9px] uppercase tracking-widest text-white/50">Live Emcee & Host</span>
+            <div id="header-main" class="mt-3 lg:mt-5 transition-all duration-500 rounded-full bg-[#090a0f]/92 backdrop-blur-2xl border border-white/15 shadow-[0_12px_45px_rgba(0,0,0,0.65)] px-3.5 py-2 sm:px-5 sm:py-2.5 lg:px-6 lg:py-2.5 2xl:px-8 2xl:py-3 flex justify-between items-center">
+                <!-- Logo & Brand Lockup -->
+                <a href="index.html" class="flex items-center space-x-2.5 sm:space-x-3 group relative z-[70] shrink-0">
+                    <div class="relative shrink-0">
+                        <img src="src/assets/images/Aman-Satija-Anchor-Emblem-logo.webp" alt="Anchor Aman Satija Emblem" width="56" height="56" decoding="async" class="h-10 w-10 sm:h-12 sm:w-12 lg:h-13 lg:w-13 object-cover rounded-full border border-brand-gold/50 shadow-[0_0_15px_rgba(212,175,55,0.3)] ring-1 ring-white/15 group-hover:scale-105 group-hover:border-brand-gold transition-all duration-300">
+                        <span class="absolute -bottom-0.5 -right-0.5 w-3 h-3 bg-brand-gold rounded-full border-2 border-[#090a0f] flex items-center justify-center">
+                            <span class="w-1.5 h-1.5 bg-black rounded-full"></span>
+                        </span>
+                    </div>
+                    <div class="flex flex-col justify-center border-l border-white/15 pl-2.5 sm:pl-3">
+                        <span class="font-serif font-black text-sm sm:text-base lg:text-[17px] tracking-wider text-white group-hover:text-brand-gold transition-colors leading-tight">
+                            AMAN SATIJA
+                        </span>
+                        <span class="text-[8.5px] sm:text-[9.5px] uppercase font-bold tracking-[0.2em] text-brand-gold leading-tight flex items-center gap-1 mt-0.5 whitespace-nowrap">
+                            <span class="w-1.5 h-1.5 rounded-full bg-brand-gold animate-pulse"></span>
+                            Tiger of Alwar <span class="text-white/40">&bull;</span> <span class="text-white/70">Anchor</span>
+                        </span>
                     </div>
                 </a>
                 
                 <!-- Desktop Nav Links with Active State -->
-                <nav class="hidden lg:flex items-center space-x-1 xl:space-x-2">
+                <nav class="hidden lg:flex items-center space-x-0.5 xl:space-x-1.5 2xl:space-x-2">
                     <a href="index.html" class="desktop-nav-link ${isActive('index.html')}">Home</a>
                     <a href="about.html" class="desktop-nav-link ${isActive('about.html')}">About</a>
                     <a href="services.html" class="desktop-nav-link ${isActive('services.html')}">Services</a>
@@ -35,20 +45,20 @@ export const Header = () => {
                 </nav>
 
                 <!-- Desktop Action Strip -->
-                <div class="hidden lg:flex items-center space-x-3">
+                <div class="hidden lg:flex items-center space-x-2.5 xl:space-x-3 shrink-0">
                     <!-- WhatsApp Quick Chat -->
-                    <a href="https://wa.me/919057529067?text=Hi%20Aman%2C%20I%20would%20like%20to%20inquire%20about%20booking%20you%20for%20an%20event." target="_blank" rel="noopener noreferrer" title="Chat on WhatsApp" class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white/80 hover:text-[#25D366] hover:border-[#25D366]/40 hover:bg-[#25D366]/10 transition-all duration-300">
+                    <a href="https://wa.me/919057529067?text=Hi%20Aman%2C%20I%20would%20like%20to%20inquire%20about%20booking%20you%20for%20an%20event." target="_blank" rel="noopener noreferrer" title="Chat on WhatsApp" class="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 hover:text-white hover:bg-emerald-500 hover:border-emerald-500 transition-all duration-300 shadow-[0_2px_10px_rgba(37,211,102,0.15)]">
                         <i class="fa-brands fa-whatsapp text-lg"></i>
                     </a>
 
-                    <!-- Direct Desk Phone -->
-                    <a href="tel:+919057529067" title="Direct Booking Desk" class="hidden xl:flex items-center space-x-2 px-3 py-1.5 rounded-full bg-white/5 border border-white/10 hover:border-brand-gold/40 text-white/70 hover:text-white transition-all text-xs tracking-wider">
+                    <!-- Direct Desk Phone (Visible on 2XL screens) -->
+                    <a href="tel:+919057529067" title="Direct Booking Desk" class="hidden 2xl:flex items-center space-x-2 px-3 py-1.5 rounded-full bg-white/5 border border-white/10 hover:border-brand-gold/40 text-white/75 hover:text-white transition-all text-xs tracking-wider">
                         <i class="fa-solid fa-phone text-[10px] text-brand-gold"></i>
                         <span class="font-medium">+91 90575 29067</span>
                     </a>
 
                     <!-- Book Now Button -->
-                    <a href="contact.html" class="btn-gold !py-2.5 !px-6 !text-xs !tracking-[0.15em] !rounded-full shadow-[0_4px_20px_rgba(212,175,55,0.3)] hover:shadow-[0_4px_25px_rgba(212,175,55,0.5)]">
+                    <a href="contact.html" class="btn-gold !py-2 sm:!py-2.5 !px-4 sm:!px-5 lg:!px-6 !text-xs !tracking-[0.14em] !rounded-full shadow-[0_4px_20px_rgba(212,175,55,0.35)] hover:shadow-[0_4px_25px_rgba(212,175,55,0.55)]">
                         Book Now
                     </a>
                 </div>
@@ -74,10 +84,10 @@ export const Header = () => {
                 <!-- Mobile Menu Top Header Bar with Official Logo & Close Button -->
                 <div class="flex justify-between items-center pb-4 border-b border-white/10 shrink-0">
                     <a href="index.html" class="flex items-center space-x-3">
-                        <img src="src/assets/images/Anchor-Aman-Satija-logo.webp" alt="Aman Satija Logo" width="140" height="56" class="h-10 w-auto">
+                        <img src="src/assets/images/Aman-Satija-Anchor-Emblem-logo.webp" alt="Anchor Aman Satija" width="48" height="48" class="h-11 w-11 object-cover rounded-full border border-brand-gold/40 shadow-md">
                         <div class="flex flex-col border-l border-white/10 pl-2.5">
-                            <span class="text-[10px] uppercase font-bold tracking-[0.2em] text-brand-gold">Tiger of Alwar</span>
-                            <span class="text-[8px] uppercase tracking-widest text-white/50">Live Emcee & Host</span>
+                            <span class="font-serif font-black text-base text-white tracking-wider leading-tight">AMAN SATIJA</span>
+                            <span class="text-[9px] uppercase font-bold tracking-[0.2em] text-brand-gold leading-tight mt-0.5">Tiger of Alwar &bull; Host</span>
                         </div>
                     </a>
                     <button id="curtain-close-btn" aria-label="Close menu" class="w-10 h-10 rounded-full bg-white/10 hover:bg-brand-gold hover:text-black border border-white/15 flex items-center justify-center text-white transition-all">

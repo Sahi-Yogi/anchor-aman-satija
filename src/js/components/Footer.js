@@ -30,8 +30,12 @@ export const Footer = () => {
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-16 mb-16">
                 <!-- Col 1: Brand & Identity -->
                 <div class="space-y-6">
-                    <a href="index.html" class="inline-block group">
-                        <img src="src/assets/images/Anchor-Aman-Satija-logo.webp" alt="Aman Satija Logo" width="200" height="80" loading="lazy" decoding="async" class="h-14 md:h-20 w-auto group-hover:scale-105 transition-transform duration-500">
+                    <a href="index.html" class="flex items-center space-x-4 group">
+                        <img src="src/assets/images/Aman-Satija-Anchor-Emblem-logo.webp" alt="Anchor Aman Satija" width="80" height="80" loading="lazy" decoding="async" class="h-16 md:h-20 w-16 md:w-20 object-cover rounded-full group-hover:scale-105 transition-transform duration-500 shadow-2xl border border-brand-gold/30">
+                        <div class="flex flex-col">
+                            <span class="text-lg md:text-xl font-serif font-black tracking-tight text-white group-hover:text-brand-gold transition-colors">AMAN SATIJA</span>
+                            <span class="text-[10px] uppercase font-bold tracking-[0.22em] text-brand-gold">Tiger of Alwar &bull; Royal Emcee</span>
+                        </div>
                     </a>
                     <p class="text-white/50 text-sm leading-relaxed font-serif italic">
                         "Your stage, my voice—creating memories that echo forever."
