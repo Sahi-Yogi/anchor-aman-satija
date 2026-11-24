@@ -1,6 +1,6 @@
 export const Footer = () => {
     const footer = document.createElement('footer');
-    footer.className = 'bg-[#050505] border-t border-white/10 pt-20 pb-12 relative overflow-hidden';
+    footer.className = 'bg-[#050505] border-t border-white/10 pt-16 pb-10 relative overflow-hidden';
     
     footer.innerHTML = `
         <!-- Design Glow -->
@@ -8,18 +8,18 @@ export const Footer = () => {
 
         <div class="container mx-auto px-6 relative z-10">
             <!-- Top Action Strip -->
-            <div class="bg-[#0e0f16] border border-brand-gold/30 rounded-2xl p-8 md:p-12 mb-16 shadow-2xl flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="bg-[#0e0f16] border border-brand-gold/30 rounded-2xl p-6 sm:p-8 md:p-10 mb-12 shadow-2xl flex flex-col md:flex-row items-center justify-between gap-6">
                 <div>
                     <span class="text-brand-gold uppercase tracking-[0.3em] text-xs font-bold block mb-2">Direct Inquiries Open</span>
                     <h3 class="text-2xl md:text-3xl font-serif font-bold text-white">Planning a Wedding or Corporate Gala?</h3>
                     <p class="text-white/60 text-sm mt-1">Check availability, dates & get an instant custom quote on WhatsApp.</p>
                 </div>
-                <div class="flex flex-wrap gap-4 w-full md:w-auto">
-                    <a href="https://wa.me/919057529067?text=Hi%20Aman%2C%20I%20would%20like%20to%20inquire%20about%20booking%20you%20for%20an%20event." target="_blank" rel="noopener noreferrer" class="btn-whatsapp flex-1 md:flex-initial flex items-center justify-center gap-2 text-sm">
+                <div class="flex flex-col sm:flex-row flex-wrap gap-3 w-full md:w-auto shrink-0">
+                    <a href="https://wa.me/919057529067?text=Hi%20Aman%2C%20I%20would%20like%20to%20inquire%20about%20booking%20you%20for%20an%20event." target="_blank" rel="noopener noreferrer" class="btn-whatsapp w-full sm:w-auto flex items-center justify-center gap-2 text-sm">
                         <i class="fa-brands fa-whatsapp text-lg"></i>
                         <span>WhatsApp (+91 90575 29067)</span>
                     </a>
-                    <a href="tel:+919057529067" class="btn-outline flex-1 md:flex-initial flex items-center justify-center gap-2 text-sm">
+                    <a href="tel:+919057529067" class="btn-outline w-full sm:w-auto flex items-center justify-center gap-2 text-sm">
                         <i class="fa-solid fa-phone text-xs"></i>
                         <span>Call Management</span>
                     </a>
@@ -27,7 +27,7 @@ export const Footer = () => {
             </div>
 
             <!-- Main Footer 4-Column Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-16 mb-16">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12 mb-12">
                 <!-- Col 1: Brand & Identity -->
                 <div class="space-y-6">
                     <a href="index.html" class="flex items-center space-x-4 group">

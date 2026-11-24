@@ -16,11 +16,11 @@ export const Header = () => {
         <div id="scroll-progress-bar" class="scroll-progress-bar"></div>
         <div class="container mx-auto px-3 sm:px-6 pointer-events-auto">
             <!-- Luxury Floating Island Header -->
-            <div id="header-main" class="mt-3 lg:mt-5 transition-all duration-500 rounded-full bg-[#090a0f]/92 backdrop-blur-2xl border border-white/15 shadow-[0_12px_45px_rgba(0,0,0,0.65)] px-3.5 py-2 sm:px-5 sm:py-2.5 lg:px-6 lg:py-2.5 2xl:px-8 2xl:py-3 flex justify-between items-center">
+            <div id="header-main" class="mt-3 lg:mt-5 transition-all duration-500 rounded-full bg-[#090a0f]/95 backdrop-blur-2xl border border-white/15 shadow-[0_12px_45px_rgba(0,0,0,0.65)] px-3.5 py-2 sm:px-5 sm:py-2.5 lg:px-6 lg:py-2.5 2xl:px-8 2xl:py-3 flex justify-between items-center">
                 <!-- Logo & Brand Lockup -->
                 <a href="index.html" class="flex items-center space-x-2.5 sm:space-x-3 group relative z-[70] shrink-0">
                     <div class="relative shrink-0">
-                        <img src="src/assets/images/Aman-Satija-Anchor-Emblem-logo.webp" alt="Anchor Aman Satija Emblem" width="56" height="56" decoding="async" class="h-10 w-10 sm:h-12 sm:w-12 lg:h-13 lg:w-13 object-cover rounded-full border border-brand-gold/50 shadow-[0_0_15px_rgba(212,175,55,0.3)] ring-1 ring-white/15 group-hover:scale-105 group-hover:border-brand-gold transition-all duration-300">
+                        <img src="src/assets/images/Aman-Satija-Anchor-Emblem-logo.webp" alt="Anchor Aman Satija Emblem" width="56" height="56" decoding="async" class="h-10 w-10 sm:h-12 sm:w-12 xl:h-14 xl:w-14 object-cover rounded-full border border-brand-gold/50 shadow-[0_0_15px_rgba(212,175,55,0.3)] ring-1 ring-white/15 group-hover:scale-105 group-hover:border-brand-gold transition-all duration-300">
                         <span class="absolute -bottom-0.5 -right-0.5 w-3 h-3 bg-brand-gold rounded-full border-2 border-[#090a0f] flex items-center justify-center">
                             <span class="w-1.5 h-1.5 bg-black rounded-full"></span>
                         </span>
@@ -75,7 +75,7 @@ export const Header = () => {
         </div>
         
         <!-- Luxury Curtain Menu (Mobile Only) -->
-        <div id="curtain-nav" class="lg:hidden fixed inset-0 z-[80] bg-[#090a0f]/98 backdrop-blur-2xl curtain-menu flex flex-col pt-6 pb-6 px-6 sm:px-8 overflow-y-auto pointer-events-auto">
+        <div id="curtain-nav" class="lg:hidden fixed inset-0 z-[80] bg-[#090a0f] backdrop-blur-2xl curtain-menu flex flex-col pt-6 pb-6 px-5 sm:px-8 overflow-y-auto pointer-events-auto">
             <!-- Background Texture / Ambient Glow -->
             <div class="absolute inset-0 opacity-25 pointer-events-none">
                 <div class="absolute top-0 right-0 w-[80%] h-[50%] bg-brand-gold/10 blur-[130px] rounded-full"></div>
@@ -155,11 +155,11 @@ export const Header = () => {
                 <!-- Footer of Menu -->
                 <div class="mt-auto pt-4 shrink-0 flex flex-col space-y-4">
                     <div class="grid grid-cols-2 gap-3">
-                        <a href="https://wa.me/919057529067?text=Hi%20Aman%2C%20I%20would%20like%20to%20inquire%20about%20booking%20you%20for%20an%20event." target="_blank" rel="noopener noreferrer" class="btn-whatsapp !py-3.5 !rounded-full w-full flex items-center justify-center space-x-2 text-sm">
-                            <i class="fa-brands fa-whatsapp text-lg"></i>
+                        <a href="https://wa.me/919057529067?text=Hi%20Aman%2C%20I%20would%20like%20to%20inquire%20about%20booking%20you%20for%20an%20event." target="_blank" rel="noopener noreferrer" class="btn-whatsapp !py-3 !px-3 !rounded-full w-full flex items-center justify-center space-x-2 !text-xs sm:!text-sm">
+                            <i class="fa-brands fa-whatsapp text-base sm:text-lg"></i>
                             <span>WhatsApp</span>
                         </a>
-                        <a href="tel:+919057529067" class="btn-gold !py-3.5 !rounded-full w-full flex items-center justify-center space-x-2 text-sm">
+                        <a href="tel:+919057529067" class="btn-gold !py-3 !px-3 !rounded-full w-full flex items-center justify-center space-x-2 !text-xs sm:!text-sm">
                             <i class="fa-solid fa-phone text-xs"></i>
                             <span>Call Desk</span>
                         </a>

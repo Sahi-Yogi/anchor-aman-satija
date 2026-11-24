@@ -28,22 +28,22 @@
 
     <div id="app">
         <!-- Page Header -->
-        <section class="pt-36 sm:pt-40 pb-16 border-b border-white/10 bg-[#090a0f]">
+        <section class="pt-32 sm:pt-36 pb-12 sm:pb-14 border-b border-white/10 bg-[#090a0f]">
             <div class="container mx-auto px-6 text-center">
-                <div class="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-[0.22em] text-white/50 mb-5">
+                <div class="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-[0.22em] text-white/50 mb-4">
                     <a href="index.html" class="hover:text-brand-gold transition-colors">Home</a>
                     <span>/</span>
                     <span class="text-brand-gold font-bold">Services</span>
                 </div>
 
-                <h1 class="text-5xl md:text-7xl font-serif font-bold mb-5">Tailored <span class="text-brand-gold italic font-normal">Expertise</span></h1>
+                <h1 class="text-5xl md:text-7xl font-serif font-bold mb-4">Tailored <span class="text-brand-gold italic font-normal">Expertise</span></h1>
                 <p class="text-white/65 tracking-[0.18em] uppercase text-xs sm:text-sm font-mono max-w-2xl mx-auto">
                     Every Event &bull; Custom-Scripted &bull; Hindi, English, Punjabi &amp; Marwari
                 </p>
 
                 <!-- Quick Category Navigation Pills -->
-                <div class="mt-8 flex flex-wrap items-center justify-center gap-2.5 sm:gap-3">
-                    <a href="#directory" class="filter-pill is-active">Occasion Index</a>
+                <div class="mt-7 flex flex-wrap items-center justify-center gap-2.5 sm:gap-3">
+                    <a href="#directory" class="filter-pill">Occasion Index</a>
                     <a href="#wedding" class="filter-pill">Weddings &amp; Sangeet</a>
                     <a href="#corporate" class="filter-pill">Corporate &amp; Awards</a>
                     <a href="#celebrity" class="filter-pill">Celebrity &amp; Concerts</a>
@@ -54,9 +54,9 @@
         </section>
 
         <!-- 6-Category Quick Occasion Directory (No. 01 - No. 06) -->
-        <section id="directory" class="py-16 bg-[#07080c] border-b border-white/10">
+        <section id="directory" class="py-16 lg:py-20 bg-[#07080c] border-b border-white/10">
             <div class="container mx-auto px-6">
-                <div class="text-center max-w-2xl mx-auto mb-12 reveal">
+                <div class="text-center max-w-2xl mx-auto mb-10 sm:mb-12 reveal">
                     <span class="text-brand-gold uppercase tracking-[0.25em] text-xs font-bold block mb-2">Which Service Fits Your Event?</span>
                     <h2 class="text-3xl md:text-4xl font-serif font-bold text-white">Every Occasion, <span class="text-brand-gold italic">Custom Crafted</span></h2>
                 </div>
@@ -119,11 +119,10 @@
             </div>
         </section>
 
-        <!-- Deep Service Sections -->
-        <section class="py-20 md:py-28 space-y-24 md:space-y-32">
-            <!-- 1. Destination Weddings & Complete Ritual Breakdown -->
-            <div id="wedding" class="container mx-auto px-6">
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center reveal">
+        <!-- Deep Service Sections (Uniform Alternating Cadence) -->
+        <section id="wedding" class="py-16 lg:py-20 bg-[#090a0f] border-b border-white/10">
+            <div class="container mx-auto px-6">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center reveal">
                     <div>
                         <span class="text-brand-gold font-bold tracking-widest uppercase text-xs mb-3 block">Celebration &amp; Glamour &bull; 01</span>
                         <h2 class="text-3xl sm:text-4xl font-serif font-bold mb-6">Destination Wedding &amp; <span class="text-brand-gold italic">Sangeet Hosting</span></h2>
@@ -153,7 +152,7 @@
                 </div>
 
                 <!-- 5-Ritual Wedding Flow Grid -->
-                <div id="wedding-rituals" class="mt-14 pt-12 border-t border-white/10 reveal">
+                <div id="wedding-rituals" class="mt-12 pt-10 border-t border-white/10 reveal">
                     <span class="text-[11px] font-mono uppercase tracking-[0.25em] text-brand-gold font-bold block mb-6">Complete Multi-Day Wedding Coverage</span>
                     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
                         <div class="p-5 rounded-2xl bg-[#0c0d14] border border-white/10">
@@ -179,10 +178,12 @@
                     </div>
                 </div>
             </div>
+        </section>
 
-            <!-- 2. Corporate Galas, Summits & Award Nights -->
-            <div id="corporate" class="container mx-auto px-6 pt-8 border-t border-white/10">
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center reveal">
+        <!-- 2. Corporate Galas, Summits & Award Nights -->
+        <section id="corporate" class="py-16 lg:py-20 bg-[#07080c] border-b border-white/10">
+            <div class="container mx-auto px-6">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center reveal">
                     <div class="lg:order-2">
                         <span class="text-brand-gold font-bold tracking-widest uppercase text-xs mb-3 block">Corporate Prestige &bull; 02</span>
                         <h2 class="text-3xl sm:text-4xl font-serif font-bold mb-6">Corporate Galas &amp; <span class="text-brand-gold italic">Leadership Summits</span></h2>
@@ -208,10 +209,12 @@
                     </div>
                 </div>
             </div>
+        </section>
 
-            <!-- 3. Celebrity Concerts & Live Mega Shows -->
-            <div id="celebrity" class="container mx-auto px-6 pt-8 border-t border-white/10">
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center reveal">
+        <!-- 3. Celebrity Concerts & Live Mega Shows -->
+        <section id="celebrity" class="py-16 lg:py-20 bg-[#090a0f] border-b border-white/10">
+            <div class="container mx-auto px-6">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center reveal">
                     <div>
                         <span class="text-brand-gold font-bold tracking-widest uppercase text-xs mb-3 block">Arena Crowd Command &bull; 03</span>
                         <h2 class="text-3xl sm:text-4xl font-serif font-bold mb-6">Celebrity Concerts &amp; <span class="text-brand-gold italic">Live Mega Shows</span></h2>
@@ -234,10 +237,12 @@
                     </div>
                 </div>
             </div>
+        </section>
 
-            <!-- 4. Private Milestones & After-Dark Theme Nights -->
-            <div id="social" class="container mx-auto px-6 pt-8 border-t border-white/10">
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center reveal">
+        <!-- 4. Private Milestones & After-Dark Theme Nights -->
+        <section id="social" class="py-16 lg:py-20 bg-[#07080c] border-b border-white/10">
+            <div class="container mx-auto px-6">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center reveal">
                     <div class="lg:order-2">
                         <span class="text-brand-gold font-bold tracking-widest uppercase text-xs mb-3 block">Social &amp; Theme Nights &bull; 04</span>
                         <h2 class="text-3xl sm:text-4xl font-serif font-bold mb-6">Private Milestones &amp; <span class="text-brand-gold italic">Luxury Theme Nights</span></h2>
@@ -263,9 +268,9 @@
         </section>
 
         <!-- 5-Step Process Flow -->
-        <section id="process" class="py-24 bg-[#090a0f] border-y border-white/10">
+        <section id="process" class="py-16 lg:py-20 bg-[#090a0f] border-b border-white/10">
             <div class="container mx-auto px-6">
-                <div class="text-center max-w-2xl mx-auto mb-14 reveal">
+                <div class="text-center max-w-2xl mx-auto mb-10 sm:mb-12 reveal">
                     <span class="text-brand-gold uppercase tracking-[0.25em] text-xs font-bold block mb-2">Our Workflow</span>
                     <h2 class="text-3xl md:text-5xl font-serif font-bold text-white mb-4">How We Build <span class="text-brand-gold italic">Your Event</span></h2>
                     <p class="text-white/60 text-sm sm:text-base">Structured preparation so your event feels completely effortless on the night.</p>
@@ -302,9 +307,9 @@
         </section>
 
         <!-- Service FAQs -->
-        <section class="py-20 bg-[#07080c]">
+        <section class="py-16 lg:py-20 bg-[#07080c]">
             <div class="container mx-auto px-6 max-w-4xl">
-                <div class="text-center mb-12 reveal">
+                <div class="text-center mb-10 sm:mb-12 reveal">
                     <span class="text-brand-gold uppercase tracking-[0.25em] text-xs font-bold block mb-2">Service Clarifications</span>
                     <h2 class="text-3xl md:text-4xl font-serif font-bold text-white">Frequently Asked <span class="text-brand-gold italic">Questions</span></h2>
                 </div>
@@ -354,7 +359,7 @@
         </section>
 
         <!-- Final CTA -->
-        <section class="py-20 border-t border-white/10 bg-[#090a0f] text-center">
+        <section class="py-16 lg:py-20 border-t border-white/10 bg-[#090a0f] text-center">
             <div class="container mx-auto px-6 max-w-3xl reveal">
                 <span class="inline-block px-3.5 py-1.5 rounded-full bg-brand-gold/10 border border-brand-gold/30 text-brand-gold text-xs font-bold uppercase tracking-wider mb-5">Booking Open 2026–27</span>
                 <h2 class="text-3xl md:text-4xl font-serif font-bold mb-5">Looking for a Custom Anchoring Package for Your City?</h2>

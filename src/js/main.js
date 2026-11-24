@@ -251,22 +251,43 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // 7. Reveal Animation on Scroll with unobserve for performance
-    const observerOptions = {
-        threshold: 0.08,
-        rootMargin: '0px 0px -30px 0px'
-    };
+    // 7. Reveal Animation on Scroll with immediate viewport visibility + failsafe
+    const revealElements = Array.from(document.querySelectorAll('.reveal'));
+    if (revealElements.length > 0) {
+        const revealEl = (el) => el.classList.add('active');
 
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('active');
-                observer.unobserve(entry.target);
+        const observerOptions = {
+            threshold: 0.01,
+            rootMargin: '60px 0px -10px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting || entry.boundingClientRect.top < window.innerHeight) {
+                    revealEl(entry.target);
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        revealElements.forEach(el => {
+            const rect = el.getBoundingClientRect();
+            if (rect.top < window.innerHeight + 60) {
+                revealEl(el);
+            } else {
+                observer.observe(el);
             }
         });
-    }, observerOptions);
 
-    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+        // Failsafe: ensure scrolled/deep anchor content never remains hidden
+        setTimeout(() => {
+            revealElements.forEach(el => {
+                if (el.getBoundingClientRect().top <= window.innerHeight + 120) {
+                    revealEl(el);
+                }
+            });
+        }, 1200);
+    }
 
     // 8. Media Scroll Controls (Horizontal Gallery Showcase)
     document.querySelectorAll('.media-scroll-container').forEach(container => {
